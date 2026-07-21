@@ -1,6 +1,6 @@
 {
-  "catalog": "synthetic_catalog_physical_visibility_final.csv",
-  "n_sources": 11922,
+  "catalog": "synthetic_catalog_coregulated_covering_mid.csv",
+  "n_sources": 11614,
   "constants": {
     "ionizing_bolometric_fraction": 0.5,
     "mean_ionizing_energy_ryd": 3.26,
@@ -9,168 +9,188 @@
   "regressions": {
     "A_interception_odds": {
       "global": {
-        "eta_emergent": 1.040713074486927,
-        "intercept": 1.3327777767972582,
-        "corr": 0.22903103779584857
+        "eta_emergent": 1.0175408294555741,
+        "eta_emergent_se": 0.15875000104285375,
+        "n_eff": 366.0512093601985,
+        "intercept": 0.5626160240685906,
+        "corr": 0.31844756790789636
       },
       "z45_65": {
-        "eta_emergent": 1.0033872062877887,
-        "intercept": 1.374560750200231,
-        "corr": 0.21473671866435834
+        "eta_emergent": 0.8932445658288642,
+        "eta_emergent_se": 0.17841887439499757,
+        "n_eff": 244.7489281147356,
+        "intercept": 0.5133227337650101,
+        "corr": 0.30592390005792536
       }
     },
     "B_stellar_diffuse": {
       "global": {
-        "eta_emergent": 0.8003516718555952,
-        "intercept": 0.38820114741360384,
-        "corr": 0.6804217751618005
+        "eta_emergent": 0.4714714260561383,
+        "eta_emergent_se": 0.041821584307524154,
+        "n_eff": 366.0512093601985,
+        "intercept": 0.8644056650436878,
+        "corr": 0.5086884932956846
       },
       "z45_65": {
-        "eta_emergent": 0.694288331334754,
-        "intercept": 0.4375552930761746,
-        "corr": 0.6448326469098133
+        "eta_emergent": 0.39913799352842044,
+        "eta_emergent_se": 0.04748765533236641,
+        "n_eff": 244.7489281147356,
+        "intercept": 0.8767389778925406,
+        "corr": 0.4747846687407842
       }
     },
     "C_full_competition": {
       "global": {
-        "eta_emergent": 0.5940087094514345,
-        "intercept": 0.23667854368182561,
-        "corr": 0.5143187450988805
+        "eta_emergent": 0.7400443875175673,
+        "eta_emergent_se": 0.08467616101568685,
+        "n_eff": 366.0512093601985,
+        "intercept": 0.27529777127509925,
+        "corr": 0.41644378980658225
       },
       "z45_65": {
-        "eta_emergent": 0.5310686747286723,
-        "intercept": 0.27879080980381005,
-        "corr": 0.4732581923679651
+        "eta_emergent": 0.6499284036048665,
+        "eta_emergent_se": 0.09941813320835438,
+        "n_eff": 244.7489281147356,
+        "intercept": 0.27185196779100607,
+        "corr": 0.38690814721375444
       }
     },
     "D_dust_quenched_912": {
       "global": {
-        "eta_emergent": 0.6435874318365153,
-        "intercept": 0.26699952630067336,
-        "corr": 0.4853561956555422
+        "eta_emergent": 0.7556202598042191,
+        "eta_emergent_se": 0.0988989724973052,
+        "n_eff": 366.0512093601985,
+        "intercept": 0.3544217106783908,
+        "corr": 0.371737703610698
       },
       "z45_65": {
-        "eta_emergent": 0.578705662745588,
-        "intercept": 0.3092879576452875,
-        "corr": 0.4490555103815424
+        "eta_emergent": 0.6644189509139944,
+        "eta_emergent_se": 0.11278173751933207,
+        "n_eff": 244.7489281147356,
+        "intercept": 0.33645833190451147,
+        "corr": 0.35367705843050257
       }
     },
     "D_dust_quenched_2500": {
       "global": {
-        "eta_emergent": 0.8265271398287737,
-        "intercept": 0.39925359593380344,
-        "corr": 0.6690660120069544
+        "eta_emergent": 0.45028246238442243,
+        "eta_emergent_se": 0.046293818487429424,
+        "n_eff": 366.0512093601985,
+        "intercept": 0.9283930591600736,
+        "corr": 0.4541688681340379
       },
       "z45_65": {
-        "eta_emergent": 0.7181900059796295,
-        "intercept": 0.4482768253445551,
-        "corr": 0.6334070257310296
+        "eta_emergent": 0.37344506177562814,
+        "eta_emergent_se": 0.05189041736732214,
+        "n_eff": 244.7489281147356,
+        "intercept": 0.9386110798986572,
+        "corr": 0.4193390305981854
       }
     }
   },
   "stack_confrontation": {
     "A_interception_odds": {
       "median_f_dense": {
-        "xLRD": 0.9998,
-        "plusLRD": 0.9953,
-        "minusLRD": 0.8697,
-        "bLRD": 0.818
+        "xLRD": 0.9899,
+        "plusLRD": 0.9457,
+        "minusLRD": 0.7912,
+        "bLRD": 0.4707
       },
-      "chi2_vs_stacks": 9.9
+      "chi2_vs_stacks": 2.38
     },
     "B_stellar_diffuse": {
       "median_f_dense": {
-        "xLRD": 0.94,
-        "plusLRD": 0.9314,
-        "minusLRD": 0.6891,
-        "bLRD": 0.6087
+        "xLRD": 0.9445,
+        "plusLRD": 0.9368,
+        "minusLRD": 0.923,
+        "bLRD": 0.8473
       },
-      "chi2_vs_stacks": 3.7
+      "chi2_vs_stacks": 9.42
     },
     "C_full_competition": {
       "median_f_dense": {
-        "xLRD": 0.939,
-        "plusLRD": 0.9171,
-        "minusLRD": 0.6259,
-        "bLRD": 0.5416
+        "xLRD": 0.9355,
+        "plusLRD": 0.8915,
+        "minusLRD": 0.7381,
+        "bLRD": 0.4385
       },
-      "chi2_vs_stacks": 3.84
+      "chi2_vs_stacks": 1.98
     },
     "D_dust_quenched_912": {
       "median_f_dense": {
-        "xLRD": 0.954,
-        "plusLRD": 0.9359,
-        "minusLRD": 0.6261,
-        "bLRD": 0.5418
+        "xLRD": 0.9512,
+        "plusLRD": 0.9072,
+        "minusLRD": 0.7538,
+        "bLRD": 0.4509
       },
-      "chi2_vs_stacks": 3.78
+      "chi2_vs_stacks": 1.59
     },
     "D_dust_quenched_2500": {
       "median_f_dense": {
-        "xLRD": 0.9447,
-        "plusLRD": 0.9386,
-        "minusLRD": 0.6892,
-        "bLRD": 0.6088
+        "xLRD": 0.9501,
+        "plusLRD": 0.9429,
+        "minusLRD": 0.931,
+        "bLRD": 0.8653
       },
-      "chi2_vs_stacks": 3.74
+      "chi2_vs_stacks": 9.98
     }
   },
   "closure_reference": {
     "imposed_D2_closure": {
       "median_f_dense": {
-        "xLRD": 0.9786,
-        "plusLRD": 0.8949,
-        "minusLRD": 0.6869,
-        "bLRD": 0.2003
+        "xLRD": 0.9857,
+        "plusLRD": 0.9285,
+        "minusLRD": 0.792,
+        "bLRD": 0.3481
       },
-      "chi2_vs_stacks": 0.38
+      "chi2_vs_stacks": 1.18
     }
   },
   "required_lemma2_law": {
     "reference_model": "B_stellar_diffuse",
     "per_subtype": {
       "xLRD": {
-        "median_d": 6.764,
-        "physical_odds": 15.674,
+        "median_d": 8.313,
+        "physical_odds": 17.005,
         "required_odds": 51.632,
-        "correction_factor": 3.294
+        "correction_factor": 3.036
       },
       "plusLRD": {
-        "median_d": 2.918,
-        "physical_odds": 13.571,
+        "median_d": 3.604,
+        "physical_odds": 14.835,
         "required_odds": 9.101,
-        "correction_factor": 0.671
+        "correction_factor": 0.614
       },
       "minusLRD": {
-        "median_d": 1.481,
-        "physical_odds": 2.217,
+        "median_d": 1.951,
+        "physical_odds": 11.992,
         "required_odds": 2.817,
-        "correction_factor": 1.271
+        "correction_factor": 0.235
       },
       "bLRD": {
-        "median_d": 0.5,
-        "physical_odds": 1.555,
+        "median_d": 0.731,
+        "physical_odds": 5.547,
         "required_odds": 0.094,
-        "correction_factor": 0.06
+        "correction_factor": 0.017
       }
     },
-    "required_extra_power_of_d": 1.397,
-    "required_normalization_log10": -0.599
+    "required_extra_power_of_d": 2.108,
+    "required_normalization_log10": -1.392
   },
   "qstar_bracket_chi2": {
     "qstar_x0.33": {
-      "A_interception_odds": 9.9,
-      "B_stellar_diffuse": 8.61,
-      "C_full_competition": 4.76,
-      "D_dust_quenched_912": 5.1,
-      "D_dust_quenched_2500": 8.76
+      "A_interception_odds": 2.38,
+      "B_stellar_diffuse": 13.97,
+      "C_full_competition": 1.66,
+      "D_dust_quenched_912": 1.86,
+      "D_dust_quenched_2500": 14.34
     },
     "qstar_x3.00": {
-      "A_interception_odds": 9.9,
-      "B_stellar_diffuse": 20.2,
-      "C_full_competition": 22.89,
-      "D_dust_quenched_912": 16.92,
-      "D_dust_quenched_2500": 18.05
+      "A_interception_odds": 2.38,
+      "B_stellar_diffuse": 11.85,
+      "C_full_competition": 13.54,
+      "D_dust_quenched_912": 6.79,
+      "D_dust_quenched_2500": 10.39
     }
   },
   "notes": [

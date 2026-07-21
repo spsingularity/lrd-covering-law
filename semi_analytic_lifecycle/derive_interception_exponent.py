@@ -52,7 +52,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-CATALOG = "synthetic_catalog_physical_visibility_final.csv"
+CATALOG = "synthetic_catalog_coregulated_covering_mid.csv"
 
 RYDBERG_ERG = 2.1798723611030e-11
 IONIZING_BOLOMETRIC_FRACTION = 0.5      # lrd_lifecycle.py config value
@@ -184,8 +184,15 @@ def weighted_fit(log_d, log_r, weights):
     var = np.sum(w * (log_d - mx) ** 2)
     slope = cov / var
     corr = cov / np.sqrt(var * np.sum(w * (log_r - my) ** 2))
+    intercept = my - slope * mx
+    # weighted slope standard error, using the Kish effective sample size.
+    resid = log_r - (slope * log_d + intercept)
+    n_eff = float((weights.sum() ** 2) / np.sum(weights ** 2))
+    slope_se = float(np.sqrt(np.sum(w * resid ** 2) / (max(n_eff - 2.0, 1.0) * var)))
     return {"eta_emergent": float(slope),
-            "intercept": float(my - slope * mx),
+            "eta_emergent_se": slope_se,
+            "n_eff": n_eff,
+            "intercept": float(intercept),
             "corr": float(corr)}
 
 
@@ -229,13 +236,18 @@ def main() -> None:
 
     ratios = candidate_ratios(cat)
     window = (cat["z"] >= 4.5) & (cat["z"] <= 6.5) & (weights > 0)
+    # Fits are restricted to the physically populated range; the |log D|>1.5
+    # wings are numerically capped sources (host-term floors, yield caps) and
+    # are excluded from every regression (review I-4).
+    fit_window = window & (np.abs(log_d) < 1.5)
 
     regressions = {}
     for name, ratio in ratios.items():
         log_r = np.log10(np.clip(ratio, 1.0e-30, None))
         regressions[name] = {
             "global": weighted_fit(log_d, log_r, weights),
-            "z45_65": weighted_fit(log_d[window], log_r[window], weights[window]),
+            "z45_65": weighted_fit(log_d[fit_window], log_r[fit_window],
+                                   weights[fit_window]),
         }
 
     confrontation = stack_confrontation(cat, ratios, weights)
@@ -286,18 +298,27 @@ def main() -> None:
         ratio = ratios[name]
         log_r = np.log10(np.clip(ratio, 1.0e-30, None))
         ax.scatter(log_d[window], log_r[window], s=4, alpha=0.2, color="#4C78A8")
+        # shade the excluded (numerically capped) wings outside |log D| < 1.5
+        ax.axvspan(-4.5, -1.5, color="0.9", zorder=0)
+        ax.axvspan(1.5, 10.5, color="0.9", zorder=0)
         fit = regressions[name]["z45_65"]
-        grid = np.linspace(log_d[window].min(), log_d[window].max(), 50)
+        grid = np.linspace(-1.5, 1.5, 50)
         ax.plot(grid, fit["eta_emergent"] * grid + fit["intercept"],
                 color="#8B0000", lw=2,
-                label=f"$\\eta_{{emergent}}$ = {fit['eta_emergent']:.2f}")
-        ax.plot(grid, 2.0 * grid + np.median(log_r[window] - 2.0 * log_d[window]),
-                color="0.4", ls="--", lw=1.2, label="imposed $\\eta=2$")
+                label=f"$\\eta$ = {fit['eta_emergent']:.2f} $\\pm$ "
+                      f"{fit['eta_emergent_se']:.2f}")
+        refgrid = np.linspace(log_d[window].min(), log_d[window].max(), 50)
+        ax.plot(refgrid,
+                2.0 * refgrid + np.median(log_r[fit_window]
+                                          - 2.0 * log_d[fit_window]),
+                color="0.4", ls="--", lw=1.2, label="$\\eta=2$ reference")
+        ax.set_xlim(-4.5, 10.5)
         ax.set_xlabel(r"$\log_{10} D$")
         ax.set_title(labels[name], fontsize=10)
         ax.legend(frameon=False, fontsize=8)
     axes[0].set_ylabel(r"$\log_{10} (Q_{\rm dense}/Q_{\rm diffuse})$")
-    fig.suptitle("Emergent interception exponent, $4.5 \\leq z \\leq 6.5$", y=1.0)
+    fig.suptitle("Emergent interception exponent; fits restricted to "
+                 "$|\\log_{10} D| < 1.5$ (unshaded)", y=1.0)
     fig.tight_layout()
     fig.savefig(HERE / "interception_exponent.pdf")
     fig.savefig(HERE / "interception_exponent.png", dpi=200)
