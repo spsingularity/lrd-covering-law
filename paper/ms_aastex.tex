@@ -1,14 +1,16 @@
 \documentclass[twocolumn]{aastex631}
 \usepackage{booktabs}
-%% Relax float placement so the full-width figure*/deluxetable queue in
-%% twocolumn mode does not leave a float stuck (all figures are top-anchored).
-\setcounter{topnumber}{4}
-\setcounter{totalnumber}{6}
-\renewcommand{\topfraction}{0.9}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\floatpagefraction}{0.1}
-\renewcommand{\dbltopfraction}{0.9}
-\renewcommand{\dblfloatpagefraction}{0.1}
+%% Float placement: let full-width figure*/deluxetable* sit at page tops with
+%% text below (minimal white space), and only form a dedicated float page when
+%% a float genuinely fills most of it.
+\setcounter{topnumber}{3}
+\setcounter{dbltopnumber}{3}
+\setcounter{totalnumber}{5}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\dbltopfraction}{0.92}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.75}
+\renewcommand{\dblfloatpagefraction}{0.75}
 \shorttitle{An engine-regulated covering law for LRDs}
 \shortauthors{Pandev}
 
@@ -435,7 +437,8 @@ exponent and the systematics floor of its original calibration). Because
 the seed range of the physical partition (5.0--15.6) straddles 12.9,
 ``at least as well'' is a fiducial-seed statement.
 
-\begin{deluxetable*}{lcccc}
+\begin{deluxetable}{lcccc}
+\tabletypesize{\footnotesize}
 \tablecaption{Direct confrontation with the stacked line ratios at
 $4.5\le z\le6.5$ under the fitted law with $\epsilon=0.1$. The inverted
 dense fractions (final columns) are shown as model-conditional
@@ -457,7 +460,7 @@ four He~II$\lambda4686$/H$\beta$ predictions are $\le0.015$, below the
 population gate of 0.1. The bLRD inverted interval is unconstrained and
 its central value is not matched; only the three red subtypes
 discriminate.}
-\end{deluxetable*}
+\end{deluxetable}
 
 Table~\ref{tab:ratios} shows the result: the raw photon partition under
 the fitted covering law matches the stacked ratios at least as well as
