@@ -29,7 +29,8 @@ cp semi_analytic_lifecycle/interception_exponent.pdf         paper/
 cp semi_analytic_lifecycle/coregulated_covering_scan.pdf     paper/
 cp semi_analytic_lifecycle/subtype_redshift_march.pdf        paper/
 cp semi_analytic_lifecycle/subtype_march_with_bands.pdf      paper/
-cp semi_analytic_lifecycle/public_lrd_constraints/rubies_fwhm_confrontation.pdf paper/
+# Fig. 3 is the fitted-law (coregulated) confrontation -> compact scale 5864 AU
+cp semi_analytic_lifecycle/public_lrd_constraints/coregulated/rubies_fwhm_confrontation.pdf paper/
 
 echo "==> [3/3] Compiling the papers"
 cd "$ROOT/paper"
