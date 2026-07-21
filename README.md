@@ -62,7 +62,7 @@ the shipped configurations out of the box.
 To reproduce the **full 67-configuration grid** (the complete γ/k scan and the
 saturation/Poisson/metallicity/burst-rate/dynamic-covering variants), download
 the companion data record — *"…full forward-catalogue grid"*, CC-BY-4.0,
-DOI **&lt;to be assigned&gt;** — and unzip its `catalogs/synthetic_catalog_*.csv`
+DOI [10.5281/zenodo.21476542](https://doi.org/10.5281/zenodo.21476542) — and unzip its `catalogs/synthetic_catalog_*.csv`
 into `semi_analytic_lifecycle/`, then re-run `reproduce.sh`.
 
 ## Data provenance
@@ -93,5 +93,6 @@ C23/C25 build (see `semi_analytic_lifecycle/CLOUDY_INSTALLATION.md`).
 Please cite the manuscript (DOI to be assigned at submission), this code
 record — archived as
 [doi:10.5281/zenodo.21475322](https://doi.org/10.5281/zenodo.21475322)
-(v1.0.0) — the companion data record, and the underlying public data
-products.
+(v1.0.0) — the companion data record
+([doi:10.5281/zenodo.21476542](https://doi.org/10.5281/zenodo.21476542)),
+and the underlying public data products.
