@@ -118,6 +118,16 @@ def main():
     compact_quantiles = [weighted_quantile(compact, weights, q) for q in quantiles]
     legacy_quantiles = [weighted_quantile(legacy, weights, q) for q in quantiles]
 
+    # Width budget of the matched population (paper Sec. 4.3): weighted-median
+    # black-hole mass, Thomson depth, and the electron-scattering contribution
+    # to the Balmer FWHM (electron = 1100 * sqrt(tau_e)).
+    matched_logmbh = np.array([float(row["logmbh"]) for row in model_rows])
+    matched_tau_e = np.array([float(row["tau_e"]) for row in model_rows])
+    matched_electron = 1100.0 * np.sqrt(np.clip(matched_tau_e, 0.0, 12.0))
+    median_logmbh = float(weighted_quantile(matched_logmbh, weights))
+    median_tau_e = float(weighted_quantile(matched_tau_e, weights))
+    median_electron_fwhm = float(weighted_quantile(matched_electron, weights))
+
     grid = np.linspace(0, 4000, 1001)
     obs_cdf = empirical_cdf(observed, grid)
     compact_cdf = weighted_cdf(compact, weights, grid)
@@ -139,6 +149,9 @@ def main():
         "compact_radius_bootstrap_68_percent_au": radius_interval.tolist(),
         "compact_model_fwhm_kms_p16_median_p84": compact_quantiles,
         "compact_weighted_cdf_distance": compact_ks,
+        "matched_median_logmbh": median_logmbh,
+        "matched_median_tau_e": median_tau_e,
+        "electron_scattering_fwhm_kms_median": median_electron_fwhm,
         "inference_status": (
             "Descriptive scale calibration only; reverberation, profile modeling, "
             "or an uncensored width likelihood is needed for a physical posterior."
