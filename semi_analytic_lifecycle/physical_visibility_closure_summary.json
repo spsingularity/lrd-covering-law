@@ -1,5 +1,5 @@
 {
-  "catalog": "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_final.csv",
+  "catalog": "synthetic_catalog_physical_visibility_final.csv",
   "redshift_interval": [
     4.5,
     6.5
@@ -164,10 +164,10 @@
   },
   "seed_stability": {
     "catalogs": [
-      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_final.csv",
-      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_seed17.csv",
-      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_seed29.csv",
-      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_seed41.csv"
+      "synthetic_catalog_physical_visibility_final.csv",
+      "synthetic_catalog_physical_visibility_seed17.csv",
+      "synthetic_catalog_physical_visibility_seed29.csv",
+      "synthetic_catalog_physical_visibility_seed41.csv"
     ],
     "ranges": {
       "dense_fraction_xLRD": {

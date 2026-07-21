@@ -15,8 +15,11 @@ and [O III]/[O II] for the four subtypes), with:
 - the independent He II 4686/Hbeta < 0.1 population gate;
 - the demographic term restated on the z <= 7.5 bins only (review I-3).
 
-Reference values: the imposed D^2 closure scores 5.77 on the same eight
-ratios (median-map); the fitted (2,1) law scored 132 in the review check.
+Reference values: with the fitted epsilon=0.1 stellar coupling the (2,1) law
+scores 10.4 on the eight flux-stacked ratios (paper Table 1); the raw
+epsilon=1 partition scores 79 (flux) / 132 (median-map) -- the review-check
+failure at the xLRD point that motivates epsilon; the imposed D^2 closure
+scores 12.9 (flux) / 5.77 (median-map).
 
 Outputs: covering_ratio_space_refit.json and a printed ranking.
 """
@@ -51,6 +54,11 @@ OBSERVED = {
 HEII_GATE = 0.1                     # Sok et al. population upper envelope
 SUBTYPES = ["xLRD", "plusLRD", "minusLRD", "bLRD"]
 CANDIDATE = "D_dust_quenched_912"
+# Fitted stellar ionizing coupling: the fraction of surviving stellar LyC
+# photons that reaches the nuclear-scale diffuse gas (the third selected
+# parameter; paper Sec. 4.1). epsilon=1 is the raw-partition diagnostic that
+# fails at the xLRD point (chi2~79); epsilon=0.1 is the fiducial (chi2=10.4).
+EPSILON = 0.1
 
 GRID = [(g, k) for g in (1.5, 2.0, 2.5, 3.0, 3.5) for k in (0.5, 1.0, 1.5, 2.0)]
 
@@ -103,7 +111,7 @@ def evaluate(suffix):
     for key in cat:
         cat[key] = cat[key][valid]
     ws = cat["p_select"] * cat["weight"]
-    ratio = interception.candidate_ratios(cat)[CANDIDATE]
+    ratio = interception.candidate_ratios(cat, qstar_factor=EPSILON)[CANDIDATE]
     f_dense = ratio / (1.0 + ratio)
     window = (cat["z"] >= 4.5) & (cat["z"] <= 6.5) & (ws > 0)
     emulator = get_soft_two_zone_emulator()
