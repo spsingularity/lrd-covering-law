@@ -12,8 +12,8 @@ cd "$ROOT/semi_analytic_lifecycle"
 $PY verify_equations_sympy.py             # 23/23 symbolic identity checks
 $PY fit_public_lrd_stacks.py              # two-zone fit to the public stacks
 $PY derive_interception_exponent.py       # Fig. 1
-$PY refit_covering_ratio_space.py         # Table 1 (stacked line ratios)
-$PY fit_coregulated_covering.py           # Fig. 2 / Table 2 (covering-law scan)
+$PY refit_covering_ratio_space.py         # Table 1 ratios + covering-law scan (Table 2)
+$PY plot_covering_scan.py                 # Fig. 2 (scan heatmap from the results)
 $PY fit_two_zone_control.py               # Table 2 control
 $PY confront_rubies_fwhm.py               # Fig. 3 (RUBIES widths)
 $PY confront_rubies_fwhm_coregulated.py   # Fig. 3 coregulated variant

@@ -29,6 +29,314 @@
         -2.09
       ],
       "joint_objective": 7.11
+    },
+    {
+      "gamma": 2.5,
+      "k": 1.0,
+      "suffix": "covscan_g2p5_k1p0",
+      "stack_chi2": 3.16,
+      "stack_chi2_full_competition": 2.71,
+      "stack_medians": {
+        "xLRD": 0.956,
+        "plusLRD": 0.9298,
+        "minusLRD": 0.8594,
+        "bLRD": 0.4562
+      },
+      "eta_emergent": 0.796,
+      "subtype_fractions": {
+        "xLRD": 0.0031,
+        "plusLRD": 0.2388,
+        "minusLRD": 0.5054,
+        "bLRD": 0.2527
+      },
+      "demographic_chi2": 5.49,
+      "demographic_pulls": [
+        -0.71,
+        -0.08,
+        -0.81,
+        -2.08
+      ],
+      "joint_objective": 8.65
+    },
+    {
+      "gamma": 3.0,
+      "k": 1.0,
+      "suffix": "covscan_g3p0_k1p0",
+      "stack_chi2": 4.65,
+      "stack_chi2_full_competition": 3.79,
+      "stack_medians": {
+        "xLRD": 0.9569,
+        "plusLRD": 0.9451,
+        "minusLRD": 0.9138,
+        "bLRD": 0.3882
+      },
+      "eta_emergent": 0.939,
+      "subtype_fractions": {
+        "xLRD": 0.0033,
+        "plusLRD": 0.299,
+        "minusLRD": 0.4739,
+        "bLRD": 0.2238
+      },
+      "demographic_chi2": 5.57,
+      "demographic_pulls": [
+        -0.82,
+        -0.04,
+        -0.76,
+        -2.08
+      ],
+      "joint_objective": 10.22
+    },
+    {
+      "gamma": 1.5,
+      "k": 2.0,
+      "suffix": "covscan_g1p5_k2p0",
+      "stack_chi2": 4.62,
+      "stack_chi2_full_competition": 4.12,
+      "stack_medians": {
+        "xLRD": 0.9548,
+        "plusLRD": 0.939,
+        "minusLRD": 0.8466,
+        "bLRD": 0.6342
+      },
+      "eta_emergent": 0.471,
+      "subtype_fractions": {
+        "xLRD": 0.0034,
+        "plusLRD": 0.3356,
+        "minusLRD": 0.5154,
+        "bLRD": 0.1456
+      },
+      "demographic_chi2": 6.65,
+      "demographic_pulls": [
+        -0.65,
+        -0.11,
+        -1.27,
+        -2.15
+      ],
+      "joint_objective": 11.27
+    },
+    {
+      "gamma": 3.0,
+      "k": 2.0,
+      "suffix": "covscan_g3p0_k2p0",
+      "stack_chi2": 6.82,
+      "stack_chi2_full_competition": 5.65,
+      "stack_medians": {
+        "xLRD": 0.9583,
+        "plusLRD": 0.9556,
+        "minusLRD": 0.9514,
+        "bLRD": 0.462
+      },
+      "eta_emergent": 0.737,
+      "subtype_fractions": {
+        "xLRD": 0.0087,
+        "plusLRD": 0.4069,
+        "minusLRD": 0.4396,
+        "bLRD": 0.1448
+      },
+      "demographic_chi2": 5.32,
+      "demographic_pulls": [
+        -0.71,
+        -0.06,
+        -0.79,
+        -2.04
+      ],
+      "joint_objective": 12.14
+    },
+    {
+      "gamma": 2.5,
+      "k": 2.0,
+      "suffix": "covscan_g2p5_k2p0",
+      "stack_chi2": 6.75,
+      "stack_chi2_full_competition": 5.69,
+      "stack_medians": {
+        "xLRD": 0.957,
+        "plusLRD": 0.9551,
+        "minusLRD": 0.9363,
+        "bLRD": 0.5299
+      },
+      "eta_emergent": 0.673,
+      "subtype_fractions": {
+        "xLRD": 0.0068,
+        "plusLRD": 0.3798,
+        "minusLRD": 0.4536,
+        "bLRD": 0.1597
+      },
+      "demographic_chi2": 5.55,
+      "demographic_pulls": [
+        -0.68,
+        -0.07,
+        -0.9,
+        -2.07
+      ],
+      "joint_objective": 12.3
+    },
+    {
+      "gamma": 2.0,
+      "k": 2.0,
+      "suffix": "covscan_g2p0_k2p0",
+      "stack_chi2": 6.51,
+      "stack_chi2_full_competition": 5.62,
+      "stack_medians": {
+        "xLRD": 0.9541,
+        "plusLRD": 0.9503,
+        "minusLRD": 0.9297,
+        "bLRD": 0.5457
+      },
+      "eta_emergent": 0.597,
+      "subtype_fractions": {
+        "xLRD": 0.0048,
+        "plusLRD": 0.3645,
+        "minusLRD": 0.4773,
+        "bLRD": 0.1534
+      },
+      "demographic_chi2": 5.98,
+      "demographic_pulls": [
+        -0.66,
+        -0.07,
+        -1.06,
+        -2.1
+      ],
+      "joint_objective": 12.49
+    },
+    {
+      "gamma": 3.0,
+      "k": 0.5,
+      "suffix": "covscan_g3p0_k0p5",
+      "stack_chi2": 6.66,
+      "stack_chi2_full_competition": 8.59,
+      "stack_medians": {
+        "xLRD": 0.9442,
+        "plusLRD": 0.804,
+        "minusLRD": 0.6018,
+        "bLRD": 0.3998
+      },
+      "eta_emergent": 0.715,
+      "subtype_fractions": {
+        "xLRD": 0.0012,
+        "plusLRD": 0.1598,
+        "minusLRD": 0.5438,
+        "bLRD": 0.2952
+      },
+      "demographic_chi2": 5.84,
+      "demographic_pulls": [
+        -0.69,
+        0.01,
+        -0.89,
+        -2.14
+      ],
+      "joint_objective": 12.5
+    },
+    {
+      "gamma": 1.5,
+      "k": 1.0,
+      "suffix": "covscan_g1p5_k1p0",
+      "stack_chi2": 8.08,
+      "stack_chi2_full_competition": 10.22,
+      "stack_medians": {
+        "xLRD": 0.8872,
+        "plusLRD": 0.8103,
+        "minusLRD": 0.6958,
+        "bLRD": 0.4704
+      },
+      "eta_emergent": 0.485,
+      "subtype_fractions": {
+        "xLRD": 0.0008,
+        "plusLRD": 0.1834,
+        "minusLRD": 0.5739,
+        "bLRD": 0.242
+      },
+      "demographic_chi2": 5.56,
+      "demographic_pulls": [
+        -0.46,
+        -0.1,
+        -0.97,
+        -2.1
+      ],
+      "joint_objective": 13.64
+    },
+    {
+      "gamma": 2.5,
+      "k": 0.5,
+      "suffix": "covscan_g2p5_k0p5",
+      "stack_chi2": 18.37,
+      "stack_chi2_full_competition": 20.71,
+      "stack_medians": {
+        "xLRD": 0.9596,
+        "plusLRD": 0.7086,
+        "minusLRD": 0.5472,
+        "bLRD": 0.4212
+      },
+      "eta_emergent": 0.519,
+      "subtype_fractions": {
+        "xLRD": 0.0007,
+        "plusLRD": 0.1252,
+        "minusLRD": 0.581,
+        "bLRD": 0.2931
+      },
+      "demographic_chi2": 5.79,
+      "demographic_pulls": [
+        -0.52,
+        -0.02,
+        -0.95,
+        -2.15
+      ],
+      "joint_objective": 24.16
+    },
+    {
+      "gamma": 2.0,
+      "k": 0.5,
+      "suffix": "covscan_g2p0_k0p5",
+      "stack_chi2": 35.14,
+      "stack_chi2_full_competition": 37.87,
+      "stack_medians": {
+        "xLRD": 0.9414,
+        "plusLRD": 0.6239,
+        "minusLRD": 0.5033,
+        "bLRD": 0.3774
+      },
+      "eta_emergent": 0.464,
+      "subtype_fractions": {
+        "xLRD": 0.0004,
+        "plusLRD": 0.1046,
+        "minusLRD": 0.543,
+        "bLRD": 0.3519
+      },
+      "demographic_chi2": 5.79,
+      "demographic_pulls": [
+        -0.36,
+        -0.03,
+        -1.01,
+        -2.15
+      ],
+      "joint_objective": 40.93
+    },
+    {
+      "gamma": 1.5,
+      "k": 0.5,
+      "suffix": "covscan_g1p5_k0p5",
+      "stack_chi2": 68.29,
+      "stack_chi2_full_competition": 72.84,
+      "stack_medians": {
+        "xLRD": 0.8169,
+        "plusLRD": 0.5375,
+        "minusLRD": 0.4536,
+        "bLRD": 0.3791
+      },
+      "eta_emergent": 0.315,
+      "subtype_fractions": {
+        "xLRD": 0.0002,
+        "plusLRD": 0.0722,
+        "minusLRD": 0.5352,
+        "bLRD": 0.3924
+      },
+      "demographic_chi2": 5.83,
+      "demographic_pulls": [
+        -0.14,
+        -0.06,
+        -1.07,
+        -2.16
+      ],
+      "joint_objective": 74.12
     }
   ],
   "baseline_independent_covering": {

@@ -162,6 +162,17 @@ def main():
         if result is None:
             continue
         rows.append({"gamma": gamma, "k": k, **result})
+
+    # Merge with any previously shipped full-grid results, so a partial
+    # (headline-catalogue-only) run does not discard the scan grid that
+    # Table 2 and Figure 2 need. Recomputed cells override; the rest persist.
+    out_path = HERE / "covering_ratio_space_refit.json"
+    if out_path.exists():
+        merged = {(r["gamma"], r["k"]): r
+                  for r in json.loads(out_path.read_text()).get("grid", [])}
+        for r in rows:
+            merged[(r["gamma"], r["k"])] = r
+        rows = list(merged.values())
     rows.sort(key=lambda r: r["joint_flux"])
 
     payload = {
