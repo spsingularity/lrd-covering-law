@@ -59,7 +59,7 @@ confrontations. `fit_coregulated_covering.py` reproduces the covering-law scan
 whose catalogue is present and **gracefully skips absent ones**, so it runs on
 the shipped configurations out of the box.
 
-To reproduce the **full 65-configuration grid** (the complete γ/k scan and the
+To reproduce the **full 67-configuration grid** (the complete γ/k scan and the
 saturation/Poisson/metallicity/burst-rate/dynamic-covering variants), download
 the companion data record — *"…full forward-catalogue grid"*, CC-BY-4.0,
 DOI **&lt;to be assigned&gt;** — and unzip its `catalogs/synthetic_catalog_*.csv`
