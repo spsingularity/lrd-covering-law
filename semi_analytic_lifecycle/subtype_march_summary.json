@@ -1,0 +1,218 @@
+{
+  "catalog": "synthetic_catalog_physical_visibility_final.csv",
+  "z_bins": [
+    [
+      2.5,
+      4.0
+    ],
+    [
+      4.0,
+      5.0
+    ],
+    [
+      5.0,
+      6.0
+    ],
+    [
+      6.5,
+      8.5
+    ],
+    [
+      8.5,
+      10.5
+    ]
+  ],
+  "selected_march": [
+    {
+      "z_low": 2.5,
+      "z_high": 4.0,
+      "z_center": 3.25,
+      "fractions": {
+        "xLRD": 0.010247540079818715,
+        "plusLRD": 0.46788541139902806,
+        "minusLRD": 0.3310307630767725,
+        "bLRD": 0.1908362854443807
+      },
+      "red_fraction": 0.47813295147884677,
+      "median_f_dense": 0.8484400548862605,
+      "median_d": 2.3660197310094655,
+      "n_effective": 16.5895257960886
+    },
+    {
+      "z_low": 4.0,
+      "z_high": 5.0,
+      "z_center": 4.5,
+      "fractions": {
+        "xLRD": 0.002655745518777691,
+        "plusLRD": 0.3849062004242886,
+        "minusLRD": 0.5209764802334896,
+        "bLRD": 0.09146157382344383
+      },
+      "red_fraction": 0.38756194594306626,
+      "median_f_dense": 0.8613029713065723,
+      "median_d": 2.4919790911888136,
+      "n_effective": 69.78631831503048
+    },
+    {
+      "z_low": 5.0,
+      "z_high": 6.0,
+      "z_center": 5.5,
+      "fractions": {
+        "xLRD": 0.001114919763585145,
+        "plusLRD": 0.15082009751833636,
+        "minusLRD": 0.5643739626522872,
+        "bLRD": 0.28369102006579133
+      },
+      "red_fraction": 0.1519350172819215,
+      "median_f_dense": 0.6426121683391898,
+      "median_d": 1.3409253209149814,
+      "n_effective": 351.94847656512314
+    },
+    {
+      "z_low": 6.5,
+      "z_high": 8.5,
+      "z_center": 7.5,
+      "fractions": {
+        "xLRD": 0.0005779445791283261,
+        "plusLRD": 0.09900218666563362,
+        "minusLRD": 0.6533979980851155,
+        "bLRD": 0.2470218706701226
+      },
+      "red_fraction": 0.09958013124476195,
+      "median_f_dense": 0.5979330590101652,
+      "median_d": 1.2194867893811836,
+      "n_effective": 47.21451412358561
+    },
+    {
+      "z_low": 8.5,
+      "z_high": 10.5,
+      "z_center": 9.5,
+      "fractions": {
+        "xLRD": 5.9230129105146245e-05,
+        "plusLRD": 0.005371310215852232,
+        "minusLRD": 0.4521542975989092,
+        "bLRD": 0.5424151620561334
+      },
+      "red_fraction": 0.005430540344957378,
+      "median_f_dense": 0.4024483428029979,
+      "median_d": 0.8206677064287542,
+      "n_effective": 125.62035005076608
+    }
+  ],
+  "intrinsic_march": [
+    {
+      "z_low": 2.5,
+      "z_high": 4.0,
+      "z_center": 3.25,
+      "fractions": {
+        "xLRD": 0.12998672294173672,
+        "plusLRD": 0.5753898160114947,
+        "minusLRD": 0.17328196517883218,
+        "bLRD": 0.12134149586793636
+      },
+      "red_fraction": 0.7053765389532315,
+      "median_f_dense": 0.9448780016900096,
+      "median_d": 4.140238812202959,
+      "n_effective": 38.32924039731456
+    },
+    {
+      "z_low": 4.0,
+      "z_high": 5.0,
+      "z_center": 4.5,
+      "fractions": {
+        "xLRD": 0.04833711497690166,
+        "plusLRD": 0.49157989337724545,
+        "minusLRD": 0.3942423393091023,
+        "bLRD": 0.0658406523367505
+      },
+      "red_fraction": 0.5399170083541471,
+      "median_f_dense": 0.8948280765268277,
+      "median_d": 2.916888933313398,
+      "n_effective": 112.61899358714722
+    },
+    {
+      "z_low": 5.0,
+      "z_high": 6.0,
+      "z_center": 5.5,
+      "fractions": {
+        "xLRD": 0.00971625306401205,
+        "plusLRD": 0.17313288775408553,
+        "minusLRD": 0.5694444532019644,
+        "bLRD": 0.2477064059799381
+      },
+      "red_fraction": 0.18284914081809758,
+      "median_f_dense": 0.6914972076020974,
+      "median_d": 1.4971512100325228,
+      "n_effective": 524.4881820753317
+    },
+    {
+      "z_low": 6.5,
+      "z_high": 8.5,
+      "z_center": 7.5,
+      "fractions": {
+        "xLRD": 0.004430924565228537,
+        "plusLRD": 0.09627382530998131,
+        "minusLRD": 0.6234907884913233,
+        "bLRD": 0.27580446163346684
+      },
+      "red_fraction": 0.10070474987520985,
+      "median_f_dense": 0.5935008662018012,
+      "median_d": 1.2083169461150631,
+      "n_effective": 64.91175378699326
+    },
+    {
+      "z_low": 8.5,
+      "z_high": 10.5,
+      "z_center": 9.5,
+      "fractions": {
+        "xLRD": 0.0003586437256568344,
+        "plusLRD": 0.003835270818996127,
+        "minusLRD": 0.4989863515326182,
+        "bLRD": 0.49681973392272877
+      },
+      "red_fraction": 0.004193914544652962,
+      "median_f_dense": 0.43153090299667013,
+      "median_d": 0.871269519049871,
+      "n_effective": 185.5249048200008
+    }
+  ],
+  "seed_red_fractions": {
+    "synthetic_catalog_physical_visibility_seed17.csv": {
+      "z_3.25": 0.5006,
+      "z_4.5": 0.3684,
+      "z_5.5": 0.1327,
+      "z_7.5": 0.1184,
+      "z_9.5": 0.0047
+    },
+    "synthetic_catalog_physical_visibility_seed29.csv": {
+      "z_3.25": 0.6883,
+      "z_4.5": 0.384,
+      "z_5.5": 0.0901,
+      "z_7.5": 0.1073,
+      "z_9.5": 0.0061
+    },
+    "synthetic_catalog_physical_visibility_seed41.csv": {
+      "z_3.25": 0.2963,
+      "z_4.5": 0.6141,
+      "z_5.5": 0.1164,
+      "z_7.5": 0.0709,
+      "z_9.5": 0.0032
+    }
+  },
+  "lemma2_diagnostics": {
+    "n_sources": 11922,
+    "corr_logd_covering_odds": 0.5113411461892046,
+    "slope_covering_odds_vs_logd": 0.08924669113288959,
+    "corr_logd_log_cover": 0.5421221133908813,
+    "corr_logd_log_lthermal": 0.3218515235814054
+  },
+  "notes": [
+    "Selected weighting is p_select * weight_cMpc3; intrinsic drops p_select.",
+    "The march is a conditional forward prediction of the physical-visibility",
+    "closure; absolute fractions remain gate-sensitive, the monotonic trend",
+    "persists without selection and across seeds.",
+    "The z>8.5 bin lies in the regime where the demographic model",
+    "underpredicts abundance by 2.3 sigma; the z<7 march is insulated",
+    "from that tension."
+  ]
+}

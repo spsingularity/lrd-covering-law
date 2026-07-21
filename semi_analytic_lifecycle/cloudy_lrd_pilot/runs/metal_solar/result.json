@@ -1,0 +1,57 @@
+{
+  "absolute_lines": {
+    "halpha": 21076000.0,
+    "hbeta": 11198000.0,
+    "heii1640": 32105000.0,
+    "heii4686": 4516700.0,
+    "nii6583": 0.054608,
+    "oiii5007": 6509.3,
+    "paalpha": 1253700.0,
+    "sii6716": 0.0013852,
+    "sii6731": 0.0031362
+  },
+  "cached": false,
+  "diagnostics": {
+    "halpha_hbeta": 1.882121807465619,
+    "heii1640_hbeta": 2.8670298267547776,
+    "heii4686_hbeta": 0.4033488122879086,
+    "lha_per_qh54": 7.030196870396253e+41,
+    "nii_halpha": 2.5910039855760102e-09,
+    "oiii_hbeta": 0.0005812913020182176,
+    "paalpha_halpha": 0.05948472195862592,
+    "sii_halpha": 2.14528373505409e-10
+  },
+  "elapsed_seconds": 101.1672056671232,
+  "erg_per_ionizing_photon": {
+    "halpha": 7.030196870396253e-13,
+    "hbeta": 3.735250738028907e-13,
+    "heii1640": 1.0709075276336673e-12,
+    "heii4686": 1.5066089487814935e-13,
+    "nii6583": 1.8215268110580685e-21,
+    "oiii5007": 2.1712687648733313e-16,
+    "paalpha": 4.181893061499232e-14,
+    "sii6716": 4.620529846684802e-23,
+    "sii6731": 1.0461237153604445e-22
+  },
+  "parameters": {
+    "dust_to_metals": 0.0,
+    "geometry": "open",
+    "iterations": 3,
+    "logn": 10.0,
+    "lognh": 22.0,
+    "logu": -1.0,
+    "metallicity": 1.0,
+    "microturbulence_kms": 0.0,
+    "no_molecules": true,
+    "radius_log_cm": 17.0,
+    "sed": "agn_standard",
+    "temperature": 10000.0
+  },
+  "returncode": 0,
+  "status": {
+    "cautions": 4,
+    "cloudy_exited_ok": true,
+    "iterations": 3,
+    "zones": 170
+  }
+}

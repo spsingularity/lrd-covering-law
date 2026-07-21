@@ -1,0 +1,808 @@
+\documentclass[twocolumn]{aastex631}
+\usepackage{booktabs}
+%% Relax float placement so the full-width figure*/deluxetable queue in
+%% twocolumn mode does not leave a float stuck (all figures are top-anchored).
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{6}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.1}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\dblfloatpagefraction}{0.1}
+\shorttitle{An engine-regulated covering law for LRDs}
+\shortauthors{Pandev}
+
+\begin{document}
+
+\title{An Engine-Regulated Covering Law for Little Red Dots: One Equilibrium
+Relation for Their Spectral Sequence, Demography, and Broad-Line Widths}
+
+\author[0009-0005-8153-071X]{Stilian Pandev}
+\affiliation{Independent researcher}
+\email{stilianpandev@gmail.com}
+
+\correspondingauthor{Stilian Pandev}
+
+\begin{abstract}
+Little red dots (LRDs) present three puzzles usually treated separately: an
+ordered spectral-subtype sequence, a rise--peak--decline number density,
+and broad Balmer lines in compact, X-ray-weak sources. Within a
+semi-analytic lifecycle model with a dense-plus-diffuse soft-EUV emission
+layer, we show that all three respond to a single equilibrium relation: the
+covering odds of the nuclear reprocessor equal the square of the intrinsic
+engine-to-host continuum contrast, $C/(1-C)=x^{2}$ with $x\equiv
+L_{\nu,\rm engine}(2500\,\text{\AA})/L_{\nu,\star}(2500\,\text{\AA})$ and
+unit normalization. Confronted directly with the eight stacked
+[O~III]/H$\beta$ and [O~III]/[O~II] ratios of the four continuum subtypes,
+the raw ionizing-photon partition under this law---supplemented by one
+physically motivated geometric parameter, the stellar ionizing coupling
+$\epsilon\simeq0.1$, consistent with canonical Lyman-continuum escape
+fractions---matches the data at least as well as an imposed
+photon-partition closure ($\chi^{2}=10.4$ versus $12.9$ on the identical
+metric; seed range 5--16), while the demographic fit on the reliable
+$z\le7.5$ bins improves from $\chi^{2}=6.9$ to $1.2$ and the RUBIES
+broad-width distribution distance improves from 0.41 to 0.35 with the
+widths reinterpreted as substantially electron-scattering broadened
+($\tau_{\rm e}\simeq2.3$). The exponent is not fitted but constructed and
+then confronted: of four candidate mechanisms, roll-over (sequential-stage)
+and steepened (Poisson double-blocking) laws are rejected by the data,
+cooling-fractionation is excluded both by its saturated timescales and by
+the demonstrated metallicity-blindness of the law
+($\Delta\chi^{2}>120$ against any $Z$-modulation), leaving a unique
+survivor among the candidates considered---momentum-limited envelope
+building against drag-limited clump removal---whose precondition we
+verify holds for 100\% of the selected population, and whose structure
+identifies $\gamma=2$ with the number of soft modes of the doubly forced
+clump system. The model predicts a subtype
+``march'' (selected red fraction $0.04\pm0.05$ at $z\simeq9.5$ rising to
+$0.49\pm0.09$ at $z\simeq4.5$) and blue LRDs that are more X-ray
+transmitting and more variable than red LRDs at matched luminosity. We
+also show the reported $z\simeq9.5$ abundance cannot currently constrain
+formation: transparent variations of one color-selection gate change the
+predicted density by an order of magnitude while moving the $z\le7.5$ bins
+by well under their errors.
+\end{abstract}
+
+\keywords{Active galactic nuclei (16) --- Supermassive black holes (1663)
+--- High-redshift galaxies (734) --- Galaxy evolution (594)}
+
+\section{Introduction}\label{sec:intro}
+JWST has revealed an abundant population of compact, red, frequently
+broad-line sources at $z\gtrsim4$, the little red dots
+\citep{Matthee2024,Greene2024,Kocevski2024,Akins2024,Kocevski2025}. Three
+empirical regularities frame the present work. First, stacked spectroscopy
+resolves an ordered continuum-subtype sequence, from extreme red (xLRD)
+through blue (bLRD) classes, with common line species but strongly varying
+line-to-continuum structure \citep{PerezGonzalez2026}, a diversity also
+mapped to black-hole luminosity and host contrast in a stationary
+framework \citep{Barro2025}. Second,
+broad-selection number densities rise, peak near $z\sim5$--6, and decline
+toward both lower and higher redshift \citep{Rinaldi2026,Ma2026}. Third,
+the population combines broad Balmer lines in very compact regions with
+pronounced X-ray weakness
+\citep{Ananna2024,Yue2024,Maiolino2024,Sneppen2026} and generally low
+photometric variability \citep[][the last for a five-object
+sample]{Tee2024,Secunda2025,KokuboHarikane2024},
+plausibly indicating dense, Compton-thick circumnuclear gas. A wave of
+recent models interprets LRDs as black holes embedded in dense gas
+envelopes with quasi-stellar photospheres and scattering-broadened Balmer
+lines \citep{Naidu2025,Rusakov2025,deGraaff2025,Sneppen2026b}, a programme
+since extended to unified ``black-hole-star'' families and explicit
+nuclear-minus-host decompositions \citep{deGraaff2025b,Sun2026}
+and to quasi-star evolutionary tracks and late-stage quasi-star models
+\citep{Santarelli2025,Begelman2026,Kido2025};
+super-Eddington accretion states offer an alternative account of the
+X-ray weakness \citep{PacucciNarayan2024,Inayoshi2024}, though deep
+Chandra limits challenge some variants \citep[e.g.,][]{Sacchi2025}; see
+the current X-ray census of \citet{Tortosa2026}.
+Published clustering measurements additionally bound the host halos
+\citep{Pizzati2025,Carranza2025,Wang2026}, a constraint the lifecycle's
+halo occupation must ultimately face. Our model shares the
+dense-envelope architecture and the low-spin entry channel proposed for
+LRD demographics by \citet{PacucciLoeb2025}; its distinguishing content
+is a population-level equilibrium law connecting the envelope to the
+host, and the joint confrontation of that law with the subtype sequence,
+the demography, and the width distribution simultaneously.
+
+In a companion demographic analysis (Pandev 2026a, in preparation) we
+concluded that binned number densities alone cannot select a formation
+mechanism. Here we take the opposite approach: a forward semi-analytic
+lifecycle model whose observation layer is confronted simultaneously with
+the stacked spectral sequence, the number densities, public broad-line
+widths \citep{Hviding2025}, and population-level hardness constraints
+\citep{Sok2026}. The central result is that these independent
+confrontations select, and are jointly improved by, one simple relation
+between the covering of the nuclear reprocessor and the visibility of the
+nuclear engine---and that the relation's form can be constructed from an
+explicit elimination program rather than fitted.
+
+Section~\ref{sec:model} summarizes the model.
+Section~\ref{sec:closure} develops the covering law and its derivation
+status. Section~\ref{sec:results} presents the confrontations,
+Section~\ref{sec:predictions} the predictions, Section~\ref{sec:highz} the
+status of the high-redshift bin, and Section~\ref{sec:limits} the
+limitations.
+
+\section{Model}\label{sec:model}
+
+\subsection{Lifecycle}
+The population model evolves $1.2\times10^{4}$ halo histories, importance
+reweighted to the \citet{Tinker2008} mass function, with mean growth from
+\citet{Fakhouri2010} and halo bias from \citet{Tinker2010}. Each halo
+carries nuclear gas, black-hole, and burst-reservoir masses through the
+states quiescent $\rightarrow$ compacting $\rightarrow$ embedded
+$\rightarrow$ clearing $\rightarrow$ post-LRD, with recurrence. Entry
+depends on spin \citep{Bullock2001}, specific growth, and nuclear Thomson
+depth \citep[low-angular-momentum compaction;][]{Mo1998}; embedded objects
+exit through competing gas-exhaustion, AGN-feedback, and host/size-growth
+hazards. Population survival is emergent: no survival kernel is imposed. A
+secondary gas-rich burst entry channel operates in rapidly assembling
+high-redshift hosts; it transfers a finite baryon reservoir and is
+mass-conserving. One global abundance normalization is calibrated at
+$4.5<z<6.5$ and is refit for each model configuration; comparative
+statistics below therefore compare shapes, not absolute abundances.
+
+\subsection{Observation layer}
+The porous-envelope layer assigns each active source a two-scale geometry:
+a cool reprocessor of outer scale 1360 AU with covering fraction $C$,
+clump-population UV/X-ray transfer, and a compact line-emitting scale
+calibrated in Section~\ref{sec:widths}. The forward continuum is the sum
+of an attenuated stellar host, a leaked accretion component, and the
+reprocessor photosphere; sources are classified into the four continuum
+subtypes by the published $L_{5100}/L_{2500}$ boundaries (1.8, 3.1, 6.3
+from bLRD through xLRD), and the ``V-shape color'' below denotes the
+model's rest-frame optical-redness proxy used by its selection function
+(the empirical V-shaped turnover at the Balmer limit is characterized by
+\citealt{Setton2024}).
+The emission layer is a dense-plus-diffuse two-zone photoionization model
+built on thermal-balance Cloudy anchors \citep[C23 release; a locally
+verified C25 build is used;][]{Chatzikos2023}: a dense, dust-free skin
+producing H/He lines with collisionally suppressed forbidden lines, and a
+diffuse skin producing the optical metal lines, mixed at the level of
+photon yields by the dense fraction of intercepted ionizing photons,
+$f_{\rm dense}$. Public stacks reject a standard AGN ionizing continuum
+through He~II: the data require a soft basis that preserves 35--54 eV
+photons while suppressing flux above the He$^{+}$ edge; a ten-screen
+warm-absorber scan shows a generic ionized filter cannot achieve this, so
+a soft basis (labelled by a 50 kK spectral shape, not a literal
+temperature) is adopted for all sources
+\citep{PerezGonzalez2026,Sok2026}.
+
+\section{The covering law and its derivation status}\label{sec:closure}
+
+\subsection{Decomposition of the imposed closure}\label{sec:decomp}
+Inverting the two-zone model through the four stacked subtype spectra
+yields an ordered sequence in the dense fraction of processed ionizing
+photons: 0.981, 0.901, 0.738, and 0.086 (xLRD$\rightarrow$bLRD; intervals
+in Table~\ref{tab:ratios}). We emphasize that these are model-conditional
+inversions---obtained through the same two-zone emission layer used
+forward---not direct measurements; the directly observed quantities are
+the stacked line ratios confronted in Section~\ref{sec:spectra}. Defining
+the nuclear-to-host continuum dominance
+$D\equiv L_{\nu,\rm thermal}(5100)/L_{\nu,\rm host}(5100)$, the inverted
+sequence is reproduced by the quadratic closure
+$f_{\rm dense}=D^{2}/(1+D^{2})$, with a free exponent returning
+$2.02$ (conditional on a declared $0.05$ systematic floor discussed in
+Section~\ref{sec:spectra}; $1.89$ with measurement errors alone).
+
+To determine what supplies the two powers, we constructed every physical
+photon partition available upstream of the closure---envelope-intercepted
+engine photons against diffuse illumination by stellar, escaped-nuclear,
+and dust-quenched supplies---and measured the emergent source-level
+exponent of $\log(Q_{\rm dense}/Q_{\rm diffuse})$ on $\log D$
+(Figure~\ref{fig:exponent}). Restricted to the physically populated range
+$|\log_{10}D|<1.5$ (the extended panels also contain numerically capped
+sources at extreme $D$, produced by a floor on the host term; they are
+excluded from all fits and flagged in the caption), the fiducial
+candidates give $\eta=0.65\pm0.10$ and $0.66\pm0.11$; the legacy
+Thomson-depth covering contributes $0.09$ powers (slope of covering odds
+on $\log D$). Ordinary flux competition therefore supplies roughly one of
+the two required powers, and the second must come from co-regulation of
+the interception itself. We record for completeness that our pre-declared
+expectation---that installing a covering law would raise the emergent
+source-level exponent to $\simeq2$---was not borne out (it rises only to
+$0.65$--$0.89$); the resolution is that the stacked observables constrain
+subtype-level medians, not the source-level slope, and the within-subtype
+scatter of Section~\ref{sec:predictions} is the observable that tests the
+difference.
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.98\textwidth]{interception_exponent.pdf}
+\caption{Emergent source-level exponent of four physical photon partitions
+against the continuum dominance $D$ at $4.5\le z\le6.5$. Fits (red, with
+standard errors) are restricted to the physically populated range
+$|\log_{10}D|<1.5$ (unshaded); the shaded regions contain numerically
+capped sources (floors on the host term and yield caps) excluded from all
+fits. Ordinary flux competition supplies roughly one power of $D$; the
+second must come from the covering law.}
+\label{fig:exponent}
+\end{figure*}
+
+\subsection{The covering law}\label{sec:law}
+We therefore replace the Thomson-depth covering with an engine-regulated
+law. With
+$x\equiv L_{\nu,\rm engine}(2500\,\text{\AA})/
+L_{\nu,\star}(2500\,\text{\AA})$
+the \emph{intrinsic} (pre-attenuation, pre-covering) contrast, the
+covering odds are
+\begin{equation}
+\frac{C}{1-C}=k\,x^{\gamma},
+\label{eq:law}
+\end{equation}
+with a frozen per-halo lognormal scatter of $0.35$ dex (this value is an
+assumption: a scan over $0.20$--$0.50$ dex changes the spectral statistic
+by $<5$\%, so the scatter is not constrained by the present observables).
+Both terms in $x$ are computed upstream of the observables inside the
+simulator; we caution that this does not by itself make the calibration
+non-circular, and we address circularity by construction: the law's
+parameters are assessed against the directly observed line ratios
+(Section~\ref{sec:spectra}) and the $z\le7.5$ demography, and the
+model-conditional inversions of Section~\ref{sec:decomp} are used only as
+diagnostics. A scan over $\gamma\in\{1.5,2,2.5,3\}$,
+$k\in\{0.5,1,1.5,2\}$ (a descriptive sum of the spectral and demographic
+statistics, not a likelihood) prefers $(\gamma,k)=(2,1)$; the preference
+is stable across four random seeds and against removal of the contested
+$z=9.5$ bin (Section~\ref{sec:highz}), and under the fiducial
+line-ratio-space objective the nearest competitor sits at joint $\simeq32$
+versus 11.5 (Table~\ref{tab:elimination}), with a non-monotonic profile
+in $\gamma$ reflecting selection reshuffling between laws. Covering odds
+equal the squared contrast with 50\% covering at engine--host parity.
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.9\textwidth]{coregulated_covering_scan.pdf}
+\caption{Joint scan of the covering law under the fiducial metric. Left:
+joint objective (flux-stacked line-ratio $\chi^{2}$ plus $z\le7.5$
+demographic $\chi^{2}$; logarithmic color scale) over the evaluated
+$(\gamma,k)$ cells; the preferred point is the unit-normalization
+quadratic. Right: spectral versus demographic components for all
+evaluated points. The objective is a descriptive sum; no probabilistic
+reading of $\Delta$ values is intended.}
+\label{fig:scan}
+\end{figure*}
+
+\subsection{Equilibrium structure, anchors, and bounds}\label{sec:equil}
+Three features of the law are derivable. (i) \emph{The odds form.} If
+covering evolves by competition between a building rate per uncovered
+solid angle, $B$, and a clearing rate per covered solid angle, $G$,
+$\dot C=(1-C)B-CG$ equilibrates exactly at $C/(1-C)=B/G$. (ii) \emph{The
+normalization.} Identifying $B$ with the engine momentum flux and $G$ with
+host feedback, the ratio at a shared interface is radius-independent,
+$B/G\sim(L_{e}/c)/(\dot p_{\rm SN}\,{\rm SFR})$ with
+$\dot p_{\rm SN}\simeq3\times10^{33}$ dyn per $M_{\odot}\,{\rm yr^{-1}}$
+\citep{KimOstriker2015}, and evaluates to $\simeq3$ at $x=1$: the anchor
+argument therefore fixes $k$ to order unity within a factor $\sim3$, while
+the scan discriminates at the factor-2 level; we present the anchor as a
+consistency check at its actual precision, not as a derivation of $k=1$.
+(iii) \emph{Fast relaxation.} A time-resolved implementation (exact
+exponential-integrator update; covering initialized unbuilt at episode
+entry) shows the stationary law is the fast-relaxation limit: relaxation
+timescales of 30, 80, and 300 Myr degrade the spectral statistic
+monotonically (defining the bound by where the degradation exceeds the
+seed scatter gives $\tau_{\rm relax}\lesssim30$ Myr, the shortest value
+resolvable at the 12 Myr integration step). The failure mode is fossil
+covering: envelopes built while the engine was strong and retained as it
+fades repopulate the blue subtype class with dense sources. The bound sits
+six orders of magnitude above the $\sim$10 yr dynamical time at the
+envelope scale, so fast equilibration is the expected regime.
+
+\subsection{The exponent: a completed elimination program}
+\label{sec:exponent}
+The mass budget alone cannot supply the second power of $x$: converting
+the engine's clump supply and the host's ablation flux to solid-angle
+rates, the clump surface density cancels between build and clear, so any
+mass-limited build against entrainment-limited clearing yields exactly one
+power of $x$ regardless of confinement details. Four candidate mechanisms
+for the second power were formulated and confronted
+(Table~\ref{tab:elimination}):
+
+\emph{Route B (sequential two-stage odds)}, $C/(1-C)=(kx)^{2}/(1+2kx)$
+with the combinatorial structure forcing $k\simeq1$: rejected in both
+forms under the fiducial metric (Table~\ref{tab:elimination}). The
+parameter-free form fails catastrophically because its high-contrast
+roll-over flattens the law across the populated range
+($x\simeq0.5$--2); the profile minimum in $k$ ($k=3$, which would also
+displace the per-stage parity to $x=1/3$) still loses to the pure
+quadratic by a margin an order of magnitude beyond the seed scatter.
+
+\emph{Route D (Poisson double-blocking)}, $C=1-e^{-kx}(1+kx)$ from
+marginally translucent clumps requiring two-deep sightlines: rejected at
+every normalization; its exponential steepening beyond $kx\sim2$ distorts
+the subtype spacing in the opposite direction.
+
+\emph{Route A (cooling-versus-mixing fractionation)}: eliminated twice
+over. Theoretically, at the model's own radiation-confinement pressures
+the cooling times at the build interface are $10^{-2}$--$10^{0}$ yr
+across the plausible parameter space, while macroscopic clumps mix over
+decades: the fractionation is saturated by 2--5 orders of magnitude and
+cannot carry a power of $x$
+\citep[cf.\ cloud-crushing and survival scalings;][]{Klein1994,GronkeOh2018}.
+Empirically, Route A's unavoidable fingerprint---covering odds
+proportional to the cooling function, hence to metallicity---is rejected:
+multiplying the odds by $(Z/0.2\,Z_{\odot})^{\delta}$ and rerunning the
+full model gives $\Delta\chi^{2}>120$ for each tested modulation
+($\delta=-0.5$, $+0.5$, $+1$; Table~\ref{tab:elimination}); the law is
+metallicity-blind at the tested amplitudes.
+
+\emph{Route C (momentum-limited build against drag-limited removal)}: the
+unique survivor, with its precondition verified rather than assumed. The
+engine's momentum-driven lofting capacity $L_{e}/(cv_{w})$ is 14--29\%
+(p16--p84) of the available nuclear mass supply, below unity for 100\% of
+the selected population in every subtype: the build bottleneck is driving,
+not mass, which bypasses the surface-density cancellation. The removal
+channel is likewise selected by the physics: the same fast cooling that
+saturates Route A makes thermal clump destruction ineffective (mixed gas
+recondenses), so clumps exit the interception zone by drag entrainment,
+whose timescale carries the standard density-contrast scaling
+$t_{\rm drag}\propto\chi\,r/v$ with
+$\chi\propto P_{\rm rad}/P_{\rm host}\propto x$. The chain
+\begin{equation}
+\frac{C}{1-C}=\frac{B}{G}
+\propto\frac{L_{e}/(cv_{w})}{1/t_{\rm drag}}
+\propto x\cdot x=x^{2}
+\end{equation}
+then has every structural property the confrontations demand:
+scale-freeness (required by the B and D rejections), metallicity
+blindness, the parity anchor, and fast relaxation. In its strongest form
+the exponent is combinatorial: it counts the soft modes of the doubly
+forced clump system---population (build/clear) and residence
+(confinement/drag)---each equilibrating linearly in the field ratio, with
+opacity frozen ($\tau\gg1$; a soft opacity mode would imprint the
+rejected Route-D curvature) and stage survival not independent (its
+distinctness would imprint the rejected Route-B roll-over). The
+confrontations select this count among the candidates considered: the
+scan disfavors $\gamma=1.5$ and $\gamma=3$ alongside the B and D
+functional forms (a selection under a descriptive objective, not a
+probabilistic measurement). The one imported ingredient is the
+$\chi^{1}$ drag-time scaling, standard in the cloud-acceleration
+literature; a targeted simulation of a radiation-confined clump in a
+host-driven wind remains the external anchor.
+
+\begin{deluxetable}{lcc}
+\tablecaption{The elimination program for the covering-law exponent. All
+spectral statistics are the flux-stacked line-ratio $\chi^{2}$ over eight
+observables under the identical fiducial metric of
+Section~\ref{sec:spectra} ($\epsilon=0.1$); joint adds the $z\le7.5$
+demographic term.\label{tab:elimination}}
+\tablehead{\colhead{candidate law} & \colhead{spectral $\chi^{2}$} &
+\colhead{joint}}
+\startdata
+pure $x^{2}$ ($\gamma{=}2$, $k{=}1$) & 10.4 & 11.5\\
+$\gamma=1.5$ ($k{=}1$) & 76.1 & 77.3\\
+$\gamma=2.5$ ($k{=}1$) & 86.2 & 87.3\\
+$\gamma=3$ ($k{=}1$) & 31.0 & 32.2\\
+Route B, $k{=}1$ (parameter-free) & 165.1 & 166.6\\
+Route B, best $k$ ($k{=}3$) & 27.3 & 28.9\\
+Route D, best $k$ ($k{=}1.68$) & 51.9 & 53.2\\
+metallicity-modulated, $\delta{=}{+}1$ & 132.9 & 135.8\\
+metallicity-modulated, $\delta{=}{-}0.5$ & 241.1 & 246.7\\
+\enddata
+\tablecomments{The $k=1$ profile in $\gamma$ is non-monotonic
+(10.4, 86.2, 31.0 at $\gamma=2$, 2.5, 3): changing the law reshuffles
+which sources are selected into each subtype, so the objective is not a
+smooth function of the exponent. The preference for $(2,1)$ over every
+alternative nevertheless exceeds the seed scatter by an order of
+magnitude.}
+\end{deluxetable}
+
+\section{Joint confrontations}\label{sec:results}
+
+\emph{Statistical conventions.} We report unreduced $\chi^{2}$ sums under a
+declared error model and do not convert them to likelihoods, $p$-values, or
+$\Delta\chi^{2}$ probabilities; the covering-law scan objective in
+particular is a descriptive sum of the spectral and demographic terms
+(Section~\ref{sec:law}), and parameters are selected on coarse grids
+without propagated posteriors (Section~\ref{sec:limits}). The spectral
+statistic sums $N=8$ stacked observables---the [O~III]$\lambda5007$/H$\beta$
+and [O~III]/[O~II] ratios of the four continuum subtypes---against the
+published stack errors, with three parameters selected on this metric
+($\gamma$, $k$, and the stellar ionizing coupling $\epsilon$), leaving 5
+residual degrees of freedom ($\chi^{2}_{\nu}\simeq2.1$). The demographic
+statistic sums the three $z\le7.5$ bins against their published errors (no
+cosmic-variance term) with one refit abundance normalization, leaving 2
+residual degrees of freedom ($\chi^{2}_{\nu}\simeq0.6$). The joint
+objective is their unweighted sum ($N=11$ observables, 4 selected
+parameters). Reduced values are indicative only.
+
+\subsection{The stacked line ratios}\label{sec:spectra}
+The decisive spectral test is performed directly in observable space. For
+each subtype we form the luminosity-weighted stack of per-source line
+yields (mirroring how observed stacks average spectra) and compare the
+resulting [O~III]$\lambda5007$/H$\beta$ and [O~III]/[O~II] ratios with the
+eight stacked measurements. One physical ingredient beyond
+Equation~\ref{eq:law} is required: the fraction $\epsilon$ of surviving
+stellar ionizing photons that reaches the nuclear-scale diffuse gas.
+Diagnosing the raw partition shows the xLRD diffuse budget would otherwise
+be dominated by stellar leak-through at a level six times too high, while
+no $(\gamma,k)$ can compensate (an 18-point grid fails uniformly in ratio
+space with $\epsilon=1$). Physically, most stellar Lyman-continuum photons
+are consumed in local H~II regions; the canonical escape fractions of
+$5$--$20$\% \citep[e.g.,][]{Flury2022} bracket the fitted
+$\epsilon=0.10$ (profile flat over $0.05$--$0.15$), so we identify
+$\epsilon$ with the LyC escape fraction into the wider ISM and treat its
+agreement as a consistency check rather than a free success. We state
+plainly that $\epsilon$ was diagnosed on, and fitted to, the same eight
+ratios it now helps match; it is counted among the three selected
+parameters in Table~\ref{tab:ratios}. The comparison value for the
+imposed closure (12.9) is evaluated on the identical catalogue and
+metric; the closure sets $f_{\rm dense}$ directly from $D$ and therefore
+has no $\epsilon$ degree of freedom (its own selected parameters are the
+exponent and the systematics floor of its original calibration). Because
+the seed range of the physical partition (5.0--15.6) straddles 12.9,
+``at least as well'' is a fiducial-seed statement.
+
+\begin{deluxetable}{lcccc}
+\tablecaption{Direct confrontation with the stacked line ratios at
+$4.5\le z\le6.5$ under the fitted law with $\epsilon=0.1$. The inverted
+dense fractions (final columns) are shown as model-conditional
+diagnostics only.\label{tab:ratios}}
+\tablehead{\colhead{subtype} & \colhead{[O III]/H$\beta$ model} &
+\colhead{observed} & \colhead{$f_{\rm dense}$ model} &
+\colhead{inverted (p16--p84)}}
+\startdata
+xLRD & 1.20 & $1.10\pm0.10$ & 0.95 & 0.981 (0.978--0.983)\\
+plusLRD & 3.00 & $3.20\pm0.10$ & 0.91 & 0.901 (0.884--0.911)\\
+minusLRD & 3.98 & $4.40\pm0.30$ & 0.75 & 0.738 (0.625--0.807)\\
+bLRD & 4.59 & $4.90\pm0.50$ & 0.45 & 0.086 (0.000--0.658)\\
+\enddata
+\tablecomments{Total $\chi^{2}=10.4$ over the eight
+[O III]/H$\beta$ and [O III]/[O II] observables (seed range 5.0--15.6),
+with three selected parameters $(\gamma,k,\epsilon)$; the imposed $D^{2}$
+closure evaluated on the identical catalogue and metric gives 12.9. All
+four He~II$\lambda4686$/H$\beta$ predictions are $\le0.015$, below the
+population gate of 0.1. The bLRD inverted interval is unconstrained and
+its central value is not matched; only the three red subtypes
+discriminate.}
+\end{deluxetable}
+
+Table~\ref{tab:ratios} shows the result: the raw photon partition under
+the fitted covering law matches the stacked ratios at least as well as
+the imposed quadratic closure evaluated on the identical metric
+($\chi^{2}=10.4$ versus $12.9$), and passes the independent He~II gate.
+Two disclosures accompany this. First, in the earlier inversion-space
+metric the imposed closure scores $0.38$ versus the physical partition's
+$1.6$; that metric's $0.05$ systematic floor---20 times the xLRD
+statistical interval---controls those values, which is why we adopt the
+direct ratio-space confrontation as fiducial. Second, the bLRD central
+value is matched by neither model and its interval does not discriminate;
+headline agreement claims rest on the three red subtypes.
+
+\subsection{Demography}\label{sec:demog}
+On the three $z\le7.5$ bins (the $z\simeq9.5$ bin is
+selection-dominated; Section~\ref{sec:highz}), the demographic
+$\chi^{2}$ improves from 6.90 (Thomson-depth covering) to 1.15 under the
+fitted law, with one refit normalization and no covering parameter tuned
+on this statistic alone. Two caveats: the $z=9.5$ pull flips sign between
+configurations ($+2.3\rightarrow-2.1\sigma$), partly because the
+burst-channel rate was originally tuned under the superseded covering
+model (a 6--60 Gyr$^{-1}$ rate scan leaves all conclusions unchanged);
+and the quoted bin errors are the published ones, without an added cosmic
+variance term. The model's selected xLRD fraction at the anchor redshift
+(0.2\% under the UV gate) remains a factor $\sim$60 below the observed
+stack-sample share, a selection-layer failure reported in the closure
+analysis and unchanged here. We also note that the demographic shape
+itself is contested: a recent analysis reports no evolution in the LRD
+number density from cosmic dawn to cosmic noon \citep{Loiacono2026}, in
+tension with the rise--peak--decline bins fitted here, while a
+spectroscopic census across $3<z<6$ \citep{Zhuang2025} and an analysis of
+the $z<3$ decline \citep{Zhang2026} further underscore that the
+demographic shape is observationally unsettled---a disagreement
+consistent with our conclusion (Section~\ref{sec:highz}) that current
+LRD demography is dominated by selection calibration.
+
+\subsection{Broad-line widths}\label{sec:widths}
+Rerunning the public RUBIES width confrontation \citep{Hviding2025} under
+the fitted law improves the distribution-level agreement (weighted CDF
+distance 0.354 versus 0.413; a descriptive statistic---no null
+distribution is available---computed against broad-component fits that
+were censored at 2500 km s$^{-1}$) and changes its interpretation
+(Figure~\ref{fig:rubies}): the matched population shifts to higher
+black-hole masses (median $\log M_{\rm BH}$ 6.85$\rightarrow$7.36) and
+Compton-thick Thomson depths ($\tau_{\rm e}\simeq2.3$), so
+$\simeq1650~{\rm km\,s^{-1}}$ of the width budget is electron-scattering
+broadening---consistent with envelope models in which scattering shapes
+the Balmer profiles \citep{Naidu2025,deGraaff2025}---and the descriptive
+compact scale moves from $1.2\times10^{3}$ to $5.9\times10^{3}$ AU
+(bootstrap 5.5--7.1$\times10^{3}$; the scan support was widened from the
+published 5000 AU edge to keep this fit interior, which we disclose as a
+boundary effect of the original support). The factor-of-five scale shift
+between covering models quantifies a systematic on any compact-scale
+inference. We note an unresolved geometric tension: the scattering
+envelope's calibrated outer scale (1360 AU) lies inside the descriptive
+line-emitting scale, whereas a scatterer must overlie its emitter; the
+single-scale envelope is evidently oversimplified, and an extended
+scattering halo ($\gtrsim6\times10^{3}$ AU) is required for
+self-consistency (Section~\ref{sec:limits}). The headline scattering
+quantities survive this relocation: $\tau_{\rm e}$ is computed from the
+nuclear gas column, not from the 1360 AU photosphere, so the
+$\simeq1650~{\rm km\,s^{-1}}$ budget is unchanged; what the relocation
+does alter is the covering geometry of the scattering region, which is no
+longer constrained by the continuum-reprocessor calibration---an
+uncertainty we estimate at the tens-of-percent level on the width
+distribution shape.
+
+Separately, the H$\alpha$ calibration marker---the offset between the
+model's selected-population median H$\alpha$ luminosity and that of a
+UV- and redshift-matched public JADES control sample (not an LRD
+sample)---moves from $+0.89$ to $+0.64$ dex; a factor-4 residual remains
+and this quantity is a consistency indicator, not a fit.
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.85\textwidth]{rubies_fwhm_confrontation.pdf}
+\caption{RUBIES broad Balmer width confrontation under the fitted covering
+law. Left: cumulative width distributions; the dotted vertical line marks
+the 2500 km s$^{-1}$ ceiling imposed in the published broad-component
+fits (the model CDFs are not truncated). The dashed curve shows the
+superseded 20--40 pc reservoir-scale width model for reference. Right:
+descriptive compact-scale calibration; the model median matches the
+observed median at $5.9\times10^{3}$ AU with a substantial
+electron-scattering contribution.}
+\label{fig:rubies}
+\end{figure*}
+
+\section{Predictions}\label{sec:predictions}
+
+\begin{figure*}[tp]
+\centering
+\includegraphics[width=0.95\textwidth]{subtype_redshift_march.pdf}
+\caption{The predicted subtype march (single fiducial realization; the
+seed-averaged fractions with combined binomial-plus-seed uncertainties are
+given in the text and in the companion Letter). Left: subtype fractions
+versus redshift, selection-weighted (solid) and with selection removed
+(dashed); the trend strengthens without selection. Right: median dense
+photon fraction. The monotonic rise of the red fraction is established
+across seeds for $z\gtrsim4.5$; the $z\simeq3.25$ bin (effective sample
+$\simeq$19) is an extrapolation below the calibration range and is
+plateau-consistent.}
+\label{fig:march}
+\end{figure*}
+
+\emph{(i) The subtype march.} Because $D$ grows as reservoirs feed while
+hosts assemble, the subtype mixture must evolve. Seed-averaged, with
+combined binomial and seed uncertainties, the selected red fraction
+(xLRD+plusLRD) is $0.04\pm0.05$, $0.09\pm0.04$, $0.23\pm0.05$,
+$0.49\pm0.09$, and $0.48\pm0.14$ at $z\simeq9.5$, 7.5, 5.5, 4.5, and 3.25,
+while the bLRD fraction falls from $0.61\pm0.15$ to $\lesssim0.05$
+(Figure~\ref{fig:march}). Removing the selection weighting strengthens
+the trend, so a transparent gate cannot manufacture it; the rise is
+monotonic in all four seed realizations for $z\ge4.5$. The predicted
+slope between $z\simeq7.5$ and 4.5 is $0.10$--$0.14$ per unit redshift. A
+full statement of this prediction, its uncertainties, its exposure to
+data-side selection evolution, and its falsification thresholds is given
+in the companion Letter (Pandev 2026c), which this section summarizes.
+The recent discovery of two LRDs transitioning into quasars
+\citep{Fu2025} provides direct evidence for evolutionary transitions
+at the phase exit, complementary to the within-phase march predicted
+here.
+
+\emph{(ii) X-ray and variability contrast.} Blue LRDs carry unbuilt
+envelopes, so at matched bolometric luminosity they should be
+systematically more X-ray transmitting and more variable than red LRDs,
+with a steepened variability gradient across the subtype sequence. Only
+the ordering is claimed; published LRD monitoring finds low variability
+overall, with tentative variability in a minority of sources in larger
+multi-epoch samples \citep{Tee2024,Secunda2025,KokuboHarikane2024}, and
+the prediction concerns the
+differential between subtypes at matched luminosity, which existing
+samples have not yet tested.
+
+\emph{(iii) Within-subtype scatter.} A deterministic $D^{2}$ law predicts
+a tight line-ratio locus at fixed continuum class; the covering chain
+predicts scatter from the covering lognormal. Because the scatter
+amplitude is unconstrained by present data (Section~\ref{sec:law}), the
+prediction is a range; object-level [O~III]/H$\beta$ dispersion within
+subtypes discriminates the two pictures.
+
+\emph{(iv) Saturation homogeneity and no hysteresis.} Covering saturates
+(reaches the 0.995 cap) near $x\simeq14$, so the reddest sources should
+be homogeneous in covering-driven marks; and no thick loop should appear
+in the variability--color plane---the fast-equilibration hierarchy of
+Section~\ref{sec:equil} forbids it.
+
+\emph{(v) Scale-free granularity.} The soft-mode construction of
+Section~\ref{sec:exponent} is self-similar: covering-driven fluctuations
+(absorption variability, X-ray transmission granularity in partially
+covered sources) should be scale-free; a measured characteristic clump
+size would falsify the framework independently of the lifecycle.
+
+\section{The $z\simeq9.5$ bin is a completeness thermometer}
+\label{sec:highz}
+The fitted model underpredicts the reported $z\simeq9.5$ broad-selection
+density by a factor 6.3, a residual robust to the burst-rate scan. Its
+character is resolved by a dichotomy test on the forward catalogue. The
+intrinsic $M_{\rm UV}<-18.5$ nuclear-active population at $z\simeq9.5$
+exceeds the reported density by a factor $\sim$34 (a model-conditional,
+order-of-magnitude statement: the estimate reweights catalogued sources
+by their selection probabilities, and its headroom resides in sources
+with $p_{\rm sel}=10^{-6}$--$10^{-3}$ assigned by an unvalidated analytic
+gate). These sources are UV-bright, compact, and embedded, and fail
+selection only through the V-shape color gate, because at this epoch the
+covering law leaves most envelopes unbuilt and continua blue. Rescaling
+that single gate within transparent limits ($\sim$0.4 mag in the redness
+threshold) moves the predicted $z=9.5$ density from a factor $\sim$6
+deficit to a factor $\sim$3 excess of the observed value while moving the
+$z\le7.5$ bins by well under their errors. Three conclusions follow. No
+additional formation channel is required by current number densities. The
+$z\simeq9.5$ bin cannot presently discriminate formation physics; it
+measures the survey's color completeness, which \citet{Rinaldi2026}
+describe as essentially unconstrained at $z>6$--7 (their discussion of
+MIRI depth). And the falsifiable content is compositional: the real
+$z>8.5$ LRD population should be dominated by blue-continuum,
+low-covering compact sources (quantified in the Letter, including the
+per-subtype gate-passing fractions that reconcile bLRD dominance of the
+selected sample with the removal of the blue headroom); a red-dominated
+census would falsify this resolution. The decisive external products are
+injection/recovery completeness for blue compact templates and the
+effective-area masks.
+
+\section{Limitations}\label{sec:limits}
+The observation layer remains a set of transparent proxies: the selection
+gates are not the survey pipelines; the X-ray transfer over-suppresses
+known bands; and the Balmer decrement is not solved (intrinsic
+H$\alpha$/H$\beta\simeq2.8$--3.2 against observed 5.5--10.1
+\citep{PerezGonzalez2026}; a smooth screen with $A_{V}\simeq2$--4 toward
+the line region is not rejected). The covering-law parameters are
+selected on coarse grids without propagated posteriors; the covering
+scatter is assumed; $\epsilon$ is fitted (its agreement with canonical
+escape fractions is a consistency, not a derivation); and the drag-time
+scaling of Section~\ref{sec:exponent} is imported from standard cloud
+physics. The single-scale scattering envelope is internally inconsistent
+with the descriptive line-emitting scale and requires an extended halo.
+The published RUBIES widths are censored at $2500~{\rm km\,s^{-1}}$, so
+the compact-scale calibration is descriptive. Demographic errors omit
+cosmic variance. Seed statements rest on four realizations. None of the
+fits here is a posterior; a catalogue-level likelihood with
+injection/recovery completeness remains the requirement for population
+inference.
+
+\section{Summary}\label{sec:summary}
+A single equilibrium relation---covering odds equal to the squared
+intrinsic engine-to-host contrast, with a momentum-parity
+normalization---simultaneously (1) matches the stacked line-ratio
+sequence through a raw photon partition at least as well as an imposed
+closure, given one geometric parameter consistent with canonical LyC
+escape fractions, (2) improves the reliable-bin demographic fit to
+$\chi^{2}=1.2$ on 3 bins, (3) improves and reinterprets the public
+broad-width confrontation in favor of electron-scattering broadening, and
+(4) converts the high-redshift abundance residual into a quantified
+statement about color completeness. The exponent is constructed, not
+fitted: of four candidate mechanisms confronted, three were eliminated by
+the data (with the eliminations consistent with the clump system having
+exactly two soft modes), and the surviving candidate's
+precondition---momentum-limited building---holds for the entire selected
+population. The framework's failure modes---a red-dominated $z>8.5$
+census, a tight within-subtype line-ratio locus, an inverted subtype
+march, a thick variability--color hysteresis loop, or a measured
+characteristic clump scale---are all measurable with data expected on a
+1--2 year horizon.
+
+\begin{acknowledgments}
+This work is unfunded and was carried out independently. It made use of
+public data products from the JWST archive and of published catalogues by
+the teams cited herein; the author thanks those teams for making their
+data and measurements public. This research made use of NASA's
+Astrophysics Data System and the arXiv preprint repository.
+\end{acknowledgments}
+
+\facilities{JWST (NIRSpec, NIRCam, MIRI), Chandra (data limits as cited)}
+
+\section*{Data and code availability}
+The lifecycle model, covering-law scans, Cloudy anchor grids, stack
+inversion, elimination-program scripts, and all confrontation scripts
+accompany this paper as an MIT-licensed code archive, together with
+machine-readable results for every table and figure (Zenodo DOI to be
+assigned at submission); the full 65-configuration forward-catalogue grid
+is deposited as a separate CC-BY-4.0 data record (Zenodo DOI to be
+assigned). Only
+public data products are used: the \citet{Rinaldi2026} and \citet{Ma2026}
+binned densities, the \citet{PerezGonzalez2026} stacks, the
+\citet{Hviding2025} RUBIES release, the \citet{Sok2026} hardness
+constraint, and public JADES catalogues \citep{Eisenstein2023}.
+
+\software{Cloudy \citep{Chatzikos2023}, numpy, scipy, matplotlib,
+astropy, colossus}
+
+\begin{thebibliography}{}
+\bibitem[Akins et al.(2024)]{Akins2024} Akins, H. B., et al. 2024,
+arXiv:2406.10341
+\bibitem[Ananna et al.(2024)]{Ananna2024} Ananna, T. T., et al. 2024,
+ApJL, 969, L18
+\bibitem[Barro et al.(2025)]{Barro2025} Barro, G., et al. 2025,
+arXiv:2512.15853
+\bibitem[Begelman \& Dexter(2026)]{Begelman2026} Begelman, M. C., \&
+Dexter, J. 2026, ApJ, 996, 48
+\bibitem[Bullock et al.(2001)]{Bullock2001} Bullock, J. S., Dekel, A.,
+Kolatt, T. S., et al. 2001, ApJ, 555, 240
+\bibitem[Carranza-Escudero et al.(2025)]{Carranza2025} Carranza-Escudero,
+M., et al. 2025, ApJL, 989, L50
+\bibitem[Chatzikos et al.(2023)]{Chatzikos2023} Chatzikos, M., et al.
+2023, RMxAA, 59, 271
+\bibitem[de Graaff et al.(2025)]{deGraaff2025} de Graaff, A., et al.
+2025, arXiv:2503.16600
+\bibitem[de Graaff et al.(2025b)]{deGraaff2025b} de Graaff, A., et al.
+2025, arXiv:2511.21820
+\bibitem[Eisenstein et al.(2023)]{Eisenstein2023} Eisenstein, D. J., et
+al. 2023, arXiv:2306.02465
+\bibitem[Fakhouri et al.(2010)]{Fakhouri2010} Fakhouri, O., Ma, C.-P., \&
+Boylan-Kolchin, M. 2010, MNRAS, 406, 2267
+\bibitem[Flury et al.(2022)]{Flury2022} Flury, S. R., et al. 2022, ApJS,
+260, 1
+\bibitem[Fu et al.(2025)]{Fu2025} Fu, S., et al. 2025, arXiv:2512.02096
+\bibitem[Greene et al.(2024)]{Greene2024} Greene, J. E., et al. 2024,
+ApJ, 964, 39
+\bibitem[Gronke \& Oh(2018)]{GronkeOh2018} Gronke, M., \& Oh, S. P. 2018,
+MNRAS, 480, L111
+\bibitem[Hviding et al.(2025)]{Hviding2025} Hviding, R. E., et al. 2025,
+RUBIES broad-line data release, Zenodo, doi:10.5281/zenodo.16758549
+\bibitem[Kido et al.(2025)]{Kido2025} Kido, D., et al. 2025, MNRAS, 544,
+3407
+\bibitem[Kim \& Ostriker(2015)]{KimOstriker2015} Kim, C.-G., \& Ostriker,
+E. C. 2015, ApJ, 802, 99
+\bibitem[Klein et al.(1994)]{Klein1994} Klein, R. I., McKee, C. F., \&
+Colella, P. 1994, ApJ, 420, 213
+\bibitem[Kocevski et al.(2024)]{Kocevski2024} Kocevski, D. D., et al.
+2024, arXiv:2404.03576
+\bibitem[Kocevski et al.(2025)]{Kocevski2025} Kocevski, D. D., et al.
+2025, ApJ, 986, 126
+\bibitem[Inayoshi et al.(2025)]{Inayoshi2024} Inayoshi, K., Kimura, S. S.,
+\& Noda, H. 2025, PASJ, 77, 811
+\bibitem[Kokubo \& Harikane(2025)]{KokuboHarikane2024} Kokubo, M., \&
+Harikane, Y. 2025, ApJ, 995, 24
+\bibitem[Loiacono et al.(2026)]{Loiacono2026} Loiacono, F., et al. 2026,
+arXiv:2606.30253
+\bibitem[Ma et al.(2026)]{Ma2026} Ma, Y., et al. 2026, ApJ, 1000, 59
+\bibitem[Maiolino et al.(2024)]{Maiolino2024} Maiolino, R., et al. 2024,
+arXiv:2405.00504
+\bibitem[Matthee et al.(2024)]{Matthee2024} Matthee, J., et al. 2024,
+ApJ, 963, 129
+\bibitem[Mo et al.(1998)]{Mo1998} Mo, H. J., Mao, S., \& White, S. D. M.
+1998, MNRAS, 295, 319
+\bibitem[Naidu et al.(2025)]{Naidu2025} Naidu, R. P., et al. 2025,
+arXiv:2503.16596
+\bibitem[Pacucci \& Loeb(2025)]{PacucciLoeb2025} Pacucci, F., \& Loeb,
+A. 2025, ApJL, arXiv:2506.03244
+\bibitem[Pacucci \& Narayan(2024)]{PacucciNarayan2024} Pacucci, F., \&
+Narayan, R. 2024, ApJ, arXiv:2407.15915 %% verify arXiv ID on ADS
+\bibitem[P\'erez-Gonz\'alez et al.(2026)]{PerezGonzalez2026}
+P\'erez-Gonz\'alez, P. G., et al. 2026, arXiv:2602.20247
+\bibitem[Pizzati et al.(2025)]{Pizzati2025} Pizzati, E., et al. 2025,
+MNRAS, 539, 2910
+\bibitem[Rinaldi et al.(2026)]{Rinaldi2026} Rinaldi, P., et al. 2026,
+arXiv:2604.07138
+\bibitem[Rusakov et al.(2025)]{Rusakov2025} Rusakov, V., et al. 2025,
+Nature, arXiv:2503.16595 %% verify author list on ADS
+\bibitem[Sacchi \& Bogd\'an(2025)]{Sacchi2025} Sacchi, A., \& Bogd\'an,
+\'A. 2025, ApJL, 989, L30
+\bibitem[Santarelli et al.(2025)]{Santarelli2025} Santarelli, A. D., et
+al. 2025, arXiv:2510.17952
+\bibitem[Secunda et al.(2025)]{Secunda2025} Secunda, A., et al. 2025,
+arXiv:2509.03571
+\bibitem[Setton et al.(2024)]{Setton2024} Setton, D. J., et al. 2024,
+arXiv:2411.03424
+\bibitem[Sneppen et al.(2026)]{Sneppen2026} Sneppen, A., et al. 2026,
+arXiv:2605.15263
+\bibitem[Sneppen et al.(2026b)]{Sneppen2026b} Sneppen, A., et al. 2026,
+arXiv:2601.18864
+\bibitem[Sok et al.(2026)]{Sok2026} Sok, V., et al. 2026, arXiv:2606.23778
+\bibitem[Sun et al.(2026)]{Sun2026} Sun, W. Q., et al. 2026, The Open
+Journal of Astrophysics, 9
+\bibitem[Tee et al.(2024)]{Tee2024} Tee, W. L., et al. 2024,
+arXiv:2412.05242
+\bibitem[Tinker et al.(2008)]{Tinker2008} Tinker, J., et al. 2008, ApJ,
+688, 709
+\bibitem[Tinker et al.(2010)]{Tinker2010} Tinker, J., et al. 2010, ApJ,
+724, 878
+\bibitem[Tortosa et al.(2026)]{Tortosa2026} Tortosa, A., et al. 2026,
+A\&A, 708, A293
+\bibitem[Wang et al.(2026)]{Wang2026} Wang, Z., et al. 2026,
+arXiv:2603.15736
+\bibitem[Yue et al.(2024)]{Yue2024} Yue, M., et al. 2024, arXiv:2404.13290
+\bibitem[Zhang et al.(2026)]{Zhang2026} Zhang, C., et al. 2026,
+arXiv:2606.02773
+\bibitem[Zhuang et al.(2025)]{Zhuang2025} Zhuang, M.-Y., et al. 2025,
+arXiv:2505.20393
+\end{thebibliography}
+
+\end{document}

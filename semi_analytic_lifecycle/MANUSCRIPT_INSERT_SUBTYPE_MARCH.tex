@@ -1,0 +1,53 @@
+\subsection{A predicted subtype--redshift march}
+\label{sec:subtype_march}
+
+The source-level closure of Section~\ref{sec:physical_visibility_closure}
+assigns every synthetic source a dense photon fraction through the continuum
+dominance $D$. Because $D$ is a lifecycle quantity---it grows as the nuclear
+reservoir feeds while the stellar host is still assembling---the closure makes
+a population-level prediction that the stacked comparison at $4.5\leq z\leq6.5$
+does not use: the mixture of continuum subtypes must evolve with redshift.
+
+We evaluate this prediction directly on the forward catalogue, weighting each
+source by its selection probability and comoving weight. The predicted red
+fraction (xLRD plus plusLRD) rises monotonically from $0.5\%$ at $z\simeq9.5$
+to $10.0\%$ at $z\simeq7.5$, $15.2\%$ at $z\simeq5.5$, $38.8\%$ at
+$z\simeq4.5$, and $47.8\%$ at $z\simeq3.25$, while the bLRD fraction falls
+from $54\%$ to below $20\%$. The selection-weighted median
+$f_{\mathrm{dense}}$ climbs from 0.40 to about 0.85 over the same interval.
+Blue-continuum broad-line sources are therefore predicted to be the
+\emph{majority} subtype at $z>8.5$, and xLRDs to be essentially absent there.
+
+Two checks argue that this march is population physics rather than a
+selection artifact. First, removing the selection weighting entirely
+strengthens the trend: the intrinsic red fraction evolves from $0.4\%$ at
+$z\simeq9.5$ to $70.5\%$ at $z\simeq3.25$, and every subtype trend retains its
+sign. The gate sensitivity documented in
+Section~\ref{sec:physical_visibility_closure} rescales the absolute
+fractions, but a transparent gate cannot manufacture or erase a monotonic
+factor-of-$\sim$100 evolution that survives with no gate at all. Second, the
+rise from $z\simeq9.5$ to $z\simeq4.5$ is monotonic in all four random-seed
+realizations; only the $z\simeq3.25$ bin, with an effective sample size near
+17, shows appreciable seed scatter and should be read as indicative.
+
+The march yields three falsifiable statements. (i) At $z>8.5$, bLRDs should
+dominate the broad-line LRD population, and confirmed xLRDs should be rare at
+the well-below-percent level; a modest confirmed xLRD sample at these
+redshifts would contradict the closure. (ii) Between $z\simeq7.5$ and
+$z\simeq4.5$ the red fraction should rise at roughly $0.08$--$0.10$ per unit
+redshift, a slope measurable by splitting existing stacked and spectroscopic
+samples at $z\simeq5.5$. (iii) Because the driver is $D$ rather than
+luminosity, the $f_{\mathrm{dense}}$--redshift anticorrelation should persist
+at fixed bolometric luminosity, distinguishing it from a pure
+luminosity-selection trend.
+
+Two caveats bound the claim. The $z>8.5$ bin lies in the regime where the
+demographic model underpredicts the reported abundance by $2.4\sigma$; if a
+missing early formation or luminosity channel operates there, it could alter
+the high-redshift end of the march, and the $z\lesssim7$ portion of the
+prediction is insulated from that tension. And the absolute subtype fractions
+inherit the uncalibrated completeness mapping of
+Section~\ref{sec:physical_visibility_closure}; the prediction defended here is
+the ordered, monotonic evolution, not the individual percentages. The
+calculation is reproduced by \texttt{analyze\_subtype\_march.py}, with
+machine-readable output in \texttt{subtype\_march\_summary.json}.

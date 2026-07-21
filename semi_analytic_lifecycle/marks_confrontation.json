@@ -1,0 +1,71 @@
+{
+  "scope": "UV/redshift-matched public JADES DR4 control comparison, not an LRD-selected likelihood",
+  "selection": {
+    "z": "5.0 <= z_spec < 6.0",
+    "muv": "-20.5 <= MUV <= -18.0"
+  },
+  "public_halpha": {
+    "n_control": 189,
+    "n_detected": 179,
+    "log_lha_detected_quantiles": [
+      41.36398576690757,
+      41.67971480653934,
+      42.0584717532096
+    ],
+    "flux_unit": "1e-20 erg s^-1 cm^-2"
+  },
+  "model_halpha": {
+    "n_synthetic_support": 926,
+    "log_lha_weighted_quantiles": [
+      42.27670671926687,
+      42.573062510257785,
+      42.87834516701816
+    ],
+    "median_offset_model_minus_control_dex": 0.8933477037184474
+  },
+  "channel_predictions": {
+    "secular_compaction": {
+      "weighted_fraction": 0.4839738552236207,
+      "log_lha_quantiles": [
+        42.30599793347197,
+        42.562312092755946,
+        42.75667907137129
+      ],
+      "log_lx_quantiles": [
+        39.72068629783388,
+        40.117995583705806,
+        41.10794521476458
+      ],
+      "variability_quantiles": [
+        0.05156299704119245,
+        0.06372257596541972,
+        0.08816438667505976
+      ],
+      "reservoir_visible_fraction": 0.0
+    },
+    "early_burst": {
+      "weighted_fraction": 0.5160261447763793,
+      "log_lha_quantiles": [
+        42.24338650644585,
+        42.57627049330748,
+        42.929740945026616
+      ],
+      "log_lx_quantiles": [
+        39.08680937357288,
+        40.35377426573403,
+        41.36487649842531
+      ],
+      "variability_quantiles": [
+        0.04332996305035183,
+        0.07266074934643409,
+        0.08931488083220379
+      ],
+      "reservoir_visible_fraction": 3.323547961727474e-06
+    }
+  },
+  "not_yet_testable": [
+    "LRD-specific H-alpha distribution: final LRD IDs and visual decisions are unreleased",
+    "X-ray weakness: no matched X-ray fluxes/upper limits supplied for the final LRD sample",
+    "variability: no matched time-domain measurements supplied for the final LRD sample"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "candidate_partition": "D_dust_quenched_912",
+  "objective": "stack_chi2 (physical partition) + demographic chi2; descriptive sum, not a likelihood",
+  "grid": [
+    {
+      "gamma": 2.0,
+      "k": 1.0,
+      "suffix": "coregulated_covering_mid",
+      "stack_chi2": 1.59,
+      "stack_chi2_full_competition": 1.98,
+      "stack_medians": {
+        "xLRD": 0.9512,
+        "plusLRD": 0.9072,
+        "minusLRD": 0.7538,
+        "bLRD": 0.4509
+      },
+      "eta_emergent": 0.664,
+      "subtype_fractions": {
+        "xLRD": 0.0017,
+        "plusLRD": 0.2061,
+        "minusLRD": 0.5422,
+        "bLRD": 0.25
+      },
+      "demographic_chi2": 5.52,
+      "demographic_pulls": [
+        -0.61,
+        -0.09,
+        -0.88,
+        -2.09
+      ],
+      "joint_objective": 7.11
+    }
+  ],
+  "baseline_independent_covering": {
+    "stack_chi2": 3.78,
+    "demographic": {
+      "chi2": 12.240313511781313,
+      "pulls": [
+        -1.53,
+        -1.66,
+        -1.34,
+        2.31
+      ]
+    }
+  },
+  "best": {
+    "gamma": 2.0,
+    "k": 1.0,
+    "suffix": "coregulated_covering_mid",
+    "stack_chi2": 1.59,
+    "stack_chi2_full_competition": 1.98,
+    "stack_medians": {
+      "xLRD": 0.9512,
+      "plusLRD": 0.9072,
+      "minusLRD": 0.7538,
+      "bLRD": 0.4509
+    },
+    "eta_emergent": 0.664,
+    "subtype_fractions": {
+      "xLRD": 0.0017,
+      "plusLRD": 0.2061,
+      "minusLRD": 0.5422,
+      "bLRD": 0.25
+    },
+    "demographic_chi2": 5.52,
+    "demographic_pulls": [
+      -0.61,
+      -0.09,
+      -0.88,
+      -2.09
+    ],
+    "joint_objective": 7.11
+  }
+}

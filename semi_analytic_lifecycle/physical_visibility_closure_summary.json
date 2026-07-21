@@ -1,0 +1,221 @@
+{
+  "catalog": "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_final.csv",
+  "redshift_interval": [
+    4.5,
+    6.5
+  ],
+  "sources_in_catalog_support": 6000,
+  "reference_quadratic_closure": {
+    "coupling_index": 2.0,
+    "predicted_dense_fraction_by_subtype": {
+      "xLRD": 0.9851149372283452,
+      "plusLRD": 0.9036611707964727,
+      "minusLRD": 0.7112493680251007,
+      "bLRD": 0.21197913259111276
+    },
+    "measurement_only_chi2": 4.101594350645695,
+    "chi2_with_0p05_model_floor": 0.11269038287624805
+  },
+  "coupling_index_scan": {
+    "measurement_only_best": 1.8900000000000001,
+    "measurement_only_prediction": {
+      "xLRD": 0.981326835437586,
+      "plusLRD": 0.8923968483929129,
+      "minusLRD": 0.7009612344621241,
+      "bLRD": 0.22429332818010203
+    },
+    "with_0p05_model_floor_best": 2.015,
+    "with_0p05_model_floor_prediction": {
+      "xLRD": 0.985569037534269,
+      "plusLRD": 0.9051129408482774,
+      "minusLRD": 0.7126359031204889,
+      "bLRD": 0.2103387878481961
+    },
+    "leave_one_subtype_out_with_0p05_floor": {
+      "xLRD": {
+        "best_coupling_index": 2.0300000000000002,
+        "held_out_prediction": 0.986009481293082,
+        "held_out_observed": 0.9809272867778656,
+        "held_out_p16": 0.9781915677911003,
+        "held_out_p84": 0.9830398543569948
+      },
+      "plusLRD": {
+        "best_coupling_index": 2.2199999999999998,
+        "held_out_prediction": 0.923071273971153,
+        "held_out_observed": 0.9008792827686009,
+        "held_out_p16": 0.8839735575004048,
+        "held_out_p84": 0.911418404873531
+      },
+      "minusLRD": {
+        "best_coupling_index": 1.97,
+        "held_out_prediction": 0.7084644138743896,
+        "held_out_observed": 0.7375097636351844,
+        "held_out_p16": 0.6247077535788944,
+        "held_out_p84": 0.8073214650961021
+      },
+      "bLRD": {
+        "best_coupling_index": 2.005,
+        "held_out_prediction": 0.21143131414735666,
+        "held_out_observed": 0.0860799091173137,
+        "held_out_p16": 4.053298843339891e-28,
+        "held_out_p84": 0.6584434001647604
+      }
+    }
+  },
+  "fixed_soft_sed_line_test": {
+    "oiii_two_ratio_chi2": 5.771255237925276,
+    "observables": 8,
+    "fitted_line_parameters_in_reference_prediction": 0,
+    "all_predicted_heii4686_hbeta_below_0p1": true
+  },
+  "predicted_marks_by_subtype": {
+    "visibility_l5100_l2500": {
+      "xLRD": 7.480058093059273,
+      "plusLRD": 3.548751898828559,
+      "minusLRD": 2.3552377576618437,
+      "bLRD": 1.4537949554295257
+    },
+    "visibility_core_to_host_5100": {
+      "xLRD": 8.13520013747991,
+      "plusLRD": 3.0626845239896565,
+      "minusLRD": 1.5694572602114085,
+      "bLRD": 0.5186539425781718
+    },
+    "visibility_dense_fraction_qh": {
+      "xLRD": 0.9851149372283452,
+      "plusLRD": 0.9036611707964727,
+      "minusLRD": 0.7112493680251007,
+      "bLRD": 0.21197913259111276
+    },
+    "visibility_qh_escape_fraction": {
+      "xLRD": 0.0015480047295135634,
+      "plusLRD": 0.023767113291827412,
+      "minusLRD": 0.2499700249361203,
+      "bLRD": 0.29075054525562327
+    },
+    "visibility_oiii_hbeta": {
+      "xLRD": 0.9476239174858045,
+      "plusLRD": 3.1644980869246493,
+      "minusLRD": 4.426352955937116,
+      "bLRD": 5.0674195113811
+    },
+    "visibility_oiii_oii": {
+      "xLRD": 21.934814688675793,
+      "plusLRD": 21.920882550299766,
+      "minusLRD": 21.919186000998486,
+      "bLRD": 21.9186478133862
+    },
+    "visibility_heii4686_hbeta": {
+      "xLRD": 0.015412137240600053,
+      "plusLRD": 0.008053273667232297,
+      "minusLRD": 0.003864575021876516,
+      "bLRD": 0.0017365691169878524
+    },
+    "visibility_halpha_hbeta": {
+      "xLRD": 3.150853227751372,
+      "plusLRD": 2.9443802038400007,
+      "minusLRD": 2.826854818712597,
+      "bLRD": 2.7671477987762914
+    },
+    "visibility_hbeta_hgamma": {
+      "xLRD": 1.989119194952434,
+      "plusLRD": 2.04840505122047,
+      "minusLRD": 2.0837563671055177,
+      "bLRD": 2.1021876234376897
+    },
+    "log_lx": {
+      "xLRD": 29.575492675864542,
+      "plusLRD": 29.81933782024102,
+      "minusLRD": 29.878552844819474,
+      "bLRD": 30.80548378145288
+    },
+    "variability_rms": {
+      "xLRD": 0.01007175515796521,
+      "plusLRD": 0.01751047978851739,
+      "minusLRD": 0.03214889642061322,
+      "bLRD": 0.034131106558390446
+    }
+  },
+  "selection_stress_test": {
+    "current_uv_gated": {
+      "xLRD": 0.00971625306401205,
+      "plusLRD": 0.17313288775408553,
+      "minusLRD": 0.5694444532019644,
+      "bLRD": 0.2477064059799381
+    },
+    "optical_gated_stress_test": {
+      "xLRD": 0.3683035273150194,
+      "plusLRD": 0.29871745625668494,
+      "minusLRD": 0.27546615721093287,
+      "bLRD": 0.05751285921736274
+    },
+    "pre_flux_gate_support": {
+      "xLRD": 0.22973000694636894,
+      "plusLRD": 0.5184116939436859,
+      "minusLRD": 0.22323564140268534,
+      "bLRD": 0.028622657707259934
+    },
+    "published_stack_sample": {
+      "xLRD": 0.12,
+      "plusLRD": 0.31,
+      "minusLRD": 0.31,
+      "bLRD": 0.27
+    }
+  },
+  "seed_stability": {
+    "catalogs": [
+      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_final.csv",
+      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_seed17.csv",
+      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_seed29.csv",
+      "outputs/semi_analytic_lifecycle/synthetic_catalog_physical_visibility_seed41.csv"
+    ],
+    "ranges": {
+      "dense_fraction_xLRD": {
+        "minimum": 0.9812555675387141,
+        "median": 0.9828485658326855,
+        "maximum": 0.9851149372283452
+      },
+      "population_fraction_xLRD": {
+        "minimum": 0.007919095436142647,
+        "median": 0.008538863293562557,
+        "maximum": 0.00971625306401205
+      },
+      "dense_fraction_plusLRD": {
+        "minimum": 0.8938402926700758,
+        "median": 0.907431206397056,
+        "maximum": 0.9138832933739411
+      },
+      "population_fraction_plusLRD": {
+        "minimum": 0.1308324089942551,
+        "median": 0.1589041462435637,
+        "maximum": 0.17313288775408553
+      },
+      "dense_fraction_minusLRD": {
+        "minimum": 0.694473068566627,
+        "median": 0.7098642404727438,
+        "maximum": 0.7112493680251007
+      },
+      "population_fraction_minusLRD": {
+        "minimum": 0.5398459044097741,
+        "median": 0.5592919404078318,
+        "maximum": 0.5829974530130878
+      },
+      "dense_fraction_bLRD": {
+        "minimum": 0.1951524524002115,
+        "median": 0.20734440474152907,
+        "maximum": 0.24753177842020016
+      },
+      "population_fraction_bLRD": {
+        "minimum": 0.2477064059799381,
+        "median": 0.2810200407010438,
+        "maximum": 0.2923396100567011
+      }
+    }
+  },
+  "interpretive_limits": [
+    "The stack dense fractions are themselves two-line inversions, not direct measurements.",
+    "The 0.05 floor is a declared model-systematics allowance, not a fitted uncertainty.",
+    "The optical-gated case brackets selection sensitivity and is not an injection-recovery calibration.",
+    "Balmer ratios listed here are intrinsic; comparison to observed ratios requires a transfer likelihood."
+  ]
+}

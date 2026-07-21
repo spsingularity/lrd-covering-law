@@ -1,0 +1,23 @@
+{
+  "j_ha": [
+    3.0501775026038803e-16,
+    83.67907919243692
+  ],
+  "j_hb": [
+    3.065079933364523e-16,
+    27.55602951004526
+  ],
+  "balmer_decrement": [
+    0.9951379960442712,
+    3.036688546219353
+  ],
+  "escape_ha": [
+    0.0009128709291752766,
+    0.9998268149176383
+  ],
+  "escape_hb": [
+    0.0024896479886598456,
+    0.9999364941588137
+  ],
+  "scope": "escape-probability statistical-equilibrium screening grid; not a full non-LTE calculation"
+}

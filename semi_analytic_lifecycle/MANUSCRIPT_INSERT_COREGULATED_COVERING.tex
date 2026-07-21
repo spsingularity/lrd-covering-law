@@ -1,0 +1,90 @@
+\subsection{A fitted covering law replaces the imposed photon closure}
+\label{sec:coregulated_covering}
+
+The quadratic closure of Section~\ref{sec:physical_visibility_closure}
+reproduces the stacked dense-fraction sequence but is imposed at the
+photon-partition level. Decomposing it against the lifecycle's own physics
+shows that ordinary flux competition---the envelope-intercepted engine
+photons against stellar and escaped-nuclear illumination of the diffuse
+gas---supplies an emergent source-level exponent of only 0.5--0.9 of the
+required two powers of $D$, while the legacy covering fraction, drawn from
+the nuclear Thomson depth alone, carries 0.09 powers. The missing factor is
+therefore an interception law: the covering odds must be co-regulated with
+the engine.
+
+We implement this as a one-line replacement of the covering model. With
+$x \equiv L_{\nu,\mathrm{engine}}(2500\,\text{\AA}) /
+L_{\nu,\star}(2500\,\text{\AA})$ the intrinsic (pre-attenuation,
+pre-covering) engine-to-host contrast, the covering odds are
+\begin{equation}
+  \frac{C}{1-C} = k\,x^{\gamma}
+  \label{eq:covering_law}
+\end{equation}
+with lognormal per-halo scatter (0.35 dex). Both continuum terms are
+upstream of every observable the law affects, so
+Equation~\ref{eq:covering_law} is not circular. A 12-point joint scan over
+$\gamma\in\{1.5,2,2.5,3\}$ and $k\in\{0.5,1,2\}$, scoring the physical
+photon partition against the four stack-inverted dense fractions plus the
+demographic fit, selects $(\gamma,k)=(2,1)$ as a clear interior optimum:
+covering odds equal to the \emph{squared} contrast with unit
+normalization---50 percent covering at engine--host parity.
+
+Under the fitted law, the raw photon partition, with no imposed closure
+anywhere, reproduces the stack sequence: predicted dense fractions 0.951,
+0.907, 0.754, and 0.451 against the inverted 0.981, 0.901, 0.738, and 0.086
+(the bLRD interval extends to 0.658), with $\chi^2=1.6$--2.0 under the
+declared 0.05 systematics floor, versus 3.7--9.9 for every candidate under
+the legacy covering. The result is seed-stable. Simultaneously and without
+retuning, the demographic $\chi^2$ improves from 12.24 to 5.5, with the
+three $z<8$ bins inside one sigma; the H$\alpha$ offset against the
+UV-matched public control improves from $+0.89$ to $+0.64$ dex; and the
+RUBIES broad-width distribution distance improves from 0.413 to 0.354, with
+the matched population shifting to Compton-thick Thomson depths
+($\tau_{\rm e}\simeq2.3$) so that the widths become substantially
+electron-scattering broadened rather than purely virial.
+
+The stacked data constrain only four subtype medians, and the fitted
+physical chain reproduces them while its source-level exponent remains
+$\sim$0.7. The quadratic of Section~\ref{sec:physical_visibility_closure} is
+therefore the subtype-median shadow of Equation~\ref{eq:covering_law}
+rather than a fundamental photon-partition law. Structurally, the odds form
+and the parity anchor are derivable: any engine-built, host-cleared
+equilibrium $\dot C=(1-C)B-CG$ equilibrates at $C/(1-C)=B/G$, and the
+momentum-flux ratio at the shared host interface,
+$(L_e/c)/(\dot p_{\rm SN}\,\mathrm{SFR})$, evaluates to order unity at
+$x=1$ from standard constants alone. One power of $x$ follows from this
+momentum bookkeeping; the second, attributed to radiation-confined clump
+survival against host ablation, remains an order-of-magnitude candidate. A
+time-resolved implementation of the build/clear dynamics shows the
+stationary law is its fast-relaxation limit and that the data bound the
+covering relaxation time at $\lesssim30$~Myr: slower envelopes retain
+fossil covering in fading engines, repopulating the blue subtype class with
+dense sources and degrading both the stack and demographic comparisons
+monotonically. This bound is consistent with the $\sim$10~yr dynamical time
+at the envelope scale.
+
+The fitted law is falsifiable on four fronts. (i) Blue-continuum LRDs
+should be systematically more X-ray transmitting and more variable than red
+LRDs at matched bolometric luminosity, with a steepened
+variability--subtype gradient. (ii) Object-level line-ratio scatter within
+a continuum subtype should exceed the tight locus implied by a
+deterministic $D^2$ law, reflecting the covering scatter. (iii) The
+covering saturates near $x\simeq14$, so the reddest sources should be
+homogeneous in covering-driven marks. (iv) No thick hysteresis loop should
+appear in the variability--color plane; observing one would contradict the
+fast-equilibration hierarchy, not merely a parameter choice.
+
+Finally, the co-regulated covering resolves the character of the
+high-redshift demographic residual. At $z\simeq9.5$ the intrinsic
+$M_{\rm UV}<-18.5$ nuclear-active population exceeds the reported density
+by a factor of $\sim$27, but most of it carries unbuilt envelopes and blue
+continua and is removed by the V-shape color gate. Rescaling that single
+gate within transparent limits swings the $z=9.5$ prediction from a
+$2\sigma$ deficit to an $8\sigma$ excess while moving the $z\le7.5$ bins by
+well under one sigma. The $z\simeq9.5$ bin is therefore a thermometer of
+color-selection completeness rather than a formation constraint, and no
+additional formation channel is required by current number densities. The
+model's corresponding prediction is compositional: the real $z>8.5$ LRD
+population should be dominated by blue-continuum, low-covering compact
+sources, a statement testable by a subtype census and by injection/recovery
+completeness for blue compact templates.

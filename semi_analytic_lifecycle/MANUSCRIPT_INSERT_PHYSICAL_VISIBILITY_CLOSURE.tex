@@ -1,0 +1,65 @@
+\subsection{A source-level closure for the physical visibility phase}
+\label{sec:physical_visibility_closure}
+
+The two-zone inversion in Section~\ref{sec:spectral_visibility} determines a
+dense share of processed ionizing photons for each stacked continuum subtype,
+but it does not explain that sequence. We therefore close the observation
+layer at the level of individual synthetic sources. The forward continuum is
+the sum of an attenuated stellar host, a leaked accretion component, and the
+cool nuclear reprocessor. We define the predicted nuclear-to-host dominance
+at 5100~\AA{} as
+\begin{equation}
+  D \equiv
+  \frac{L_{\nu,\mathrm{thermal}}(5100\,\text{\AA})}
+       {L_{\nu,\mathrm{host}}(5100\,\text{\AA})}.
+\end{equation}
+Dense nuclear emission requires both nuclear photon dominance and
+interception by the nuclear structure. To leading order, their product gives
+the quadratic photon-competition closure
+\begin{equation}
+  \frac{Q_{\mathrm{dense}}}{Q_{\mathrm{diffuse}}}=D^2,
+  \qquad
+  f_{\mathrm{dense}}=\frac{D^2}{1+D^2}.
+  \label{eq:visibility_closure}
+\end{equation}
+Equation~\ref{eq:visibility_closure} is applied before the predicted
+$L_{5100}/L_{2500}$ ratio is classified. It contains no subtype-specific
+normalization or dense fraction.
+
+For the $4.5\leq z\leq6.5$ forward sample, the median predicted
+$f_{\mathrm{dense}}$ values are 0.985, 0.904, 0.711, and 0.212 for xLRD,
+plusLRD, minusLRD, and bLRD sources. The corresponding stack inversions are
+0.981, 0.901, 0.738, and 0.086; the bLRD interval is weakly identified and
+extends from zero to 0.658. Generalizing Equation~\ref{eq:visibility_closure}
+to $D^\eta$ gives $\eta=1.89$ under measurement errors alone and
+$\eta=2.015$ after imposing a declared 0.05 model-systematics floor. The
+integer quadratic law is therefore retained rather than fitting the exponent.
+Leave-one-subtype-out tests preserve the ordered sequence; the largest
+measurement-interval discrepancy is the plusLRD held-out prediction, 0.923,
+which is 0.012 above its measurement-only 84th percentile.
+
+We use one soft 50~kK Cloudy basis and $\log U=-2.1$ for all sources. The
+temperature denotes the incident spectral basis rather than a literal source
+temperature. The closure predicts [O~III]$\lambda5007$/H$\beta$ of 0.95,
+3.16, 4.43, and 5.07 and [O~III]/[O~II] of approximately 21.9 across the four
+subtypes. Compared with the eight stacked ratios, the combined descriptive
+$\chi^2$ is 5.77. All predicted He~II$\lambda4686$/H$\beta$ ratios lie between
+0.0017 and 0.0154, below the independent population upper envelope of 0.1.
+A 50--70~kK geometry-dependent hardness gradient worsens the same
+[O~III] comparison to $\chi^2=17.0$. The data therefore favor a changing
+dense--diffuse photon partition at nearly common soft incident hardness.
+
+This comparison is a closure test, not a fully independent validation: the
+stacked dense fractions were inferred from the same two [O~III] ratios. The
+weak-He~II constraint is the independent hardness gate. Moreover, the
+intrinsic predicted H$\alpha$/H$\beta$ ratios remain 2.77--3.15, so the large
+observed Balmer decrements still require a separate attenuation or line-transfer
+likelihood.
+
+The subtype counts expose a distinct unresolved problem. With the present UV
+flux gate, the predicted xLRD fraction is only 1\%, compared with approximately
+12\% in the published stack sample. Replacing only that gate by an optical
+5100-\AA{} gate raises the prediction to 37\%. Thus the red-population residual
+is dominated by the uncalibrated multiband completeness mapping. We do not
+interpret it as evidence for an additional formation route until the synthetic
+photometry is propagated through survey masks and injection/recovery results.

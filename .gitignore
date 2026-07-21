@@ -1,0 +1,27 @@
+# Python / OS
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# LaTeX build artifacts (the compiled paper PDFs are committed on purpose)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# Regenerated manuscript figures (produced by reproduce.sh; not the papers)
+paper/interception_exponent.pdf
+paper/coregulated_covering_scan.pdf
+paper/subtype_redshift_march.pdf
+paper/subtype_march_with_bands.pdf
+paper/rubies_fwhm_confrontation.pdf
+
+# Regenerated analysis figures (reproduce.sh writes these next to the code)
+semi_analytic_lifecycle/**/*.png
+semi_analytic_lifecycle/**/*.pdf
+
+# NOTE: never ignore *.out/*.log globally — Cloudy anchor outputs use them.

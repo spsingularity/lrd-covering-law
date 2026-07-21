@@ -1,0 +1,188 @@
+{
+  "balmer_result": "The smooth-screen model is not rejected by the present Hgamma uncertainties, but it requires A_V about 2.1--3.7 mag toward the Balmer-emitting region. Line transfer and differential broad/narrow attenuation remain alternatives, not demonstrated necessities.",
+  "balmer_smooth_screen_nominal_dof": 4,
+  "balmer_smooth_screen_p_value": 0.34061909843889676,
+  "balmer_smooth_screen_total_chi2": 4.516299968356686,
+  "heii_constraint_status": "Sok et al. 2026 report HeII4686/Hbeta <= about 0.1 for most of the grating sample; it is used as a population compatibility gate, not as four independent subtype measurements.",
+  "method": "Two-zone thermal Cloudy inversion of [O III]/Hbeta and [O III]/[O II]. Each stack has a dense intercepted-Q(H) fraction and a diffuse log U interpolated within the thermal anchor grid. Two ratios determine two parameters, so the inversion itself is not a goodness-of-fit test.",
+  "preferred_fits": [
+    {
+      "dense_model": "soft_dense_50k",
+      "dense_qh_fraction": 0.9809272867778657,
+      "dense_qh_fraction_measurement_p16_p50_p84": [
+        0.9781915677911003,
+        0.9809133291883861,
+        0.9830398543569948
+      ],
+      "diffuse_logu": -2.2041542374120393,
+      "diffuse_logu_measurement_p16_p50_p84": [
+        -2.3157319167409627,
+        -2.194099104587111,
+        -2.1282117358020645
+      ],
+      "diffuse_model": "log-linear interpolation of thermal Cloudy anchors",
+      "effective_halpha_hbeta_transfer_boost": 3.2278796739656306,
+      "effective_hbeta_hgamma_transfer_boost": 4.259451719020004,
+      "heii4686_hbeta_measurement_p16_p50_p84": [
+        0.014069376133016254,
+        0.01458450678597044,
+        0.014993989075380257
+      ],
+      "intrinsic_halpha_hbeta": 3.128989002118405,
+      "intrinsic_hbeta_hgamma": 1.9955620020399345,
+      "line_ratio_chi2": 2.926539747629935e-29,
+      "measurement_monte_carlo_draws": 400,
+      "predicted_heii4686_hbeta": 0.014593413284013883,
+      "predicted_oiii5007_hbeta": 1.0999999999999996,
+      "predicted_oiii5007_oii3727": 14.800000000000015,
+      "smooth_screen_chi2_two_ratios_one_parameter": 3.2210765187847126,
+      "smooth_screen_effective_a_v_magnitude": 3.704075342726582,
+      "smooth_screen_optical_depth_v": 3.4107507759913274,
+      "smooth_screen_power_law_index": 1.2,
+      "smooth_screen_predicted_halpha_hbeta": 10.34856854694859,
+      "smooth_screen_predicted_hbeta_hgamma": 3.550620497854957,
+      "subtype": "xLRD",
+      "systematics_included": false,
+      "temperature_basis_k": 50000
+    },
+    {
+      "dense_model": "soft_dense_50k",
+      "dense_qh_fraction": 0.9008792827686007,
+      "dense_qh_fraction_measurement_p16_p50_p84": [
+        0.8839735575004048,
+        0.9008300509290963,
+        0.911418404873531
+      ],
+      "diffuse_logu": -2.1014635180015566,
+      "diffuse_logu_measurement_p16_p50_p84": [
+        -2.194685047814472,
+        -2.1015650130765877,
+        -2.034775215242621
+      ],
+      "diffuse_model": "log-linear interpolation of thermal Cloudy anchors",
+      "effective_halpha_hbeta_transfer_boost": 2.720375204558635,
+      "effective_hbeta_hgamma_transfer_boost": 2.146879798739105,
+      "heii4686_hbeta_measurement_p16_p50_p84": [
+        0.00705884880331139,
+        0.007958202791471088,
+        0.008549301718055246
+      ],
+      "intrinsic_halpha_hbeta": 2.9407708122740197,
+      "intrinsic_hbeta_hgamma": 2.0494859575203916,
+      "line_ratio_chi2": 9.371435749168255e-28,
+      "measurement_monte_carlo_draws": 400,
+      "predicted_heii4686_hbeta": 0.007923131291622582,
+      "predicted_oiii5007_hbeta": 3.1999999999999975,
+      "predicted_oiii5007_oii3727": 21.7999999999999,
+      "smooth_screen_chi2_two_ratios_one_parameter": 1.165444800461908,
+      "smooth_screen_effective_a_v_magnitude": 3.1104567870221165,
+      "smooth_screen_optical_depth_v": 2.8641406878656688,
+      "smooth_screen_power_law_index": 1.2,
+      "smooth_screen_predicted_halpha_hbeta": 8.029447776582634,
+      "smooth_screen_predicted_hbeta_hgamma": 3.3249141610709976,
+      "subtype": "plusLRD",
+      "systematics_included": false,
+      "temperature_basis_k": 50000
+    },
+    {
+      "dense_model": "soft_dense_50k",
+      "dense_qh_fraction": 0.7375097636351844,
+      "dense_qh_fraction_measurement_p16_p50_p84": [
+        0.6247077535788944,
+        0.7378937061432882,
+        0.8073214650961021
+      ],
+      "diffuse_logu": -2.080435225831514,
+      "diffuse_logu_measurement_p16_p50_p84": [
+        -2.136244535794775,
+        -2.0803077100875678,
+        -2.0354454508202062
+      ],
+      "diffuse_model": "log-linear interpolation of thermal Cloudy anchors",
+      "effective_halpha_hbeta_transfer_boost": 2.257625829686607,
+      "effective_hbeta_hgamma_transfer_boost": 1.633772539473333,
+      "heii4686_hbeta_measurement_p16_p50_p84": [
+        0.0031299874166179917,
+        0.004171787267762686,
+        0.005254403678337955
+      ],
+      "intrinsic_halpha_hbeta": 2.8348364533410826,
+      "intrinsic_hbeta_hgamma": 2.0810730489423164,
+      "line_ratio_chi2": 2.3049610172671682e-29,
+      "measurement_monte_carlo_draws": 400,
+      "predicted_heii4686_hbeta": 0.004176227633672836,
+      "predicted_oiii5007_hbeta": 4.3999999999999995,
+      "predicted_oiii5007_oii3727": 23.599999999999984,
+      "smooth_screen_chi2_two_ratios_one_parameter": 0.12515557887726034,
+      "smooth_screen_effective_a_v_magnitude": 2.5262614736011546,
+      "smooth_screen_optical_depth_v": 2.326207618417269,
+      "smooth_screen_power_law_index": 1.2,
+      "smooth_screen_predicted_halpha_hbeta": 6.4094729618572694,
+      "smooth_screen_predicted_hbeta_hgamma": 3.082874810471578,
+      "subtype": "minusLRD",
+      "systematics_included": false,
+      "temperature_basis_k": 50000
+    },
+    {
+      "dense_model": "soft_dense_50k",
+      "dense_qh_fraction": 0.0860799091173137,
+      "dense_qh_fraction_measurement_p16_p50_p84": [
+        4.053298843339891e-28,
+        0.003562937677199932,
+        0.6584434001647604
+      ],
+      "diffuse_logu": -2.159619229584488,
+      "diffuse_logu_measurement_p16_p50_p84": [
+        -2.2185958555719143,
+        -2.1421321834474742,
+        -2.0785290970870642
+      ],
+      "diffuse_model": "log-linear interpolation of thermal Cloudy anchors",
+      "effective_halpha_hbeta_transfer_boost": 1.9902547729239595,
+      "effective_hbeta_hgamma_transfer_boost": 1.425697265950845,
+      "heii4686_hbeta_measurement_p16_p50_p84": [
+        0.001383954373427807,
+        0.001448728134803768,
+        0.0033429200624907956
+      ],
+      "intrinsic_halpha_hbeta": 2.7634652984249546,
+      "intrinsic_hbeta_hgamma": 2.104233536563038,
+      "line_ratio_chi2": 5.590632346685644e-29,
+      "measurement_monte_carlo_draws": 400,
+      "predicted_heii4686_hbeta": 0.0015077595863442178,
+      "predicted_oiii5007_hbeta": 4.900000000000002,
+      "predicted_oiii5007_oii3727": 17.500000000000036,
+      "smooth_screen_chi2_two_ratios_one_parameter": 0.0046230702328046045,
+      "smooth_screen_effective_a_v_magnitude": 2.1338607390674937,
+      "smooth_screen_optical_depth_v": 1.9648809752002705,
+      "smooth_screen_power_law_index": 1.2,
+      "smooth_screen_predicted_halpha_hbeta": 5.504479725076392,
+      "smooth_screen_predicted_hbeta_hgamma": 2.9325997144979015,
+      "subtype": "bLRD",
+      "systematics_included": false,
+      "temperature_basis_k": 50000
+    }
+  ],
+  "preferred_temperature_basis_k": 50000,
+  "temperature_basis_warning": "The blackbody temperature is a hardness basis, not a literal source temperature.",
+  "temperature_comparison": {
+    "100000": {
+      "all_fits_below_typical_heii_upper_0p1": false,
+      "line_ratio_chi2_sum": 9.911413408570221e-28,
+      "maximum_heii4686_hbeta": 0.6969633288718222,
+      "smooth_screen_chi2_sum": 5.056738011588613
+    },
+    "50000": {
+      "all_fits_below_typical_heii_upper_0p1": true,
+      "line_ratio_chi2_sum": 1.045364906032653e-27,
+      "maximum_heii4686_hbeta": 0.014593413284013883,
+      "smooth_screen_chi2_sum": 4.516299968356686
+    },
+    "70000": {
+      "all_fits_below_typical_heii_upper_0p1": false,
+      "line_ratio_chi2_sum": 4.201635170688614e-28,
+      "maximum_heii4686_hbeta": 0.20411578908545785,
+      "smooth_screen_chi2_sum": 4.853138841567951
+    }
+  }
+}

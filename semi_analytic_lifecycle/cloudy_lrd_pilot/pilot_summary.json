@@ -1,0 +1,134 @@
+{
+  "baseline": {
+    "cautions": 4,
+    "cloudy_exited_ok": true,
+    "dust_to_metals": 0.0,
+    "elapsed_seconds": 122.72091858298518,
+    "geometry": "open",
+    "halpha_hbeta": 1.8695613249776186,
+    "heii1640_hbeta": 3.2101163831692032,
+    "heii4686_hbeta": 0.459006266786034,
+    "iterations": 3,
+    "lha_per_qh54": 6.9658190000230095e+41,
+    "logn": 10.0,
+    "lognh": 22.0,
+    "logu": -1.0,
+    "metallicity": 0.2,
+    "microturbulence_kms": 0.0,
+    "model": "baseline",
+    "nii_halpha": 3.667480725949337e-10,
+    "no_molecules": true,
+    "oiii_hbeta": 0.00010345568487018798,
+    "paalpha_halpha": 0.05832974189532155,
+    "radius_log_cm": 17.0,
+    "sed": "agn_standard",
+    "sii_halpha": 3.3329502466120766e-11,
+    "temperature": 10000.0,
+    "yield_halpha": 6.965819000023009e-13,
+    "yield_hbeta": 3.7259109433633586e-13,
+    "yield_heii1640": 1.1960607761520139e-12,
+    "yield_heii4686": 1.7102164724904455e-13,
+    "yield_nii6583": 2.554700692303607e-22,
+    "yield_oiii5007": 3.8546666841098445e-17,
+    "yield_paalpha": 4.06314424360869e-14,
+    "yield_sii6716": 7.112920766005395e-24,
+    "yield_sii6731": 1.6103807387976385e-23,
+    "zones": 174
+  },
+  "log10_change_from_baseline": {
+    "closed_sphere": {
+      "halpha_hbeta": -0.0032737427110118076,
+      "heii1640_hbeta": 0.23318127320248527,
+      "lha_per_qh54": -0.12044916979105814,
+      "nii_halpha": -0.18976136696563842,
+      "oiii_hbeta": 0.09560262507931787,
+      "paalpha_halpha": -0.03897881196559631,
+      "sii_halpha": -0.4608906434251185
+    },
+    "column_thin": {
+      "halpha_hbeta": 0.10626613926240115,
+      "heii1640_hbeta": 0.20188803638977817,
+      "lha_per_qh54": -0.6698061038438026,
+      "nii_halpha": -2.042774422837944,
+      "oiii_hbeta": -2.906886111303126,
+      "paalpha_halpha": 0.21042245804624263,
+      "sii_halpha": -2.7007748058069665
+    },
+    "density_high": {
+      "halpha_hbeta": -0.2345914236197208,
+      "heii1640_hbeta": 1.1238766384037477,
+      "lha_per_qh54": -1.4095100779314664,
+      "nii_halpha": -0.4748374374716002,
+      "oiii_hbeta": -0.7907704545157638,
+      "paalpha_halpha": 0.2300597873621458,
+      "sii_halpha": -0.7415351056735008
+    },
+    "density_low": {
+      "halpha_hbeta": 0.49260200970707124,
+      "heii1640_hbeta": 0.14154795892886005,
+      "lha_per_qh54": 0.31302869379852816,
+      "nii_halpha": 4.687351065565901,
+      "oiii_hbeta": 2.0753057767159624,
+      "paalpha_halpha": 0.35588130276934504,
+      "sii_halpha": 4.509217111543843
+    },
+    "ionization_high": {
+      "halpha_hbeta": -0.10070450264569378,
+      "heii1640_hbeta": 0.338587909136119,
+      "lha_per_qh54": -0.9061914029514903,
+      "nii_halpha": -5.5872107969236025,
+      "oiii_hbeta": -6.172279926124169,
+      "paalpha_halpha": -0.0604667201283423,
+      "sii_halpha": NaN
+    },
+    "ionization_low": {
+      "halpha_hbeta": 0.5325049089097416,
+      "heii1640_hbeta": -0.9521518057517984,
+      "lha_per_qh54": 1.3815222857535412,
+      "nii_halpha": 4.029181304268486,
+      "oiii_hbeta": -0.7760999554848196,
+      "paalpha_halpha": 0.09552713425723772,
+      "sii_halpha": 4.067209742302363
+    },
+    "metal_poor": {
+      "halpha_hbeta": -0.00262634578961292,
+      "heii1640_hbeta": 0.007973552834425886,
+      "lha_per_qh54": -0.0009576967527869267,
+      "nii_halpha": -0.6230362050266678,
+      "oiii_hbeta": -0.6159862906978995,
+      "paalpha_halpha": 0.00020832849488799558,
+      "sii_halpha": -0.622134506816425
+    },
+    "metal_solar": {
+      "halpha_hbeta": 0.0029080113769439173,
+      "heii1640_hbeta": -0.04908856699727707,
+      "lha_per_qh54": 0.003995301420299797,
+      "nii_halpha": 0.8491002409004538,
+      "oiii_hbeta": 0.7496394645104464,
+      "paalpha_halpha": 0.008515381248373543,
+      "sii_halpha": 0.80865590939548
+    },
+    "xray_weak_sed": {
+      "halpha_hbeta": -0.0018587383609259354,
+      "heii1640_hbeta": -0.014138186420794093,
+      "lha_per_qh54": -0.0002288223882864552,
+      "nii_halpha": 0.012743092261272883,
+      "oiii_hbeta": 0.015539274487799204,
+      "paalpha_halpha": -0.001092362254923402,
+      "sii_halpha": 0.016511070585385264
+    }
+  },
+  "models_completed": 10,
+  "models_failed": [
+    "dusty"
+  ],
+  "models_with_cautions": [
+    "baseline",
+    "ionization_high",
+    "metal_poor",
+    "metal_solar",
+    "xray_weak_sed"
+  ],
+  "normalization": "Line energies per incident H-ionizing photon; lha_per_qh54 is the emergent H-alpha luminosity for Q(H)=1e54 s^-1 and unit covering.",
+  "scope": "Fixed-temperature, three-iteration non-LTE Cloudy C25 screening pilot. This is a sensitivity design, not a thermal-balance posterior or a complete factorial grid."
+}

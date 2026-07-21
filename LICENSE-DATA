@@ -1,0 +1,23 @@
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+SPDX-License-Identifier: CC-BY-4.0
+
+Copyright (c) 2026 Stilian Pandev
+
+SCOPE. This license applies to the DATA products in this repository: the
+synthetic forward catalogues, machine-readable result tables (JSON/CSV),
+Cloudy photoionization anchors, and the digitized public constraints under
+semi_analytic_lifecycle/ and catalog_likelihood/, and the figures under
+paper/. The source code (all *.py files) is licensed separately under the
+MIT License; see LICENSE.
+
+Redistributed public input products (e.g. the RUBIES-derived catalogues and
+the JADES spectral-likelihood table) remain under their original terms and
+must be attributed to their original authors; see README.md > Data provenance.
+
+You are free to Share and Adapt the material for any purpose, provided you
+give appropriate credit (Attribution). Full legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested attribution:
+  Pandev, S. (2026), "An Engine-Regulated Covering Law for Little Red Dots"
+  data, CC-BY-4.0. DOI: <to be assigned at submission>.

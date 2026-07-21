@@ -1,0 +1,12 @@
+# Python dependencies (tested with Python 3.11).
+numpy
+scipy
+matplotlib
+pandas
+astropy
+colossus
+sympy
+
+# Cloudy (C23/C25) is only needed to regenerate the photoionization anchors
+# under semi_analytic_lifecycle/cloudy_lrd_pilot/. The precomputed anchors are
+# shipped, so Cloudy is optional. See semi_analytic_lifecycle/CLOUDY_INSTALLATION.md

@@ -1,0 +1,318 @@
+\documentclass[twocolumn]{aastex631}
+\shorttitle{Little red dots should turn red over time}
+\shortauthors{Pandev}
+
+\begin{document}
+
+\title{Little Red Dots Should Turn Red Over Cosmic Time: A Predicted
+Subtype March and the Blue Dominance of the $z>8.5$ Population}
+
+\author[0009-0005-8153-071X]{Stilian Pandev}
+\affiliation{Independent researcher}
+\email{stilianpandev@gmail.com}
+
+\correspondingauthor{Stilian Pandev}
+
+\begin{abstract}
+Stacked spectroscopy of little red dots (LRDs) resolves an ordered
+continuum-subtype sequence, from extreme red (xLRD) to blue (bLRD)
+classes, that inverts to a monotonic sequence in the fraction of ionizing
+photons processed by dense nuclear gas. If this spectral diversity is a
+visibility sequence---one population seen at different stages of nuclear
+envelope growth---rather than distinct formation routes, the subtype
+mixture cannot be constant: it must evolve with redshift. We extract this
+prediction, with uncertainties, from a semi-analytic lifecycle model in
+which the envelope covering odds equal the squared engine-to-host
+continuum contrast. Averaged over realizations, the selected red fraction
+(xLRD+plusLRD) rises from $0.04\pm0.05$ at $z\simeq9.5$ through
+$0.09\pm0.04$ and $0.23\pm0.05$ to $0.49\pm0.09$ at $z\simeq4.5$
+(plateau-consistent $0.48\pm0.14$ at $z\simeq3.25$, an extrapolation
+below the calibration range), while blue-continuum LRDs are the largest
+class at $z>8.5$ ($0.61\pm0.15$ of the selected population), with xLRDs
+essentially absent there. The march is population physics, not selection:
+removing the survey selection strengthens it, and the rise to
+$z\simeq4.5$ is monotonic in all realizations. It is testable now by
+splitting existing stacked and spectroscopic samples (predicted slope
+$0.10$--$0.14$ per unit redshift between $z\simeq7.5$ and 4.5). The same
+physics implies that the reported $z\simeq9.5$ number density cannot
+currently constrain formation: the intrinsic UV-bright nuclear-active
+population exceeds it $\sim$34-fold but is blue and removed by the
+redness selection. A sample of ten classified $z>8.5$ LRDs with a red
+majority would exclude the prediction at $\ge99\%$ confidence even at its
+upper uncertainty edge.
+\end{abstract}
+
+\keywords{Active galactic nuclei (16) --- Supermassive black holes (1663)
+--- High-redshift galaxies (734)}
+
+\section{Introduction}\label{sec:intro}
+Little red dots---compact, red, frequently broad-line JWST sources at
+$z\gtrsim4$ \citep{Matthee2024,Greene2024,Kocevski2024,Kocevski2025}---show
+an ordered spectral-subtype sequence in stacked spectroscopy
+\citep{PerezGonzalez2026}. Inverting a dense-plus-diffuse two-zone
+photoionization model through the four stacks yields dense photon
+fractions of 0.981, 0.901, 0.738, and 0.086 from the xLRD through bLRD
+classes at nearly constant diffuse ionization parameter, with the
+population-level He~II constraint \citep{Sok2026} selecting a soft
+extreme-UV ionizing basis in that inversion. This ordered, one-parameter
+structure is what a \emph{visibility sequence} looks like: a single
+population whose nuclear envelope intercepts a varying share of the
+ionizing output, rather than four unrelated formation routes.
+Dense-envelope models of individual LRDs
+\citep[e.g.,][]{Naidu2025,deGraaff2025} have argued on independent
+grounds that envelope properties track the accretion state; spectral
+diversity has been mapped to varying black-hole-to-host luminosity ratios
+in a stationary framework \citep{Barro2025}; two LRDs have been observed
+transitioning into quasars at the phase exit \citep{Fu2025}; and
+low-spin halo models address the redshift evolution of LRD observability
+\citep{PacucciLoeb2025}. The population-level consequence for the subtype
+mixture, however, appears not to have been stated as a quantitative,
+falsifiable prediction with a slope and uncertainties, which is the
+purpose of this Letter: if the dense photon share is set by
+the growth state of the nuclear envelope, and envelopes grow as nuclear
+reservoirs feed while stellar hosts are still assembling, then the
+subtype \emph{mixture must evolve with redshift}. A population seen
+earlier in its lifecycle must be bluer.
+
+\section{The model in brief}\label{sec:model}
+The prediction is extracted from a semi-analytic lifecycle model
+developed in a companion paper (Pandev 2026b, submitted). Halo histories,
+importance-reweighted to the \citet{Tinker2008} mass function, carry
+nuclear gas and black-hole reservoirs through an explicit five-state
+lifecycle with competing exit hazards; the observation layer assigns each
+source a porous nuclear reprocessor, a two-zone soft-EUV emission model
+built on thermal-balance Cloudy anchors \citep{Chatzikos2023}, and the
+published $L_{5100}/L_{2500}$ subtype boundaries (1.8, 3.1, 6.3). The
+envelope covering $C$ follows an equilibrium law: the covering odds equal
+the squared intrinsic engine-to-host continuum contrast,
+\begin{equation}
+\frac{C}{1-C}=x^{2},\qquad
+x\equiv\frac{L_{\nu,\rm engine}(2500\,\text{\AA})}
+{L_{\nu,\star}(2500\,\text{\AA})},
+\label{eq:law}
+\end{equation}
+applied with a frozen per-halo lognormal scatter of 0.35 dex. In the
+companion paper this law is selected against the stacked line ratios and
+the $z\le7.5$ number densities, its exponent is constructed through an
+explicit elimination program (momentum-limited envelope building against
+drag-limited clump removal; three alternative mechanisms rejected by the
+data), and the resulting photon partition matches the eight stacked
+[O~III] ratios at least as well as an imposed closure while improving the
+reliable-bin demographic fit to $\chi^{2}=1.2$. Here only one property
+matters: covering---and therefore subtype---tracks the engine's contrast
+with the growing host.
+
+\section{The subtype march}\label{sec:march}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{subtype_march_with_bands.pdf}
+\caption{The predicted subtype march: seed-averaged selected subtype
+fractions versus redshift, with combined binomial and
+realization-to-realization uncertainties. Subtypes follow the published
+$L_{5100}/L_{2500}$ boundaries; weighting is by selection probability
+times comoving weight. The $z\simeq3.25$ bin lies below the demographic
+calibration range and is an extrapolation.}
+\label{fig:march}
+\end{figure}
+
+\begin{deluxetable}{lccccc}
+\tablecaption{Predicted selected subtype fractions (seed mean $\pm$
+combined binomial and seed uncertainty). $N_{\rm eff}$ is the effective
+selection-weighted sample per bin.\label{tab:march}}
+\tablehead{\colhead{$z$} & \colhead{xLRD} & \colhead{plusLRD} &
+\colhead{minusLRD} & \colhead{bLRD} & \colhead{$N_{\rm eff}$}}
+\startdata
+9.5 & $0.00\pm0.00$ & $0.04\pm0.05$ & $0.35\pm0.16$ & $0.61\pm0.15$ & 21\\
+7.5 & $0.00\pm0.00$ & $0.09\pm0.04$ & $0.52\pm0.08$ & $0.40\pm0.08$ & 52\\
+5.5 & $0.00\pm0.00$ & $0.23\pm0.05$ & $0.57\pm0.06$ & $0.21\pm0.05$ & 265\\
+4.5 & $0.01\pm0.01$ & $0.48\pm0.09$ & $0.46\pm0.10$ & $0.05\pm0.03$ & 56\\
+3.25 & $0.01\pm0.03$ & $0.47\pm0.13$ & $0.47\pm0.13$ & $0.05\pm0.06$ & 19\\
+\enddata
+\tablecomments{The $z=3.25$ row is an extrapolation below the
+$4.5<z<6.5$ calibration window and shows the largest realization scatter.}
+\end{deluxetable}
+
+Figure~\ref{fig:march} and Table~\ref{tab:march} give the march. The
+selected red fraction (xLRD+plusLRD) rises from $0.04\pm0.05$ at
+$z\simeq9.5$ to $0.49\pm0.09$ at $z\simeq4.5$---a many-sigma monotonic
+evolution---while the bLRD fraction falls from $0.61\pm0.15$ to
+$0.05\pm0.03$ and the median dense photon fraction climbs from 0.40 to
+$\simeq0.85$. At $z>8.5$, blue-continuum broad-line sources are the
+largest predicted class and xLRDs are essentially absent.
+
+Two checks establish that this is population physics rather than a
+selection artifact. First, removing the selection weighting entirely
+\emph{strengthens} the march (intrinsic red fraction
+$0.004\rightarrow0.7$ over the same interval, computed for the full
+catalogued population without a UV cut), and every subtype trend
+retains its sign: a transparent selection gate can rescale absolute
+fractions but cannot manufacture or erase a monotonic factor-of-$\sim$100
+evolution that survives with no gate at all. Second, the rise from
+$z\simeq9.5$ to $z\simeq4.5$ is monotonic in all four random-seed
+realizations; the $z\simeq3.25$ bin, with $N_{\rm eff}\simeq19$ and the
+largest seed scatter, is reported as plateau-consistent and flagged as an
+extrapolation throughout.
+
+The physical driver is simple: at high redshift most nuclear-active
+sources have young reservoirs and vigorous host star formation, so
+$x\lesssim1$, envelopes are unbuilt, and continua are blue; as reservoirs
+feed and hosts age, $x$ grows, covering saturates, and the population
+reddens. The march is the population-level shadow of individual sources
+evolving blueward-to-redward through the visibility sequence.
+
+\section{Three tests}\label{sec:tests}
+
+\emph{(i) The slope, with existing data.} Between $z\simeq7.5$ and 4.5
+the red fraction should rise at $0.10$--$0.14$ per unit redshift (range
+spans seed realizations and bin pairings). A redshift split of the
+existing 249-object stack sample \citep{PerezGonzalez2026} and of
+spectroscopic compilations at $z\simeq5.5$ tests this without new
+observations. One systematic must be controlled: fixed observed-frame
+filters sample different rest-frame wavelengths across this interval, and
+the surveys contributing at $z\simeq4$ are not those contributing at
+$z\simeq8$. The prediction concerns the \emph{rest-frame}
+$L_{5100}/L_{2500}$ classification; applying that classification
+uniformly (as the stacked-sample construction already does) mitigates the
+observed-frame drift, but the redshift dependence of the parent
+selection's color completeness does not cancel and should be
+forward-modeled or bounded before a measured slope is compared with the
+prediction.
+
+\emph{(ii) Composition at $z>8.5$.} The model predicts bLRD plurality
+($0.61\pm0.15$) and xLRD absence at $z>8.5$. The falsification threshold
+is quantitative: with a predicted red fraction of $0.04\pm0.05$, a sample
+of ten classified $z>8.5$ LRDs containing a red majority ($\ge5$ red)
+would exclude the prediction at $\ge99.9\%$ confidence even adopting the
+$+1\sigma$ edge ($p_{\rm red}=0.09$; binomial
+$P(\ge5/10)=1.0\times10^{-3}$), and at $2\times10^{-5}$ at the central
+value.
+
+\emph{(iii) Luminosity control.} Because the driver is the engine--host
+contrast rather than luminosity, the dense-fraction--redshift
+anticorrelation should persist at fixed bolometric luminosity,
+distinguishing the march from a pure luminosity-selection trend.
+
+\section{The $z\simeq9.5$ density is a completeness thermometer}
+\label{sec:highz}
+The same physics resolves the character of the reported high-redshift
+abundance. In the forward catalogue at $z\simeq9.5$, the reported
+broad-selection density is $3.18\times10^{-5}$ cMpc$^{-3}$
+\citep{Rinaldi2026}; the model's selected density is
+$5.0\times10^{-6}$ (the factor 6.3 deficit), while its intrinsic
+$M_{\rm UV}<-18.5$ nuclear-active population totals
+$1.1\times10^{-3}$---a factor $\sim$34 above the reported value (a
+model-conditional reweighting; its headroom resides in sources assigned
+selection probabilities of $10^{-6}$--$10^{-3}$ by the model's analytic
+color gate). These sources are UV-bright ($M_{\rm UV}\simeq-19.4$),
+compact, and embedded, and are removed only by the redness selection.
+Rescaling that single gate within transparent limits moves the predicted
+$z=9.5$ density from the factor $\sim$6 deficit to a factor $\sim$3
+excess while moving the $z\le7.5$ bins by well under their errors: the
+bin measures color completeness---which \citet{Rinaldi2026} describe as
+essentially unconstrained at $z>6$--7---rather than formation physics.
+The recent report of no evolution in the LRD number density across this
+range \citep{Loiacono2026} is independently consistent with
+selection-dominated demography.
+
+Table~\ref{tab:gates} resolves an apparent paradox in these two claims:
+how can the \emph{selected} $z\simeq9.5$ sample be bLRD-dominated if the
+redness gate removes blue sources? Continuum subtype and the photometric
+V-shape gate are distinct axes: only 0.3\% of intrinsic bLRDs pass the
+gate, but the intrinsic blue population is three orders of magnitude
+larger than the red one, so its thin passing tail still dominates the
+selected sample while the removed 34$\times$ headroom is also blue.
+
+\begin{deluxetable}{lccc}
+\tablecaption{Per-subtype selection at $z\simeq9.5$ in the forward
+catalogue ($M_{\rm UV}<-18.5$; single fiducial realization, whereas
+Table~\ref{tab:march} is seed-averaged).\label{tab:gates}}
+\tablehead{\colhead{subtype} & \colhead{intrinsic $n$ [cMpc$^{-3}$]} &
+\colhead{selected $n$} & \colhead{pass fraction}}
+\startdata
+xLRD & \nodata & \nodata & \nodata\\
+plusLRD & $2.4\times10^{-7}$ & $1.4\times10^{-7}$ & 0.57\\
+minusLRD & $1.9\times10^{-6}$ & $1.5\times10^{-6}$ & 0.83\\
+bLRD & $1.1\times10^{-3}$ & $2.8\times10^{-6}$ & 0.0026\\
+\enddata
+\tablecomments{No $M_{\rm UV}<-18.5$ xLRDs occur at this redshift in the
+fiducial realization. The selected shares implied here (3/34/63\% for
+plus/minus/bLRD) agree with the seed-averaged Table~\ref{tab:march}
+within its uncertainties.}
+\end{deluxetable}
+
+Two consequences follow: no additional formation channel is required by
+current number densities, and the informative measurement at $z>8.5$ is
+compositional (test ii), not demographic. Injection/recovery completeness
+for \emph{blue, compact} templates is the decisive survey product.
+
+\section{Discussion}\label{sec:disc}
+The march prediction is deliberately exposed. If LRD subtypes are
+distinct formation routes, the mixture can be redshift-independent and
+the prediction fails; the same null outcome would follow if the
+dense-fraction sequence reflects orientation, so a flat measured march
+would leave orientation and distinct-routes degenerate rather than
+selecting between them---the discriminating outcome is an
+\emph{inverted} march (red fraction rising with redshift), which would
+falsify the visibility-sequence framework outright, or a confirmed march,
+which would establish LRD spectral diversity as an evolutionary sequence
+and calibrate the envelope-growth clock against cosmic time. The
+$z\lesssim7$ portion of the prediction is insulated from the
+high-redshift completeness question; the $z>8.5$ portion should be read
+jointly with Section~\ref{sec:highz}.
+
+\begin{acknowledgments}
+This work is unfunded and was carried out independently. It made use of
+public data products from the JWST archive and of published catalogues by
+the teams cited herein. This research made use of NASA's Astrophysics Data
+System and the arXiv preprint repository.
+\end{acknowledgments}
+
+\facilities{JWST (NIRSpec, NIRCam, MIRI)}
+
+\software{Cloudy \citep{Chatzikos2023}, numpy, scipy, matplotlib, astropy,
+colossus}
+
+\section*{Data and code availability}
+The extraction scripts and machine-readable march fractions with
+uncertainties accompany the companion paper as an MIT-licensed code archive
+(Zenodo DOI to be assigned at submission); the full forward-catalogue grid
+is a separate CC-BY-4.0 data record (Zenodo DOI to be assigned). Only public
+data products are used
+\citep{Rinaldi2026,Ma2026,PerezGonzalez2026,Hviding2025,Sok2026}.
+
+\begin{thebibliography}{}
+\bibitem[Barro et al.(2025)]{Barro2025} Barro, G., et al. 2025,
+arXiv:2512.15853
+\bibitem[Chatzikos et al.(2023)]{Chatzikos2023} Chatzikos, M., et al.
+2023, RMxAA, 59, 271
+\bibitem[de Graaff et al.(2025)]{deGraaff2025} de Graaff, A., et al.
+2025, arXiv:2503.16600
+\bibitem[Greene et al.(2024)]{Greene2024} Greene, J. E., et al. 2024,
+ApJ, 964, 39
+\bibitem[Fu et al.(2025)]{Fu2025} Fu, S., et al. 2025, arXiv:2512.02096
+\bibitem[Hviding et al.(2025)]{Hviding2025} Hviding, R. E., et al. 2025,
+RUBIES broad-line data release, Zenodo, doi:10.5281/zenodo.16758549
+\bibitem[Kocevski et al.(2024)]{Kocevski2024} Kocevski, D. D., et al.
+2024, arXiv:2404.03576
+\bibitem[Kocevski et al.(2025)]{Kocevski2025} Kocevski, D. D., et al.
+2025, ApJ, 986, 126
+\bibitem[Loiacono et al.(2026)]{Loiacono2026} Loiacono, F., et al. 2026,
+arXiv:2606.30253
+\bibitem[Ma et al.(2026)]{Ma2026} Ma, Y., et al. 2026, ApJ, 1000, 59
+\bibitem[Matthee et al.(2024)]{Matthee2024} Matthee, J., et al. 2024,
+ApJ, 963, 129
+\bibitem[Naidu et al.(2025)]{Naidu2025} Naidu, R. P., et al. 2025,
+arXiv:2503.16596
+\bibitem[Pacucci \& Loeb(2025)]{PacucciLoeb2025} Pacucci, F., \& Loeb,
+A. 2025, ApJL, arXiv:2506.03244
+\bibitem[P\'erez-Gonz\'alez et al.(2026)]{PerezGonzalez2026}
+P\'erez-Gonz\'alez, P. G., et al. 2026, arXiv:2602.20247
+\bibitem[Rinaldi et al.(2026)]{Rinaldi2026} Rinaldi, P., et al. 2026,
+arXiv:2604.07138
+\bibitem[Sok et al.(2026)]{Sok2026} Sok, V., et al. 2026, arXiv:2606.23778
+\bibitem[Tinker et al.(2008)]{Tinker2008} Tinker, J., et al. 2008, ApJ,
+688, 709
+\end{thebibliography}
+
+\end{document}

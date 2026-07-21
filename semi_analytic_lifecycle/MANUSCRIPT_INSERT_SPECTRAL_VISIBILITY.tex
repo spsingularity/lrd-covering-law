@@ -1,0 +1,111 @@
+% Optional full-length-manuscript insert. This is intentionally not inserted
+% into the ApJL draft: the zero-dof inversion and cross-sample He II gate need
+% the methodological space and caveats retained below.
+
+\section{A spectroscopic test of the physical visibility phase}
+\label{sec:spectral_visibility}
+
+The demographic model requires an observation layer that predicts more than
+$n(z)$. We therefore represent the line-emitting nucleus as two physically
+distinct photoionized zones: a dense compact skin, in which collisionally
+excited forbidden lines are suppressed, and a lower-density channel or skin
+that produces the optical metal lines. For line $\ell$ the emergent energy
+yield per incident hydrogen-ionizing photon is
+\begin{equation}
+ y_\ell=f_{\rm d}\,y_{\ell,{\rm dense}}
+ +(1-f_{\rm d})\,y_{\ell,{\rm diffuse}},
+\end{equation}
+where $f_{\rm d}$ is the fraction of incident $Q({\rm H})$ intercepted by the
+dense phase. It is not a mass fraction, volume filling factor, or observed
+broad-line fraction. Ratios are formed only after mixing the line yields.
+The dense and diffuse yields are calculated in thermal balance with Cloudy
+C25 at $Z=0.2Z_\odot$; positive yields are interpolated in $\log U$ within the
+computed grid.
+
+We confront this layer with three public constraints. First, the RUBIES
+release contains 36 spectroscopic LRDs and 80 broad-Balmer sources
+\citep{hviding2025}; 17 LRDs lie at $4.5\le z\le6.5$. Second,
+\citet{perezgonzalez2026} report four stacked spectra from 249 LRDs, including
+[O~III]~$\lambda5007$/H$\beta$, [O~III]/[O~II], H$\alpha$/H$\beta$, and
+H$\beta$/H$\gamma$. Third, \citet{sok2026} find that most objects in their
+high-S/N grating sample have He~II~$\lambda4686$/H$\beta\lesssim0.1$, while
+low-density channels are required in at least some LRDs. Because these samples
+have different selections, the He~II result is used as a population
+compatibility test rather than as four subtype-specific measurements.
+
+\paragraph{The ionizing spectrum must be soft above the He$^+$ edge.}
+The original standard-AGN anchors predict He~II/H$\beta=0.244$ in the diffuse
+zone and 0.729 in the dense zone, inconsistent with the typical observed
+upper envelope when $f_{\rm d}$ is large. Thermal hardness-basis calculations
+show that a 50-kK blackbody shape gives 0.0012 and 0.0186, respectively, while
+still producing strong [O~III]. The temperature is not interpreted as a
+literal source temperature; the inference is that the spectrum reaching the
+gas must retain enough 35--54 eV photons to make O$^{++}$ while suppressing
+photons above the 54.4-eV He$^+$ edge. A two-stage calculation in which a
+standard AGN continuum crosses a generic ionized screen leaves He~II nearly
+unchanged, so ordinary warm absorption is not sufficient in the tested
+family.
+
+\paragraph{The stacks define a dense-to-diffuse visibility sequence.}
+For each stack, [O~III]/H$\beta$ and [O~III]/[O~II] determine $f_{\rm d}$ and
+the diffuse $\log U$. With the He~II-compatible soft basis, the inferred
+$f_{\rm d}$ values are $0.981^{+0.002}_{-0.003}$, $0.901^{+0.011}_{-0.017}$,
+$0.738^{+0.069}_{-0.113}$, and $0.086^{+0.572}_{-0.086}$ for the xLRD,
+plusLRD, minusLRD, and bLRD stacks, while $\log U$ remains near
+$-2.20$ to $-2.08$. The bLRD fraction is weakly constrained, but the three
+redder stacks show an ordered sequence. This supports the interpretation that
+spectral diversity is primarily a changing dense intercepted-photon fraction
+within a common stratified structure, rather than evidence that each subtype
+requires a separate formation route.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{public_lrd_constraints/public_lrd_stack_two_zone_fits.pdf}
+\caption{Two-zone inversion of the four LRD stacks. Left: measured ratios
+(circles with uncertainties) and the corresponding fitted points (crosses)
+within the Cloudy mixing sequences. Middle: the independently predicted
+He~II/H$\beta$ ratios remain below the typical observed upper envelope for the
+preferred soft basis. Right: observed Balmer ratios and the best one-parameter
+smooth-screen predictions.}
+\label{fig:lrd_stack_inversion}
+\end{figure}
+
+This inversion is not by itself a goodness-of-fit test: two ratios determine
+two parameters. Its value is that the independent He~II constraint rejects
+harder continua and that additional lines now provide over-identifying
+falsifiers. In particular, He~I~$\lambda5876/7065/10830$, [Ne~III]/[O~II],
+[O~I]/H$\alpha$, and [O~III]~$\lambda4363$ must be predicted jointly rather
+than fitted one at a time.
+
+\paragraph{Balmer transfer remains degenerate.}
+The intrinsic two-zone Balmer decrements are close to recombination values,
+whereas the stacks reach H$\alpha$/H$\beta=5.5$--10.1$. A one-parameter
+power-law foreground screen gives $\chi^2=4.52$ for four nominal degrees of
+freedom ($p=0.34$) and is therefore not rejected by the current
+H$\gamma$ uncertainties. It requires effective $A_V\simeq2.1$--3.7 mag
+toward the Balmer-emitting region. Optically thick line transfer and
+differential broad/narrow attenuation remain alternatives, not demonstrated
+necessities. A porous geometry can expose a blue continuum while obscuring
+the line-emitting region, but this must be tested with a joint
+continuum-plus-line likelihood.
+
+\paragraph{An independent compact scale.}
+Evaluating virial widths at the 20--40 pc nuclear-reservoir radius predicts a
+median broad-Balmer FWHM of only $53\,{\rm km\,s^{-1}}$ for the redshift-matched
+lifecycle population. A distinct compact line-emitting radius gives the
+observed scale: median matching to the 17 RUBIES LRDs yields approximately
+1220 au and a model median of $2246\,{\rm km\,s^{-1}}$, compared with the
+observed $2245\,{\rm km\,s^{-1}}$. This is a descriptive calibration, not a
+radius posterior, because the published Gaussian fits impose an upper width
+bound of $2500\,{\rm km\,s^{-1}}$.
+
+Together, these tests favor revising the visibility and ionizing-spectrum
+calibration before invoking separate formation routes for the spectral
+subtypes. They do not remove the independent $z\gtrsim8$ demographic tension,
+which can still reflect an early formation/luminosity channel, revised
+completeness, or both.
+
+% Bibliography keys to add:
+% hviding2025: Hviding et al. 2025, RUBIES LRD tables, Zenodo 16758549.
+% perezgonzalez2026: Perez-Gonzalez et al. 2026, arXiv:2602.20247.
+% sok2026: Sok et al. 2026, arXiv:2606.23778.

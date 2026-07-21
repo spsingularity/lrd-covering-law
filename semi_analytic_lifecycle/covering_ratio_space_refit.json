@@ -1,0 +1,78 @@
+{
+  "objective": "chi2 over 8 stacked line ratios (flux-stack) + demographic chi2 on z<=7.5 bins; He II gate reported",
+  "closure_reference_median_map": 5.77,
+  "grid": [
+    {
+      "gamma": 2.0,
+      "k": 1.0,
+      "chi2_ratio_median_map": 132.46,
+      "chi2_ratio_flux_stack": 79.07,
+      "max_heii_hbeta": 0.0121,
+      "passes_heii_gate": true,
+      "demographic_chi2_z_le_7p5": 1.15,
+      "joint_flux": 80.22,
+      "per_subtype": {
+        "xLRD": {
+          "median_f_dense": 0.9512,
+          "median_map_oiii_hb": 2.233,
+          "flux_stack_oiii_hb": 1.942,
+          "observed_oiii_hb": 1.1
+        },
+        "plusLRD": {
+          "median_f_dense": 0.9072,
+          "median_map_oiii_hb": 3.113,
+          "flux_stack_oiii_hb": 3.398,
+          "observed_oiii_hb": 3.2
+        },
+        "minusLRD": {
+          "median_f_dense": 0.7538,
+          "median_map_oiii_hb": 4.279,
+          "flux_stack_oiii_hb": 4.138,
+          "observed_oiii_hb": 4.4
+        },
+        "bLRD": {
+          "median_f_dense": 0.4509,
+          "median_map_oiii_hb": 4.889,
+          "flux_stack_oiii_hb": 4.64,
+          "observed_oiii_hb": 4.9
+        }
+      }
+    }
+  ],
+  "best": {
+    "gamma": 2.0,
+    "k": 1.0,
+    "chi2_ratio_median_map": 132.46,
+    "chi2_ratio_flux_stack": 79.07,
+    "max_heii_hbeta": 0.0121,
+    "passes_heii_gate": true,
+    "demographic_chi2_z_le_7p5": 1.15,
+    "joint_flux": 80.22,
+    "per_subtype": {
+      "xLRD": {
+        "median_f_dense": 0.9512,
+        "median_map_oiii_hb": 2.233,
+        "flux_stack_oiii_hb": 1.942,
+        "observed_oiii_hb": 1.1
+      },
+      "plusLRD": {
+        "median_f_dense": 0.9072,
+        "median_map_oiii_hb": 3.113,
+        "flux_stack_oiii_hb": 3.398,
+        "observed_oiii_hb": 3.2
+      },
+      "minusLRD": {
+        "median_f_dense": 0.7538,
+        "median_map_oiii_hb": 4.279,
+        "flux_stack_oiii_hb": 4.138,
+        "observed_oiii_hb": 4.4
+      },
+      "bLRD": {
+        "median_f_dense": 0.4509,
+        "median_map_oiii_hb": 4.889,
+        "flux_stack_oiii_hb": 4.64,
+        "observed_oiii_hb": 4.9
+      }
+    }
+  }
+}

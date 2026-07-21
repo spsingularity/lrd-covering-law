@@ -1,0 +1,5 @@
+subtype,oiii5007_hbeta,oiii5007_hbeta_error,halpha_hbeta,halpha_hbeta_error,hbeta_hgamma,hbeta_hgamma_error,oiii5007_oii3727,oiii5007_oii3727_error,temperature_mbb_k,temperature_mbb_error_k,source
+xLRD,1.1,0.1,10.1,0.8,8.5,2.8,14.8,4.6,4100,100,"Perez-Gonzalez et al. 2026, arXiv:2602.20247, Table 3"
+plusLRD,3.2,0.1,8.0,0.3,4.4,1.0,21.8,6.6,3200,100,"Perez-Gonzalez et al. 2026, arXiv:2602.20247, Table 3"
+minusLRD,4.4,0.3,6.4,0.3,3.4,0.9,23.6,4.7,3100,100,"Perez-Gonzalez et al. 2026, arXiv:2602.20247, Table 3"
+bLRD,4.9,0.5,5.5,0.5,3.0,1.0,17.5,5.4,3600,200,"Perez-Gonzalez et al. 2026, arXiv:2602.20247, Table 3"

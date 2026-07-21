@@ -1,0 +1,99 @@
+{
+  "diagnostics": {
+    "filtered_dense": {
+      "halpha_hbeta": 3.3089840641514825,
+      "hbeta_hgamma": 2.0317137882430973,
+      "hei5876_hbeta": 0.0008964679956742641,
+      "hei7065_hbeta": 0.00039923279397661657,
+      "heii1640_hbeta": 6.829357873043727,
+      "heii4686_hbeta": 0.7291313840315045,
+      "lha_per_qh54": 5.409408931828432e+40,
+      "neiii3869_oii3727": 176446.90056976397,
+      "nii_halpha": 1.9364864031571807e-12,
+      "oi6300_halpha": 0.0,
+      "oiii5007_oii3727": 228869.46836310672,
+      "oiii5007_oiii4363": 0.1264811373240687,
+      "oiii_hbeta": 2.1802117978330516e-07,
+      "paalpha_halpha": 0.10122094098785227,
+      "sii_halpha": 3.037984830733181e-14
+    },
+    "filtered_diffuse_u_m1p5": {
+      "halpha_hbeta": 2.7667966201969025,
+      "hbeta_hgamma": 2.0948582687174273,
+      "hei5876_hbeta": 0.0029577828006249907,
+      "hei7065_hbeta": 0.0014362797894449417,
+      "heii1640_hbeta": 6.185585776914793,
+      "heii4686_hbeta": 0.728038106218049,
+      "lha_per_qh54": 1.923890368309768e+41,
+      "neiii3869_oii3727": 33.56859771014776,
+      "nii_halpha": 3.555348429190197e-05,
+      "oi6300_halpha": 1.6007456549152914e-09,
+      "oiii5007_oii3727": 1623.6911635189354,
+      "oiii5007_oiii4363": 20.116693187845723,
+      "oiii_hbeta": 0.2013622366165562,
+      "paalpha_halpha": 0.0924776577663249,
+      "sii_halpha": 1.4394648829431437e-05
+    },
+    "filtered_diffuse_u_m2p0": {
+      "halpha_hbeta": 2.795616522338877,
+      "hbeta_hgamma": 2.0988097791121594,
+      "hei5876_hbeta": 0.07258282882468645,
+      "hei7065_hbeta": 0.0438462717449613,
+      "heii1640_hbeta": 3.591462947352288,
+      "heii4686_hbeta": 0.43189771885457384,
+      "lha_per_qh54": 7.301050915697154e+41,
+      "neiii3869_oii3727": 13.334269717341186,
+      "nii_halpha": 0.0017391264619883039,
+      "oi6300_halpha": 2.6022934941520466e-06,
+      "oiii5007_oii3727": 281.01691303252807,
+      "oiii5007_oiii4363": 28.594450741708147,
+      "oiii_hbeta": 7.410657266201753,
+      "paalpha_halpha": 0.0944581505847953,
+      "sii_halpha": 0.0013032163742690058
+    },
+    "filtered_diffuse_u_m2p5": {
+      "halpha_hbeta": 2.884944729877004,
+      "hbeta_hgamma": 2.112134166392634,
+      "hei5876_hbeta": 0.10047596806120859,
+      "hei7065_hbeta": 0.0634372011298681,
+      "heii1640_hbeta": 1.9757790084740106,
+      "heii4686_hbeta": 0.2434554391583817,
+      "lha_per_qh54": 1.368209987792423e+42,
+      "neiii3869_oii3727": 0.8508130613645701,
+      "nii_halpha": 0.08718680132603501,
+      "oi6300_halpha": 0.028557551460951357,
+      "oiii5007_oii3727": 13.665120773819469,
+      "oiii5007_oiii4363": 38.00153206665746,
+      "oiii_hbeta": 6.730499766464268,
+      "paalpha_halpha": 0.0941330660704649,
+      "sii_halpha": 0.040211240459486555
+    }
+  },
+  "failed_models": [],
+  "filter_commands": [
+    "title standard AGN transmitted through an ionized He+ filtering screen",
+    "AGN 6.00 -1.40 -0.50 -1.0",
+    "hden 9",
+    "ionization parameter 1",
+    "abundances GASS",
+    "metals 0.2 linear",
+    "stop column density 21",
+    "no molecules",
+    "iterate 1",
+    "save transmitted continuum \"filtered_agn.trn\" last"
+  ],
+  "filter_file_bytes": 296171,
+  "filter_status": {
+    "cautions": 0,
+    "cloudy_exited_ok": true,
+    "iterations": 2,
+    "zones": 38
+  },
+  "scope": "Two-stage thermal Cloudy calculation: a standard AGN crosses an ionized screen, and the transmitted continuum illuminates the LRD zones.",
+  "successful_models": [
+    "filtered_diffuse_u_m2p5",
+    "filtered_diffuse_u_m2p0",
+    "filtered_diffuse_u_m1p5",
+    "filtered_dense"
+  ]
+}

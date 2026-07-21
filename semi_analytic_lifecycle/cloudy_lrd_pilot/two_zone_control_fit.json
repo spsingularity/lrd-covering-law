@@ -1,0 +1,413 @@
+{
+  "comparison": {
+    "conclusion": "Thermal balance supplies a subsolar, purely diffuse solution that is effectively tied with the numerical solar/high-dense minimum. The fixed-temperature solar preference was therefore not robust, and the parent control does not identify metallicity or dense fraction. Only an LRD-labelled sample with decomposed broad and narrow lines can do so.",
+    "dense_fraction_identified_by_parent_control": false,
+    "fixed_temperature_best_objective": 23.171867507627944,
+    "objective_improvement": 5.379773794372664,
+    "parsimonious_delta_objective_from_numerical_best": 0.007480454431910033,
+    "parsimonious_subsolar_diffuse_reference": {
+      "channel_mean_deviance": {
+        "halpha_hbeta": 5.755053113027589,
+        "nii_halpha": 10.95831314198588,
+        "oiii_hbeta": 1.0862079126737196
+      },
+      "dense_fraction_qh": 0.0,
+      "diffuse_logu": -2.5,
+      "diffuse_metallicity_zsun": 0.2,
+      "diffuse_model": "thermal_skin_u_mid",
+      "lha_per_qh54": 1.3696867389934945e+42,
+      "objective_equal_channel_mean_deviance": 17.79957416768719,
+      "predicted_ratios": {
+        "halpha_hbeta": 2.8852349738917895,
+        "heii1640_hbeta": 1.9785134985001667,
+        "nii_halpha": 0.08716211012706969,
+        "oiii_hbeta": 6.727252527496944,
+        "sii_halpha": 0.04016172506738544
+      }
+    },
+    "thermal_balance_best_objective": 17.79209371325528
+  },
+  "fixed_temperature_screening": {
+    "best_by_diffuse_hypothesis": [
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 7.531353412855243,
+          "nii_halpha": 14.6692759757829,
+          "oiii_hbeta": 0.9712381189898012
+        },
+        "dense_fraction_qh": 0.26,
+        "diffuse_logu": -2.0,
+        "diffuse_metallicity_zsun": 1.0,
+        "diffuse_model": "diffuse_z_solar",
+        "lha_per_qh54": 1.1729781407643018e+42,
+        "objective_equal_channel_mean_deviance": 23.171867507627944,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.648609075393281,
+          "heii1640_hbeta": 2.286720123403416,
+          "nii_halpha": 0.41725351918075604,
+          "oiii_hbeta": 6.485510828378567,
+          "sii_halpha": 0.47731210010467695
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 5.886302115098475,
+          "nii_halpha": 10.16748665029413,
+          "oiii_hbeta": 113.1279576870539
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -2.0,
+        "diffuse_metallicity_zsun": 0.2,
+        "diffuse_model": "diffuse_base",
+        "lha_per_qh54": 1.322014578498836e+42,
+        "objective_equal_channel_mean_deviance": 129.1817464524465,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.8638629958812056,
+          "heii1640_hbeta": 2.1933665727292437,
+          "nii_halpha": 0.09616985845129059,
+          "oiii_hbeta": 1.596285858804827,
+          "sii_halpha": 0.09235737895188355
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 5.013579928892843,
+          "nii_halpha": 10.230262520706962,
+          "oiii_hbeta": 186.38177650592732
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -3.0,
+        "diffuse_metallicity_zsun": 0.2,
+        "diffuse_model": "diffuse_u_low",
+        "lha_per_qh54": 1.6167851694254432e+42,
+        "objective_equal_channel_mean_deviance": 201.62561895552713,
+        "predicted_ratios": {
+          "halpha_hbeta": 3.0248377433849227,
+          "heii1640_hbeta": 1.5934223664503246,
+          "nii_halpha": 0.20278316484423353,
+          "oiii_hbeta": 1.2866325511732402,
+          "sii_halpha": 0.47470600371363725
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 6.188892416843481,
+          "nii_halpha": 131.70801047961234,
+          "oiii_hbeta": 116.60831724194055
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -1.0,
+        "diffuse_metallicity_zsun": 0.2,
+        "diffuse_model": "diffuse_u_high",
+        "lha_per_qh54": 1.1964944094757714e+42,
+        "objective_equal_channel_mean_deviance": 254.50522013839637,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.81753200848323,
+          "heii1640_hbeta": 2.4528316707250024,
+          "nii_halpha": 0.003970448843044327,
+          "oiii_hbeta": 1.5766239886890268,
+          "sii_halpha": 0.0020418176749372736
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 5.8995185196797175,
+          "nii_halpha": 100.01810104734099,
+          "oiii_hbeta": 2345.953071594656
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -2.0,
+        "diffuse_metallicity_zsun": 0.02,
+        "diffuse_model": "diffuse_z_0p02",
+        "lha_per_qh54": 1.3154100094139125e+42,
+        "objective_equal_channel_mean_deviance": 2451.870691161677,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.8617561683599417,
+          "heii1640_hbeta": 2.2366473149492023,
+          "nii_halpha": 0.009472549765436796,
+          "oiii_hbeta": 0.15822206095791003,
+          "sii_halpha": 0.008398884239888426
+        }
+      }
+    ],
+    "best_control_match": {
+      "channel_mean_deviance": {
+        "halpha_hbeta": 7.531353412855243,
+        "nii_halpha": 14.6692759757829,
+        "oiii_hbeta": 0.9712381189898012
+      },
+      "dense_fraction_qh": 0.26,
+      "diffuse_logu": -2.0,
+      "diffuse_metallicity_zsun": 1.0,
+      "diffuse_model": "diffuse_z_solar",
+      "lha_per_qh54": 1.1729781407643018e+42,
+      "objective_equal_channel_mean_deviance": 23.171867507627944,
+      "predicted_ratios": {
+        "halpha_hbeta": 2.648609075393281,
+        "heii1640_hbeta": 2.286720123403416,
+        "nii_halpha": 0.41725351918075604,
+        "oiii_hbeta": 6.485510828378567,
+        "sii_halpha": 0.47731210010467695
+      }
+    },
+    "detected_ratio_quantiles_for_visual_reference_only": {
+      "halpha_hbeta": {
+        "count": 207,
+        "median": 3.202266612141466,
+        "p16": 2.4861684303815443,
+        "p84": 4.083291501844552
+      },
+      "nii_halpha": {
+        "count": 62,
+        "median": 0.08384455972633988,
+        "p16": 0.05249339468763222,
+        "p84": 0.15826792771656853
+      },
+      "oiii_hbeta": {
+        "count": 198,
+        "median": 5.666903704788729,
+        "p16": 4.221485798236367,
+        "p84": 6.836734591668532
+      }
+    },
+    "interpretation_limit": "Detected-ratio quantiles are visualization aids and are not used for fitting because thresholding biases them high. Model rankings only test whether the proposed sequence overlaps an ordinary high-z spectral locus; an LRD-labelled spectral sample is still required.",
+    "likelihood": {
+      "counts": {
+        "halpha_hbeta": {
+          "censored_upper_limit": 0,
+          "flux_likelihood": 208,
+          "numerator_detected": 207,
+          "numerator_nondetected": 1,
+          "total": 208
+        },
+        "nii_halpha": {
+          "censored_upper_limit": 0,
+          "flux_likelihood": 215,
+          "numerator_detected": 62,
+          "numerator_nondetected": 153,
+          "total": 215
+        },
+        "oiii_hbeta": {
+          "censored_upper_limit": 0,
+          "flux_likelihood": 198,
+          "numerator_detected": 198,
+          "numerator_nondetected": 0,
+          "total": 198
+        }
+      },
+      "fractional_model_and_cross_band_floor": 0.2,
+      "method": "Gaussian likelihood on reported numerator flux conditional on a detected denominator; nondetected numerator fluxes are retained. A one-sided Gaussian CDF is used only if flux is absent but a 3-sigma upper limit exists.",
+      "objective": "sum over diagnostics of their mean -2 log-likelihood term; diagnostics receive equal weight"
+    },
+    "parameter_definition": "dense_fraction_qh is the fraction of incident Q(H) intercepted by dense clumps; it is not a gas-mass or volume fraction.",
+    "scope": "Descriptive confrontation with a UV-luminous JADES DR4 spectroscopic parent/control sample. The table has no LRD-specific classification, so this is not an LRD posterior or a calibrated population inference.",
+    "selection": {
+      "muv_max_brightward": -18.5,
+      "selected_parent_objects": 252,
+      "z_spec_max": 6.5,
+      "z_spec_min": 4.5
+    }
+  },
+  "preferred_tier": "thermal_balance_emitting_skin",
+  "thermal_balance_emitting_skin": {
+    "best_by_diffuse_hypothesis": [
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 4.798953782275631,
+          "nii_halpha": 11.881990495841523,
+          "oiii_hbeta": 1.1111494351381264
+        },
+        "dense_fraction_qh": 0.97,
+        "diffuse_logu": -3.0,
+        "diffuse_metallicity_zsun": 1.0,
+        "diffuse_model": "thermal_skin_u_low_solar",
+        "lha_per_qh54": 9.120116023732663e+40,
+        "objective_equal_channel_mean_deviance": 17.79209371325528,
+        "predicted_ratios": {
+          "halpha_hbeta": 3.0731252296434852,
+          "heii1640_hbeta": 4.468630404848046,
+          "nii_halpha": 0.26996403259341706,
+          "oiii_hbeta": 5.2936161366759364,
+          "sii_halpha": 0.1366509127909403
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 5.755053113027589,
+          "nii_halpha": 10.95831314198588,
+          "oiii_hbeta": 1.0862079126737196
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -2.5,
+        "diffuse_metallicity_zsun": 0.2,
+        "diffuse_model": "thermal_skin_u_mid",
+        "lha_per_qh54": 1.3696867389934945e+42,
+        "objective_equal_channel_mean_deviance": 17.79957416768719,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.8852349738917895,
+          "heii1640_hbeta": 1.9785134985001667,
+          "nii_halpha": 0.08716211012706969,
+          "oiii_hbeta": 6.727252527496944,
+          "sii_halpha": 0.04016172506738544
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 5.610884076974381,
+          "nii_halpha": 9.647853493034532,
+          "oiii_hbeta": 2.76354862295834
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -3.0,
+        "diffuse_metallicity_zsun": 0.2,
+        "diffuse_model": "thermal_skin_u_low",
+        "lha_per_qh54": 1.4501365474644464e+42,
+        "objective_equal_channel_mean_deviance": 18.022286192967254,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.9097115320259688,
+          "heii1640_hbeta": 1.7243825714476941,
+          "nii_halpha": 0.17779592400055205,
+          "oiii_hbeta": 4.457867612609598,
+          "sii_halpha": 0.11433730505589548
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 6.6343264097408,
+          "nii_halpha": 83.05443554092344,
+          "oiii_hbeta": 8.67467291270819
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -2.0,
+        "diffuse_metallicity_zsun": 1.0,
+        "diffuse_model": "thermal_skin_z_solar",
+        "lha_per_qh54": 9.97323288232955e+41,
+        "objective_equal_channel_mean_deviance": 98.36343486337242,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.755668202764977,
+          "heii1640_hbeta": 2.5297695852534563,
+          "nii_halpha": 0.012737549750827786,
+          "oiii_hbeta": 17.84516129032258,
+          "sii_halpha": 0.009204020201344526
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 5.885032581478222,
+          "nii_halpha": 142.21959741925008,
+          "oiii_hbeta": 0.9428533233551696
+        },
+        "dense_fraction_qh": 0.71,
+        "diffuse_logu": -2.0,
+        "diffuse_metallicity_zsun": 0.2,
+        "diffuse_model": "thermal_skin_base",
+        "lha_per_qh54": 2.5017794143440393e+41,
+        "objective_equal_channel_mean_deviance": 149.04748332408346,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.8640657967738954,
+          "heii1640_hbeta": 4.02962585451081,
+          "nii_halpha": 0.0014636208418099994,
+          "oiii_hbeta": 6.41283164922407,
+          "sii_halpha": 0.0010973889041672443
+        }
+      },
+      {
+        "channel_mean_deviance": {
+          "halpha_hbeta": 5.528812750468509,
+          "nii_halpha": 145.11957686216044,
+          "oiii_hbeta": 453.6198394575857
+        },
+        "dense_fraction_qh": 0.0,
+        "diffuse_logu": -2.0,
+        "diffuse_metallicity_zsun": 0.02,
+        "diffuse_model": "thermal_skin_z_0p02",
+        "lha_per_qh54": 7.2927118133172e+41,
+        "objective_equal_channel_mean_deviance": 604.2682290702147,
+        "predicted_ratios": {
+          "halpha_hbeta": 2.9241510291973736,
+          "heii1640_hbeta": 3.6985568499471686,
+          "nii_halpha": 0.0002086172986323926,
+          "oiii_hbeta": 0.8110663795524764,
+          "sii_halpha": 0.0001443214563417646
+        }
+      }
+    ],
+    "best_control_match": {
+      "channel_mean_deviance": {
+        "halpha_hbeta": 4.798953782275631,
+        "nii_halpha": 11.881990495841523,
+        "oiii_hbeta": 1.1111494351381264
+      },
+      "dense_fraction_qh": 0.97,
+      "diffuse_logu": -3.0,
+      "diffuse_metallicity_zsun": 1.0,
+      "diffuse_model": "thermal_skin_u_low_solar",
+      "lha_per_qh54": 9.120116023732663e+40,
+      "objective_equal_channel_mean_deviance": 17.79209371325528,
+      "predicted_ratios": {
+        "halpha_hbeta": 3.0731252296434852,
+        "heii1640_hbeta": 4.468630404848046,
+        "nii_halpha": 0.26996403259341706,
+        "oiii_hbeta": 5.2936161366759364,
+        "sii_halpha": 0.1366509127909403
+      }
+    },
+    "detected_ratio_quantiles_for_visual_reference_only": {
+      "halpha_hbeta": {
+        "count": 207,
+        "median": 3.202266612141466,
+        "p16": 2.4861684303815443,
+        "p84": 4.083291501844552
+      },
+      "nii_halpha": {
+        "count": 62,
+        "median": 0.08384455972633988,
+        "p16": 0.05249339468763222,
+        "p84": 0.15826792771656853
+      },
+      "oiii_hbeta": {
+        "count": 198,
+        "median": 5.666903704788729,
+        "p16": 4.221485798236367,
+        "p84": 6.836734591668532
+      }
+    },
+    "interpretation_limit": "Detected-ratio quantiles are visualization aids and are not used for fitting because thresholding biases them high. Model rankings only test whether the proposed sequence overlaps an ordinary high-z spectral locus; an LRD-labelled spectral sample is still required.",
+    "likelihood": {
+      "counts": {
+        "halpha_hbeta": {
+          "censored_upper_limit": 0,
+          "flux_likelihood": 208,
+          "numerator_detected": 207,
+          "numerator_nondetected": 1,
+          "total": 208
+        },
+        "nii_halpha": {
+          "censored_upper_limit": 0,
+          "flux_likelihood": 215,
+          "numerator_detected": 62,
+          "numerator_nondetected": 153,
+          "total": 215
+        },
+        "oiii_hbeta": {
+          "censored_upper_limit": 0,
+          "flux_likelihood": 198,
+          "numerator_detected": 198,
+          "numerator_nondetected": 0,
+          "total": 198
+        }
+      },
+      "fractional_model_and_cross_band_floor": 0.2,
+      "method": "Gaussian likelihood on reported numerator flux conditional on a detected denominator; nondetected numerator fluxes are retained. A one-sided Gaussian CDF is used only if flux is absent but a 3-sigma upper limit exists.",
+      "objective": "sum over diagnostics of their mean -2 log-likelihood term; diagnostics receive equal weight"
+    },
+    "parameter_definition": "dense_fraction_qh is the fraction of incident Q(H) intercepted by dense clumps; it is not a gas-mass or volume fraction.",
+    "scope": "Descriptive confrontation with a UV-luminous JADES DR4 spectroscopic parent/control sample. The table has no LRD-specific classification, so this is not an LRD posterior or a calibrated population inference.",
+    "selection": {
+      "muv_max_brightward": -18.5,
+      "selected_parent_objects": 252,
+      "z_spec_max": 6.5,
+      "z_spec_min": 4.5
+    }
+  }
+}

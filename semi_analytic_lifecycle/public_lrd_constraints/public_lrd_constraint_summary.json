@@ -1,0 +1,44 @@
+{
+  "perez_gonzalez26": {
+    "constraint_type": "four stacked spectral subtypes",
+    "source": "Perez-Gonzalez et al. 2026, arXiv:2602.20247",
+    "spectroscopic_lrd_count": 249,
+    "subtypes": [
+      "xLRD",
+      "plusLRD",
+      "minusLRD",
+      "bLRD"
+    ]
+  },
+  "rubies_hviding25": {
+    "all_broad_balmer_objects": 80,
+    "broad_fwhm_kms_p16_median_p84": [
+      1526.0576948870205,
+      2109.8286833964376,
+      2382.7499733246364
+    ],
+    "caution": "Published broad FWHM values come from Gaussian fits bounded below 2500 km/s and should not be treated as an unbiased tail.",
+    "license": "CC-BY-4.0",
+    "lrd_fields": [
+      "EGS",
+      "UDS"
+    ],
+    "lrd_fwhm_kms_p16_median_p84": [
+      1730.9574278754328,
+      2207.958708863409,
+      2458.361967817083
+    ],
+    "lrd_objects": 36,
+    "source": "Hviding et al. 2025, Zenodo 10.5281/zenodo.16758549 v2"
+  },
+  "sok26": {
+    "fraction_hard_agn_or_shock_diagnostics_lower_limit": 0.15,
+    "fraction_with_two_or_more_agn_like_diagnostics_lower_limit": 0.4,
+    "grating_diagnostic_count": 19,
+    "heii4686_hbeta_typical_upper": 0.1,
+    "interpretation": "Low-density channels are required in at least some LRDs, but the ionizing spectrum above about 54 eV is softer than a standard AGN for most objects.",
+    "parent_lrd_count": 120,
+    "source": "Sok et al. 2026, arXiv:2606.23778",
+    "typical_electron_temperature_k": 20000
+  }
+}

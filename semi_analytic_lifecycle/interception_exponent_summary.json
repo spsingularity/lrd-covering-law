@@ -1,0 +1,183 @@
+{
+  "catalog": "synthetic_catalog_physical_visibility_final.csv",
+  "n_sources": 11922,
+  "constants": {
+    "ionizing_bolometric_fraction": 0.5,
+    "mean_ionizing_energy_ryd": 3.26,
+    "qstar_per_sfr": 1e+53
+  },
+  "regressions": {
+    "A_interception_odds": {
+      "global": {
+        "eta_emergent": 1.040713074486927,
+        "intercept": 1.3327777767972582,
+        "corr": 0.22903103779584857
+      },
+      "z45_65": {
+        "eta_emergent": 1.0033872062877887,
+        "intercept": 1.374560750200231,
+        "corr": 0.21473671866435834
+      }
+    },
+    "B_stellar_diffuse": {
+      "global": {
+        "eta_emergent": 0.8003516718555952,
+        "intercept": 0.38820114741360384,
+        "corr": 0.6804217751618005
+      },
+      "z45_65": {
+        "eta_emergent": 0.694288331334754,
+        "intercept": 0.4375552930761746,
+        "corr": 0.6448326469098133
+      }
+    },
+    "C_full_competition": {
+      "global": {
+        "eta_emergent": 0.5940087094514345,
+        "intercept": 0.23667854368182561,
+        "corr": 0.5143187450988805
+      },
+      "z45_65": {
+        "eta_emergent": 0.5310686747286723,
+        "intercept": 0.27879080980381005,
+        "corr": 0.4732581923679651
+      }
+    },
+    "D_dust_quenched_912": {
+      "global": {
+        "eta_emergent": 0.6435874318365153,
+        "intercept": 0.26699952630067336,
+        "corr": 0.4853561956555422
+      },
+      "z45_65": {
+        "eta_emergent": 0.578705662745588,
+        "intercept": 0.3092879576452875,
+        "corr": 0.4490555103815424
+      }
+    },
+    "D_dust_quenched_2500": {
+      "global": {
+        "eta_emergent": 0.8265271398287737,
+        "intercept": 0.39925359593380344,
+        "corr": 0.6690660120069544
+      },
+      "z45_65": {
+        "eta_emergent": 0.7181900059796295,
+        "intercept": 0.4482768253445551,
+        "corr": 0.6334070257310296
+      }
+    }
+  },
+  "stack_confrontation": {
+    "A_interception_odds": {
+      "median_f_dense": {
+        "xLRD": 0.9998,
+        "plusLRD": 0.9953,
+        "minusLRD": 0.8697,
+        "bLRD": 0.818
+      },
+      "chi2_vs_stacks": 9.9
+    },
+    "B_stellar_diffuse": {
+      "median_f_dense": {
+        "xLRD": 0.94,
+        "plusLRD": 0.9314,
+        "minusLRD": 0.6891,
+        "bLRD": 0.6087
+      },
+      "chi2_vs_stacks": 3.7
+    },
+    "C_full_competition": {
+      "median_f_dense": {
+        "xLRD": 0.939,
+        "plusLRD": 0.9171,
+        "minusLRD": 0.6259,
+        "bLRD": 0.5416
+      },
+      "chi2_vs_stacks": 3.84
+    },
+    "D_dust_quenched_912": {
+      "median_f_dense": {
+        "xLRD": 0.954,
+        "plusLRD": 0.9359,
+        "minusLRD": 0.6261,
+        "bLRD": 0.5418
+      },
+      "chi2_vs_stacks": 3.78
+    },
+    "D_dust_quenched_2500": {
+      "median_f_dense": {
+        "xLRD": 0.9447,
+        "plusLRD": 0.9386,
+        "minusLRD": 0.6892,
+        "bLRD": 0.6088
+      },
+      "chi2_vs_stacks": 3.74
+    }
+  },
+  "closure_reference": {
+    "imposed_D2_closure": {
+      "median_f_dense": {
+        "xLRD": 0.9786,
+        "plusLRD": 0.8949,
+        "minusLRD": 0.6869,
+        "bLRD": 0.2003
+      },
+      "chi2_vs_stacks": 0.38
+    }
+  },
+  "required_lemma2_law": {
+    "reference_model": "B_stellar_diffuse",
+    "per_subtype": {
+      "xLRD": {
+        "median_d": 6.764,
+        "physical_odds": 15.674,
+        "required_odds": 51.632,
+        "correction_factor": 3.294
+      },
+      "plusLRD": {
+        "median_d": 2.918,
+        "physical_odds": 13.571,
+        "required_odds": 9.101,
+        "correction_factor": 0.671
+      },
+      "minusLRD": {
+        "median_d": 1.481,
+        "physical_odds": 2.217,
+        "required_odds": 2.817,
+        "correction_factor": 1.271
+      },
+      "bLRD": {
+        "median_d": 0.5,
+        "physical_odds": 1.555,
+        "required_odds": 0.094,
+        "correction_factor": 0.06
+      }
+    },
+    "required_extra_power_of_d": 1.397,
+    "required_normalization_log10": -0.599
+  },
+  "qstar_bracket_chi2": {
+    "qstar_x0.33": {
+      "A_interception_odds": 9.9,
+      "B_stellar_diffuse": 8.61,
+      "C_full_competition": 4.76,
+      "D_dust_quenched_912": 5.1,
+      "D_dust_quenched_2500": 8.76
+    },
+    "qstar_x3.00": {
+      "A_interception_odds": 9.9,
+      "B_stellar_diffuse": 20.2,
+      "C_full_competition": 22.89,
+      "D_dust_quenched_912": 16.92,
+      "D_dust_quenched_2500": 18.05
+    }
+  },
+  "notes": [
+    "eta_emergent is the weighted slope of log R on log D; the imposed",
+    "closure would give exactly 2.0 by construction and is excluded here.",
+    "The stellar conversion constant cannot change eta_emergent, only",
+    "the stack-confrontation chi2, for which the factor-3 bracket is",
+    "reported."
+  ]
+}

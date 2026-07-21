@@ -1,0 +1,18 @@
+{
+  "failed_models": [],
+  "models_with_cautions": [
+    "thermal_skin_z_solar",
+    "thermal_skin_u_mid"
+  ],
+  "scope": "Self-consistent local thermal-balance anchors through log N_H=21. The metallicity sequence uses one transfer pass; a two-pass baseline measures diffuse-field iteration sensitivity. These are thermal anchors, not a converged full-column publication grid.",
+  "successful_models": [
+    "thermal_skin_z_0p02",
+    "thermal_skin_base",
+    "thermal_skin_z_solar",
+    "thermal_skin_u_mid",
+    "thermal_skin_u_low",
+    "thermal_skin_u_low_solar",
+    "thermal_skin_base_iter2",
+    "thermal_dense_skin"
+  ]
+}

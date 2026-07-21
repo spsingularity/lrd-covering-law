@@ -1,0 +1,181 @@
+{
+  "preferred_screen": {
+    "cached": true,
+    "filter_lognh": 21.0,
+    "filter_logu": -1.5,
+    "heplus_to_h_transmission_ratio": 0.9914422980682615,
+    "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9991,
+    "median_transmission_heplus_4p1_to_10_ryd": 0.99055,
+    "median_transmission_soft_xray_10_to_100_ryd": 1.0,
+    "name": "filter_u_m1p5_nh21",
+    "status": {
+      "cautions": 0,
+      "cloudy_exited_ok": true,
+      "iterations": 2,
+      "zones": 44
+    }
+  },
+  "screens": [
+    {
+      "cached": true,
+      "filter_lognh": 21.0,
+      "filter_logu": 0.0,
+      "heplus_to_h_transmission_ratio": 0.9992999299929992,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9999,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.9992,
+      "median_transmission_soft_xray_10_to_100_ryd": 0.9989,
+      "name": "filter_u_0_nh21",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 41
+      }
+    },
+    {
+      "cached": true,
+      "filter_lognh": 22.0,
+      "filter_logu": 0.0,
+      "heplus_to_h_transmission_ratio": 0.9943955164131306,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9992,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.9936,
+      "median_transmission_soft_xray_10_to_100_ryd": 0.9905,
+      "name": "filter_u_0_nh22",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 52
+      }
+    },
+    {
+      "cached": true,
+      "filter_lognh": 21.0,
+      "filter_logu": -0.5,
+      "heplus_to_h_transmission_ratio": 0.9972497249724972,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9999,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.99715,
+      "median_transmission_soft_xray_10_to_100_ryd": 0.9995,
+      "name": "filter_u_m0p5_nh21",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 42
+      }
+    },
+    {
+      "cached": true,
+      "filter_lognh": 21.0,
+      "filter_logu": -1.0,
+      "heplus_to_h_transmission_ratio": 0.995298589576873,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9997,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.995,
+      "median_transmission_soft_xray_10_to_100_ryd": 0.9999,
+      "name": "filter_u_m1_nh21",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 44
+      }
+    },
+    {
+      "cached": true,
+      "filter_lognh": 20.5,
+      "filter_logu": -1.5,
+      "heplus_to_h_transmission_ratio": 0.9964989496849054,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9997,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.9962,
+      "median_transmission_soft_xray_10_to_100_ryd": 1.0,
+      "name": "filter_u_m1p5_nh20p5",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 40
+      }
+    },
+    {
+      "cached": true,
+      "filter_lognh": 21.0,
+      "filter_logu": -1.5,
+      "heplus_to_h_transmission_ratio": 0.9914422980682615,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9991,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.99055,
+      "median_transmission_soft_xray_10_to_100_ryd": 1.0,
+      "name": "filter_u_m1p5_nh21",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 44
+      }
+    },
+    {
+      "cached": true,
+      "filter_lognh": 20.5,
+      "filter_logu": -2.0,
+      "heplus_to_h_transmission_ratio": 0.9939457620334234,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9993,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.99325,
+      "median_transmission_soft_xray_10_to_100_ryd": 1.0,
+      "name": "filter_u_m2_nh20p5",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 41
+      }
+    },
+    {
+      "cached": false,
+      "filter_lognh": 20.0,
+      "filter_logu": -2.5,
+      "heplus_to_h_transmission_ratio": 0.9977986792075245,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9994,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.9972,
+      "median_transmission_soft_xray_10_to_100_ryd": 1.0,
+      "name": "filter_u_m2p5_nh20",
+      "status": {
+        "cautions": 0,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 38
+      }
+    },
+    {
+      "cached": false,
+      "filter_lognh": 20.0,
+      "filter_logu": -3.0,
+      "heplus_to_h_transmission_ratio": 1.000851149051219,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.99865,
+      "median_transmission_heplus_4p1_to_10_ryd": 0.9995,
+      "median_transmission_soft_xray_10_to_100_ryd": 1.0,
+      "name": "filter_u_m3_nh20",
+      "status": {
+        "cautions": 3,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 42
+      }
+    },
+    {
+      "cached": false,
+      "filter_lognh": 19.5,
+      "filter_logu": -3.5,
+      "heplus_to_h_transmission_ratio": 1.0006003602161297,
+      "median_transmission_h_ionizing_1_to_3p8_ryd": 0.9994,
+      "median_transmission_heplus_4p1_to_10_ryd": 1.0,
+      "median_transmission_soft_xray_10_to_100_ryd": 1.0,
+      "name": "filter_u_m3p5_nh19p5",
+      "status": {
+        "cautions": 2,
+        "cloudy_exited_ok": true,
+        "iterations": 2,
+        "zones": 38
+      }
+    }
+  ],
+  "selection_rule": "Minimize median 4.1--10 Ryd transmission relative to 1--3.8 Ryd, requiring at least 20% median transmission below the He+ edge."
+}

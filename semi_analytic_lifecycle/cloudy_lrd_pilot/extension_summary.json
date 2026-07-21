@@ -1,0 +1,21 @@
+{
+  "failed_models": [],
+  "models_with_cautions": [
+    "dense_u_0p5",
+    "dense_u_1p0",
+    "dense_z_0p02"
+  ],
+  "scope": "Fixed-temperature Cloudy support expansion: dense high-U, very-low-Z and intermediate-density points plus a diffuse metal-line zone. Not a factorial grid.",
+  "successful_models": [
+    "dense_u_0p5",
+    "dense_u_1p0",
+    "dense_z_0p02",
+    "dense_n_9",
+    "dense_n_11",
+    "diffuse_base",
+    "diffuse_u_low",
+    "diffuse_u_high",
+    "diffuse_z_0p02",
+    "diffuse_z_solar"
+  ]
+}
