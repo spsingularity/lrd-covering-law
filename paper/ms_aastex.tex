@@ -6,11 +6,13 @@
 \setcounter{topnumber}{3}
 \setcounter{dbltopnumber}{3}
 \setcounter{totalnumber}{5}
-\renewcommand{\topfraction}{0.92}
-\renewcommand{\dbltopfraction}{0.92}
-\renewcommand{\textfraction}{0.08}
-\renewcommand{\floatpagefraction}{0.75}
-\renewcommand{\dblfloatpagefraction}{0.75}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\textfraction}{0.06}
+%% keep floatpagefraction high so a wide figure is placed at a page top WITH
+%% text below it, instead of getting a near-empty dedicated float page.
+\renewcommand{\floatpagefraction}{0.9}
+\renewcommand{\dblfloatpagefraction}{0.9}
 \shorttitle{An engine-regulated covering law for LRDs}
 \shortauthors{Pandev}
 
@@ -438,7 +440,7 @@ the seed range of the physical partition (5.0--15.6) straddles 12.9,
 ``at least as well'' is a fiducial-seed statement.
 
 \begin{deluxetable}{lcccc}
-\tabletypesize{\footnotesize}
+\tabletypesize{\scriptsize}
 \tablecaption{Direct confrontation with the stacked line ratios at
 $4.5\le z\le6.5$ under the fitted law with $\epsilon=0.1$. The inverted
 dense fractions (final columns) are shown as model-conditional

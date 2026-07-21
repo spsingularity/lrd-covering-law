@@ -75,6 +75,42 @@
       }
     },
     {
+      "gamma": 3.5,
+      "k": 0.5,
+      "chi2_ratio_median_map": 57.47,
+      "chi2_ratio_flux_stack": 56.92,
+      "max_heii_hbeta": 0.0166,
+      "passes_heii_gate": true,
+      "demographic_chi2_z_le_7p5": 3.03,
+      "joint_flux": 59.95,
+      "per_subtype": {
+        "xLRD": {
+          "median_f_dense": 0.9883,
+          "median_map_oiii_hb": 0.773,
+          "flux_stack_oiii_hb": 0.58,
+          "observed_oiii_hb": 1.1
+        },
+        "plusLRD": {
+          "median_f_dense": 0.9388,
+          "median_map_oiii_hb": 2.54,
+          "flux_stack_oiii_hb": 2.69,
+          "observed_oiii_hb": 3.2
+        },
+        "minusLRD": {
+          "median_f_dense": 0.7036,
+          "median_map_oiii_hb": 4.449,
+          "flux_stack_oiii_hb": 4.179,
+          "observed_oiii_hb": 4.4
+        },
+        "bLRD": {
+          "median_f_dense": 0.3906,
+          "median_map_oiii_hb": 4.946,
+          "flux_stack_oiii_hb": 4.718,
+          "observed_oiii_hb": 4.9
+        }
+      }
+    },
+    {
       "gamma": 1.5,
       "k": 1.0,
       "chi2_ratio_median_map": 343.09,
@@ -178,6 +214,42 @@
           "median_f_dense": 0.4769,
           "median_map_oiii_hb": 4.861,
           "flux_stack_oiii_hb": 4.548,
+          "observed_oiii_hb": 4.9
+        }
+      }
+    },
+    {
+      "gamma": 1.5,
+      "k": 1.5,
+      "chi2_ratio_median_map": 182.78,
+      "chi2_ratio_flux_stack": 88.3,
+      "max_heii_hbeta": 0.0153,
+      "passes_heii_gate": true,
+      "demographic_chi2_z_le_7p5": 3.57,
+      "joint_flux": 91.86,
+      "per_subtype": {
+        "xLRD": {
+          "median_f_dense": 0.9754,
+          "median_map_oiii_hb": 1.407,
+          "flux_stack_oiii_hb": 0.979,
+          "observed_oiii_hb": 1.1
+        },
+        "plusLRD": {
+          "median_f_dense": 0.9606,
+          "median_map_oiii_hb": 1.954,
+          "flux_stack_oiii_hb": 2.364,
+          "observed_oiii_hb": 3.2
+        },
+        "minusLRD": {
+          "median_f_dense": 0.8943,
+          "median_map_oiii_hb": 3.289,
+          "flux_stack_oiii_hb": 3.411,
+          "observed_oiii_hb": 4.4
+        },
+        "bLRD": {
+          "median_f_dense": 0.7363,
+          "median_map_oiii_hb": 4.344,
+          "flux_stack_oiii_hb": 4.057,
           "observed_oiii_hb": 4.9
         }
       }
