@@ -1,0 +1,31 @@
+{
+  "scope": "fitted-law model (coregulated 2,1 + physical visibility), z~9.5 snapshot, M_UV < -18.5; densities carry the fitted abundance normalization",
+  "abundance_normalization": 0.3894008292694981,
+  "reported_broad_selection_density": 3.18e-05,
+  "selected_density": 5.03768698949132e-06,
+  "selected_deficit_factor": 6.312420772933136,
+  "intrinsic_muv185_density": 0.0010804659315464475,
+  "intrinsic_headroom_factor": 33.97691608636627,
+  "per_subtype": {
+    "xLRD": {
+      "intrinsic_density": 0.0,
+      "selected_density": 0.0,
+      "pass_fraction": null
+    },
+    "plusLRD": {
+      "intrinsic_density": 2.4314334638486277e-07,
+      "selected_density": 1.3738709606319317e-07,
+      "pass_fraction": 0.5650456741091657
+    },
+    "minusLRD": {
+      "intrinsic_density": 1.8516399242139188e-06,
+      "selected_density": 1.5431333818165126e-06,
+      "pass_fraction": 0.8333873998054038
+    },
+    "bLRD": {
+      "intrinsic_density": 0.0010783711482758485,
+      "selected_density": 2.8077278513238137e-06,
+      "pass_fraction": 0.002603674862604534
+    }
+  }
+}

@@ -9,7 +9,7 @@
     "n_detected": 179,
     "log_lha_detected_quantiles": [
       41.36398576690757,
-      41.679714806539344,
+      41.67971480653934,
       42.0584717532096
     ],
     "flux_unit": "1e-20 erg s^-1 cm^-2"
@@ -21,7 +21,17 @@
       42.573062510257785,
       42.87834516701816
     ],
-    "median_offset_model_minus_control_dex": 0.8933477037184403
+    "median_offset_model_minus_control_dex": 0.8933477037184474
+  },
+  "model_halpha_fitted_law": {
+    "catalog": "synthetic_catalog_coregulated_covering_mid.csv",
+    "n_synthetic_support": 705,
+    "log_lha_weighted_quantiles": [
+      42.01970266634867,
+      42.3244215753165,
+      42.586616703638576
+    ],
+    "median_offset_model_minus_control_dex": 0.6447067687771622
   },
   "channel_predictions": {
     "secular_compaction": {

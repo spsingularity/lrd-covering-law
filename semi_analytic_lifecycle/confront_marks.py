@@ -72,6 +72,29 @@ def load_model():
     return values
 
 
+def fitted_law_halpha(control_median):
+    """H-alpha calibration marker under the fitted covering law (paper
+    Sec. 4.3): the same UV/redshift-matched offset computed on the
+    coregulated_covering_mid catalogue (+0.64 dex vs the +0.89 dex baseline
+    of the early-visibility model above)."""
+    path = HERE / "synthetic_catalog_coregulated_covering_mid.csv"
+    if not path.exists():
+        return None
+    rows = list(csv.DictReader(path.open()))
+    selected = [row for row in rows if abs(float(row["z"]) - 5.5) < 0.1
+                and -20.5 <= float(row["muv"]) <= -18.0]
+    lha = np.array([float(row["log_lha"]) for row in selected])
+    weight = np.array([float(row["weight_cMpc3"]) for row in selected])
+    quantiles = weighted_quantile(lha, weight)
+    return {
+        "catalog": path.name,
+        "n_synthetic_support": len(selected),
+        "log_lha_weighted_quantiles": quantiles,
+        "median_offset_model_minus_control_dex":
+            float(quantiles[1] - control_median),
+    }
+
+
 def main():
     public, model = load_public_control(), load_model()
     detected_lha = public["log_lha"][public["detected"]]
@@ -102,6 +125,7 @@ def main():
             "log_lha_weighted_quantiles": q_model,
             "median_offset_model_minus_control_dex": float(q_model[1] - q_public[1]),
         },
+        "model_halpha_fitted_law": fitted_law_halpha(q_public[1]),
         "channel_predictions": channels,
         "not_yet_testable": [
             "LRD-specific H-alpha distribution: final LRD IDs and visual decisions are unreleased",

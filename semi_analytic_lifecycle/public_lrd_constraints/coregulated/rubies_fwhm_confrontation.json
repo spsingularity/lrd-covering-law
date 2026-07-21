@@ -1,23 +1,23 @@
 {
   "compact_model_fwhm_kms_p16_median_p84": [
-    1803.0517831359564,
-    2246.19480059056,
-    3101.238584794741
+    1622.9964142509623,
+    2244.3806359178448,
+    2944.637910569167
   ],
   "compact_radius_bootstrap_68_percent_au": [
-    5526.538477858942,
-    7062.942390750151
+    6327.464699873444,
+    8507.528186029662
   ],
-  "compact_radius_descriptive_fit_au": 5863.648538593457,
-  "compact_weighted_cdf_distance": 0.3540496139516427,
-  "electron_scattering_fwhm_kms_median": 1211.0115146810365,
+  "compact_radius_descriptive_fit_au": 6885.9690124950475,
+  "compact_weighted_cdf_distance": 0.32475399930278037,
+  "electron_scattering_fwhm_kms_median": 1548.0191129339876,
   "inference_status": "Descriptive scale calibration only; reverberation, profile modeling, or an uncensored width likelihood is needed for a physical posterior.",
   "legacy_reservoir_model_fwhm_kms_p16_median_p84": [
-    900.1932041590542,
-    1211.994321152708,
-    1475.4257506609827
+    1055.0408709493151,
+    1548.7243908687724,
+    1904.1273744248324
   ],
-  "legacy_weighted_cdf_distance": 0.7825056794690787,
+  "legacy_weighted_cdf_distance": 0.6135101979946747,
   "lifecycle_config": {
     "bh_inflow_fraction": 0.015,
     "broad_line_radius_au": 1360.0,
@@ -47,7 +47,7 @@
     "covering_poisson_law": false,
     "covering_relax_gyr": 0.08,
     "covering_saturating_law": false,
-    "dt_gyr": 0.012,
+    "dt_gyr": 0.006,
     "dust_to_gas_scale": 0.12,
     "dynamic_covering_enabled": false,
     "early_burst_bh_fraction": 0.035,
@@ -75,7 +75,7 @@
     "logm_max": 10.8,
     "logm_min": 7.0,
     "n_halo": 12000,
-    "physical_visibility_enabled": false,
+    "physical_visibility_enabled": true,
     "porous_envelope_enabled": true,
     "radiative_efficiency": 0.1,
     "recurrence_rate_gyr": 0.1,
@@ -100,8 +100,8 @@
     "z_end": 2.0,
     "z_start": 15.0
   },
-  "matched_median_logmbh": 7.372341929867205,
-  "matched_median_tau_e": 1.2120238749504613,
+  "matched_median_logmbh": 7.2595273191020535,
+  "matched_median_tau_e": 1.9804654330652314,
   "observed_fwhm_kms_p16_median_p84": [
     1630.4021573934501,
     2245.0777048850514,

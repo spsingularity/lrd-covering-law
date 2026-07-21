@@ -25,12 +25,17 @@ HERE = Path(__file__).resolve().parent
 
 
 class CoregulatedConfig(Config):
-    """Config with the scan-preferred co-regulated covering law applied."""
+    """The paper's fitted-law model: co-regulated covering with the
+    physical-visibility observation layer and the fiducial integration step
+    (the same configuration that produces the coregulated_covering_mid
+    catalogue used for Tables 1-2, Fig. 1, and the demography)."""
 
     def __init__(self, **kwargs):
         kwargs.setdefault("coregulated_covering_enabled", True)
         kwargs.setdefault("covering_odds_index", 2.0)
         kwargs.setdefault("covering_odds_normalization", 1.0)
+        kwargs.setdefault("physical_visibility_enabled", True)
+        kwargs["dt_gyr"] = 0.006
         super().__init__(**kwargs)
 
 

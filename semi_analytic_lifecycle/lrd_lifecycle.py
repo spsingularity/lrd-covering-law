@@ -982,6 +982,23 @@ def simulate(cfg: Config, store_catalog=True):
                 "corr_size_fwhm": weighted_corr(np.log10(obs["reff_pc"][sel]),
                                                   np.log10(obs["fwhm"][sel]), w),
             }
+            # Intrinsic (selection-free) densities of the nuclear-active,
+            # UV-bright population, computed on the FULL array before the
+            # p_select > 1e-6 storage floor: the catalogue cannot recover
+            # these (Letter Sec. 5 headroom), so they are emitted here.
+            active_states = (state == EMBEDDED) | (state == CLEARING)
+            bright = active_states & (obs["muv"] < -18.5)
+            row["density_active_muv185_intrinsic"] = float(
+                np.sum(snapshot_weight[bright]))
+            row["density_active_muv185_selected"] = float(
+                np.sum(snapshot_weight[bright] * obs["p_select"][bright]))
+            if cfg.physical_visibility_enabled:
+                for st in ("xLRD", "plusLRD", "minusLRD", "bLRD"):
+                    ms = bright & (obs["visibility_subtype"] == st)
+                    row[f"density_muv185_intrinsic_{st}"] = float(
+                        np.sum(snapshot_weight[ms]))
+                    row[f"density_muv185_selected_{st}"] = float(
+                        np.sum(snapshot_weight[ms] * obs["p_select"][ms]))
             summaries.append(row)
             if store_catalog and np.any(sel):
                 selected_indices = np.flatnonzero(sel)
@@ -1176,6 +1193,7 @@ def plot_results(result, suffix="fiducial"):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--n-halo", type=int, default=Config.n_halo)
+    parser.add_argument("--dt-gyr", type=float, default=Config.dt_gyr)
     parser.add_argument("--seed", type=int, default=Config.seed)
     parser.add_argument("--suffix", default="fiducial")
     parser.add_argument("--early-burst-rate", type=float,
@@ -1224,7 +1242,7 @@ def main():
                         default=Config.visibility_coupling_index,
                         help="global core/host coupling exponent for the dense Q(H) odds")
     args = parser.parse_args()
-    cfg = Config(n_halo=args.n_halo, seed=args.seed,
+    cfg = Config(n_halo=args.n_halo, seed=args.seed, dt_gyr=args.dt_gyr,
                  early_burst_rate_gyr=args.early_burst_rate,
                  early_burst_reservoir_fraction=args.early_burst_reservoir_fraction,
                  early_burst_visibility_gyr=args.early_burst_visibility_gyr,

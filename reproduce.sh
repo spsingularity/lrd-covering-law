@@ -19,8 +19,9 @@ $PY confront_rubies_fwhm.py               # Fig. 3 (RUBIES widths)
 $PY confront_rubies_fwhm_coregulated.py   # Fig. 3 coregulated variant
 $PY analyze_subtype_march.py              # Fig. 4 + Letter Table 1 data
 $PY plot_subtype_march_bands.py           # Letter Fig. 1 (bands)
-$PY confront_marks.py                     # marks confrontation
-$PY highz_marks.py                        # Letter Table 2 (z~9.5 gate-passing)
+$PY confront_marks.py                     # marks + H-alpha marker (+0.89 -> +0.64)
+$PY highz_marks.py                        # high-z channel marks
+$PY highz_gate_fractions.py               # Letter Table 2 + ~34x headroom (Sec. 6)
 $PY evaluate_physical_visibility_closure.py
 
 echo "==> [2/3] Collecting the manuscript figures into paper/"
