@@ -91,4 +91,7 @@ C23/C25 build (see `semi_analytic_lifecycle/CLOUDY_INSTALLATION.md`).
 ## Citation
 
 Please cite the manuscript (DOI to be assigned at submission), this code
-record, the companion data record, and the underlying public data products.
+record — archived as
+[doi:10.5281/zenodo.21475322](https://doi.org/10.5281/zenodo.21475322)
+(v1.0.0) — the companion data record, and the underlying public data
+products.
