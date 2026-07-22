@@ -647,11 +647,21 @@ per-subtype gate-passing fractions that reconcile bLRD dominance of the
 selected sample with the removal of the blue headroom); a red-dominated
 census would falsify this resolution. The decisive external products are
 injection/recovery completeness for blue compact templates and the
-effective-area masks.
+effective-area masks. Both are measurable model-independently: survey
+depth is an exclusion restriction---it changes detection without changing
+the source---so re-running the color selection on the same field imaged,
+or artificially degraded, to two depths measures the gate's completeness
+directly. Applied to JADES SED properties, this cross-depth technique
+shows that selection bias near the detection limit is observable-dependent
+and flips sign at the Balmer break \citep{PandevXDC}---the wavelength at
+which the V-shape gate operates---independently supporting the conclusion
+that color-gated LRD demography is selection-dominated.
 
 \section{Limitations}\label{sec:limits}
 The observation layer remains a set of transparent proxies: the selection
-gates are not the survey pipelines; the X-ray transfer over-suppresses
+gates are not the survey pipelines (though cross-depth reselection offers
+a model-independent calibration path; \citealt{PandevXDC}); the X-ray
+transfer over-suppresses
 known bands; and the Balmer decrement is not solved (intrinsic
 H$\alpha$/H$\beta\simeq2.8$--3.2 against observed 5.5--10.1
 \citep{PerezGonzalez2026}; a smooth screen with $A_{V}\simeq2$--4 toward
@@ -778,6 +788,9 @@ arXiv:2503.16596
 A. 2025, ApJL, 989, L19
 \bibitem[Pacucci \& Narayan(2024)]{PacucciNarayan2024} Pacucci, F., \&
 Narayan, R. 2024, ApJ, 976, 96
+\bibitem[Pandev(2026d)]{PandevXDC} Pandev, S. 2026d, XDC: the
+observable dependence of correlated selection bias in JWST
+high-redshift galaxies, Zenodo, doi:10.5281/zenodo.21400943
 \bibitem[P\'erez-Gonz\'alez et al.(2026)]{PerezGonzalez2026}
 P\'erez-Gonz\'alez, P. G., et al. 2026, arXiv:2602.20247
 \bibitem[Pizzati et al.(2025)]{Pizzati2025} Pizzati, E., et al. 2025,
