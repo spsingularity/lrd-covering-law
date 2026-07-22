@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or the covering-law model, please cite it using the metadata below."
+title: "An engine-regulated covering law for little red dots — reproduction code"
+abstract: >-
+  Semi-analytic lifecycle model and full reproduction pipeline for "An
+  Engine-Regulated Covering Law for Little Red Dots" and its companion Letter
+  "Little Red Dots Should Turn Red Over Cosmic Time." A single equilibrium
+  relation — covering odds equal to the squared intrinsic engine-to-host
+  continuum contrast, C/(1-C) = x^2 — is confronted jointly with the stacked
+  line-ratio subtype sequence, the number-density demography, and the RUBIES
+  broad-line widths. One script (reproduce.sh) regenerates every figure,
+  table, and both manuscripts; all runs are seeded and deterministic.
+type: software
+authors:
+  - family-names: Pandev
+    given-names: Stilian
+    orcid: "https://orcid.org/0009-0005-8153-071X"
+    email: stilianpandev@gmail.com
+license: MIT
+repository-code: "https://github.com/spsingularity/lrd-covering-law"
+version: "1.0.0"
+date-released: "2026-07-21"
+keywords:
+  - "little red dots"
+  - "active galactic nuclei"
+  - "supermassive black holes"
+  - "galaxies: high-redshift"
+  - "galaxy evolution"
+  - "JWST"
+  - "semi-analytic model"
+  - "reproducible research"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21475322"
+    description: "Archived code (v1.0.0) on Zenodo"
+  - type: doi
+    value: "10.5281/zenodo.21476542"
+    description: "Companion data record: the full 67-configuration forward-catalogue grid (CC-BY-4.0)"

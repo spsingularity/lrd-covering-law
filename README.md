@@ -1,14 +1,19 @@
 # An Engine-Regulated Covering Law for Little Red Dots — code & data
 
-Reproduction package for the manuscript *"An Engine-Regulated Covering Law
-for Little Red Dots: One Equilibrium Relation for Their Spectral Sequence,
-Demography, and Broad-Line Widths"* (S. Pandev) and its companion Letter
-*"Little Red Dots Should Turn Red Over Cosmic Time."*
+Code and papers for *"An Engine-Regulated Covering Law for Little Red Dots:
+One Equilibrium Relation for Their Spectral Sequence, Demography, and
+Broad-Line Widths"* ([`paper/ms_aastex.pdf`](paper/ms_aastex.pdf)) and its
+companion Letter *"Little Red Dots Should Turn Red Over Cosmic Time"*
+([`paper/letter_subtype_march.pdf`](paper/letter_subtype_march.pdf)).
 
-The central result is a single equilibrium relation — the covering odds of
-the nuclear reprocessor equal the squared intrinsic engine-to-host continuum
-contrast, `C/(1-C) = x^2` — confronted jointly with the stacked line-ratio
-sequence, the number-density demography, and the RUBIES broad-line widths.
+One equilibrium relation — the covering odds of the nuclear reprocessor
+equal the squared intrinsic engine-to-host continuum contrast,
+`C/(1-C) = x^2` — simultaneously matches the stacked line-ratio subtype
+sequence (χ² = 10.4 vs 12.9 for an imposed closure), improves the reliable
+z ≤ 7.5 demography to χ² = 1.2, and reinterprets the RUBIES broad-line
+widths as comparably virial and electron-scattering broadened. The exponent
+is constructed by an elimination program, not fitted, and the model predicts
+a subtype "march": LRDs should turn red over cosmic time.
 
 ## Reproduce everything with one command
 
@@ -21,8 +26,21 @@ pip install -r requirements.txt      # needs a LaTeX toolchain (pdflatex) too
 `reproduce.sh` runs the full analysis (writing the result tables and figures
 into `semi_analytic_lifecycle/`), collects the manuscript figures into
 `paper/`, and compiles both papers to
-`paper/ms_aastex.pdf` and `paper/letter_subtype_march.pdf`. The comments in
-`reproduce.sh` map each step to the paper figure/table it produces.
+`paper/ms_aastex.pdf` and `paper/letter_subtype_march.pdf`. All runs are
+seeded and deterministic: the shipped fiducial configuration regenerates the
+published statistics exactly (e.g. the demographic χ² to four decimals).
+
+## Reproducing the papers, item by item
+
+| Paper item | Script | Key output |
+|---|---|---|
+| Fig. 1 — interception exponent | `derive_interception_exponent.py` | `interception_exponent_summary.json` |
+| Fig. 2 + Tables 1–2 — covering-law scan & stacked ratios | `refit_covering_ratio_space.py`, `plot_covering_scan.py` | `covering_ratio_space_refit.json` |
+| Fig. 3 — RUBIES broad-line widths (fitted law) | `confront_rubies_fwhm.py`, `confront_rubies_fwhm_coregulated.py` | `public_lrd_constraints/coregulated/rubies_fwhm_confrontation.json` |
+| Fig. 4 + Letter Fig. 1/Table 1 — subtype march | `analyze_subtype_march.py`, `plot_subtype_march_bands.py` | `subtype_march_summary.json`, `subtype_march_uncertainties.json` |
+| Letter Table 2 + §6 headroom (~34×) | `highz_gate_fractions.py` | `highz_gate_fractions.json` |
+| Hα calibration marker (+0.89 → +0.64 dex) | `confront_marks.py` | `marks_confrontation.json` |
+| 23/23 symbolic equation checks | `verify_equations_sympy.py` | (stdout) |
 
 The **compiled papers are also committed** (`paper/ms_aastex.pdf`,
 `paper/letter_subtype_march.pdf`) so they can be read without building; running
